@@ -6748,4 +6748,11 @@
         AAAAAAAAAAAAAACYmqr6P7gUx7BhulctAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="label66.Text" xml:space="preserve">
+    <value>    Emisión de Gases: Humo negro diésel: problemas con el combustible, un inyector puede tener fuga o se inyecta demasiado diésel a la cámara de
+combustión / Humo negro gasolina: exceso de combustible en la cámara de combustión / Humo azul: falla motor por el ingreso de aceite a la cámara de 
+combustión, puede ser problemas en las válvulas, pistones, desgate del motor o exceso de aceite en el cárter / Humo blanco: es el vapor de agua cuando
+se enciende el vehículo en las mañanas, si el humo persiste significa falla en los cabezotes, block del motor o que tengan alguna fisura.  
+</value>
+  </data>
 </root>
