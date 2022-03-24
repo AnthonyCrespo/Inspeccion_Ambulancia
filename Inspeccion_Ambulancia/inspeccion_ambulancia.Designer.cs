@@ -35,8 +35,34 @@ namespace Inspeccion_Ambulancia
             this.pic_escudo = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label66 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.comboBox24 = new System.Windows.Forms.ComboBox();
@@ -145,7 +171,7 @@ namespace Inspeccion_Ambulancia
             this.tabControl1 = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
-            this.tabPage6.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -196,14 +222,13 @@ namespace Inspeccion_Ambulancia
             this.tabPage7.Location = new System.Drawing.Point(4, 29);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1145, 727);
+            this.tabPage7.Size = new System.Drawing.Size(1145, 456);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Otros datos";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.label66);
             this.tabPage6.Location = new System.Drawing.Point(4, 29);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -212,19 +237,37 @@ namespace Inspeccion_Ambulancia
             this.tabPage6.Text = "Daños";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(82, 194);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(980, 68);
-            this.label66.TabIndex = 251;
-            this.label66.Text = resources.GetString("label66.Text");
-            // 
             // tabPage5
             // 
             this.tabPage5.AutoScroll = true;
+            this.tabPage5.AutoScrollMargin = new System.Drawing.Size(0, 50);
+            this.tabPage5.Controls.Add(this.textBox26);
+            this.tabPage5.Controls.Add(this.comboBox26);
+            this.tabPage5.Controls.Add(this.label67);
+            this.tabPage5.Controls.Add(this.label56);
+            this.tabPage5.Controls.Add(this.label50);
+            this.tabPage5.Controls.Add(this.label51);
+            this.tabPage5.Controls.Add(this.label52);
+            this.tabPage5.Controls.Add(this.label53);
+            this.tabPage5.Controls.Add(this.label54);
+            this.tabPage5.Controls.Add(this.label55);
+            this.tabPage5.Controls.Add(this.label49);
+            this.tabPage5.Controls.Add(this.label42);
+            this.tabPage5.Controls.Add(this.label43);
+            this.tabPage5.Controls.Add(this.label44);
+            this.tabPage5.Controls.Add(this.label45);
+            this.tabPage5.Controls.Add(this.label46);
+            this.tabPage5.Controls.Add(this.label47);
+            this.tabPage5.Controls.Add(this.label48);
+            this.tabPage5.Controls.Add(this.label41);
+            this.tabPage5.Controls.Add(this.label40);
+            this.tabPage5.Controls.Add(this.label39);
+            this.tabPage5.Controls.Add(this.label38);
+            this.tabPage5.Controls.Add(this.label37);
+            this.tabPage5.Controls.Add(this.label36);
+            this.tabPage5.Controls.Add(this.label35);
+            this.tabPage5.Controls.Add(this.label33);
+            this.tabPage5.Controls.Add(this.label34);
             this.tabPage5.Location = new System.Drawing.Point(4, 29);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -232,6 +275,263 @@ namespace Inspeccion_Ambulancia
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Cabina Exterior";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(628, 55);
+            this.textBox26.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(468, 27);
+            this.textBox26.TabIndex = 254;
+            // 
+            // comboBox26
+            // 
+            this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox26.FormattingEnabled = true;
+            this.comboBox26.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox26.Location = new System.Drawing.Point(490, 54);
+            this.comboBox26.Name = "comboBox26";
+            this.comboBox26.Size = new System.Drawing.Size(120, 28);
+            this.comboBox26.TabIndex = 253;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(20, 929);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(980, 68);
+            this.label67.TabIndex = 252;
+            this.label67.Text = resources.GetString("label67.Text");
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(19, 876);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(324, 20);
+            this.label56.TabIndex = 206;
+            this.label56.Text = "Puertas (Chapa/bisagras/seguros), placas";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(19, 843);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(272, 20);
+            this.label50.TabIndex = 205;
+            this.label50.Text = "Pintura exterior/brandeo (logotipos)";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(19, 809);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(271, 20);
+            this.label51.TabIndex = 204;
+            this.label51.Text = "Llantas (incluída la de emergencia)";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(19, 774);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(81, 20);
+            this.label52.TabIndex = 203;
+            this.label52.Text = "Radiador ";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(19, 735);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(504, 20);
+            this.label53.TabIndex = 202;
+            this.label53.Text = "Mangueras/acoples/abrazaderas /empaques/bandas/cadenas/etc. ";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(19, 694);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(216, 20);
+            this.label54.TabIndex = 201;
+            this.label54.Text = "Sistema doble tracción 4x4 ";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(19, 659);
+            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(360, 20);
+            this.label55.TabIndex = 200;
+            this.label55.Text = "Sistema de tracción 4x2 / Palanca de cambios ";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(19, 619);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(121, 20);
+            this.label49.TabIndex = 199;
+            this.label49.Text = "Freno de mano";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(19, 582);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(120, 20);
+            this.label42.TabIndex = 198;
+            this.label42.Text = "Freno de pedal";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(19, 539);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(219, 20);
+            this.label43.TabIndex = 197;
+            this.label43.Text = "Suspensión/Amortiguadores";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(19, 500);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(138, 20);
+            this.label44.TabIndex = 196;
+            this.label44.Text = "Crucetas/cardan \r\n";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(19, 459);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(316, 20);
+            this.label45.TabIndex = 195;
+            this.label45.Text = "Volante (dirección)/nivel aceite hidráulico";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(19, 424);
+            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(172, 20);
+            this.label46.TabIndex = 194;
+            this.label46.Text = "Sistema de embrague";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(19, 362);
+            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(273, 40);
+            this.label47.TabIndex = 193;
+            this.label47.Text = "Tubo de escape, emisión de gases \r\n(humo color: blanco/negro/azul)*";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(19, 326);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(138, 20);
+            this.label48.TabIndex = 192;
+            this.label48.Text = "Líquido de frenos";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(19, 286);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(201, 20);
+            this.label41.TabIndex = 191;
+            this.label41.Text = "Nivel de agua/refrigerante";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(19, 250);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(194, 20);
+            this.label40.TabIndex = 190;
+            this.label40.Text = "Nivel de aceite del motor";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(19, 213);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(216, 20);
+            this.label39.TabIndex = 189;
+            this.label39.Text = "Baterías/sistema alternador";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(19, 171);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(194, 20);
+            this.label38.TabIndex = 188;
+            this.label38.Text = "Luces de parqueo (Stop)";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(19, 137);
+            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(121, 20);
+            this.label37.TabIndex = 187;
+            this.label37.Text = "Torreta/balizas";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(19, 99);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(159, 20);
+            this.label36.TabIndex = 186;
+            this.label36.Text = "Luces direccionales";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(19, 63);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(212, 20);
+            this.label35.TabIndex = 185;
+            this.label35.Text = "Luces (altas/bajas/medias)";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(800, 15);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(118, 17);
+            this.label33.TabIndex = 177;
+            this.label33.Text = "OBSERVACIÓN";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(487, 15);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(110, 17);
+            this.label34.TabIndex = 176;
+            this.label34.Text = "BUENO/MALO";
             // 
             // tabPage4
             // 
@@ -473,6 +773,7 @@ namespace Inspeccion_Ambulancia
             // 
             // comboBox21
             // 
+            this.comboBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox21.FormattingEnabled = true;
             this.comboBox21.Items.AddRange(new object[] {
@@ -485,6 +786,7 @@ namespace Inspeccion_Ambulancia
             // 
             // comboBox20
             // 
+            this.comboBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox20.FormattingEnabled = true;
             this.comboBox20.Items.AddRange(new object[] {
@@ -497,6 +799,7 @@ namespace Inspeccion_Ambulancia
             // 
             // comboBox19
             // 
+            this.comboBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox19.FormattingEnabled = true;
             this.comboBox19.Items.AddRange(new object[] {
@@ -509,6 +812,7 @@ namespace Inspeccion_Ambulancia
             // 
             // comboBox18
             // 
+            this.comboBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox18.FormattingEnabled = true;
             this.comboBox18.Items.AddRange(new object[] {
@@ -521,30 +825,33 @@ namespace Inspeccion_Ambulancia
             // 
             // comboBox17
             // 
+            this.comboBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox17.FormattingEnabled = true;
             this.comboBox17.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.comboBox17.Location = new System.Drawing.Point(490, 597);
+            this.comboBox17.Location = new System.Drawing.Point(490, 605);
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(120, 28);
             this.comboBox17.TabIndex = 207;
             // 
             // comboBox16
             // 
+            this.comboBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox16.FormattingEnabled = true;
             this.comboBox16.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.comboBox16.Location = new System.Drawing.Point(490, 557);
+            this.comboBox16.Location = new System.Drawing.Point(490, 559);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(120, 28);
             this.comboBox16.TabIndex = 206;
             // 
             // comboBox15
             // 
+            this.comboBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.Items.AddRange(new object[] {
@@ -557,6 +864,7 @@ namespace Inspeccion_Ambulancia
             // 
             // comboBox14
             // 
+            this.comboBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox14.FormattingEnabled = true;
             this.comboBox14.Items.AddRange(new object[] {
@@ -569,90 +877,98 @@ namespace Inspeccion_Ambulancia
             // 
             // comboBox13
             // 
+            this.comboBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.comboBox13.Location = new System.Drawing.Point(490, 441);
+            this.comboBox13.Location = new System.Drawing.Point(490, 448);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(120, 28);
             this.comboBox13.TabIndex = 203;
             // 
             // comboBox12
             // 
+            this.comboBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.comboBox12.Location = new System.Drawing.Point(490, 400);
+            this.comboBox12.Location = new System.Drawing.Point(490, 408);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(120, 28);
             this.comboBox12.TabIndex = 202;
             // 
             // comboBox11
             // 
+            this.comboBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.comboBox11.Location = new System.Drawing.Point(490, 360);
+            this.comboBox11.Location = new System.Drawing.Point(490, 374);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(120, 28);
             this.comboBox11.TabIndex = 201;
             // 
             // comboBox10
             // 
+            this.comboBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.comboBox10.Location = new System.Drawing.Point(490, 326);
+            this.comboBox10.Location = new System.Drawing.Point(490, 331);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(120, 28);
             this.comboBox10.TabIndex = 200;
             // 
             // comboBox9
             // 
+            this.comboBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.comboBox9.Location = new System.Drawing.Point(490, 292);
+            this.comboBox9.Location = new System.Drawing.Point(490, 295);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(120, 28);
             this.comboBox9.TabIndex = 199;
             // 
             // comboBox8
             // 
+            this.comboBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.comboBox8.Location = new System.Drawing.Point(490, 254);
+            this.comboBox8.Location = new System.Drawing.Point(490, 258);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(120, 28);
             this.comboBox8.TabIndex = 198;
             // 
             // comboBox7
             // 
+            this.comboBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.comboBox7.Location = new System.Drawing.Point(490, 212);
+            this.comboBox7.Location = new System.Drawing.Point(490, 216);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(120, 28);
             this.comboBox7.TabIndex = 197;
             // 
             // comboBox6
             // 
+            this.comboBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
@@ -665,18 +981,20 @@ namespace Inspeccion_Ambulancia
             // 
             // comboBox5
             // 
+            this.comboBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.comboBox5.Location = new System.Drawing.Point(490, 142);
+            this.comboBox5.Location = new System.Drawing.Point(490, 139);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(120, 28);
             this.comboBox5.TabIndex = 195;
             // 
             // comboBox4
             // 
+            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
@@ -689,6 +1007,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox21
             // 
+            this.textBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox21.Location = new System.Drawing.Point(628, 792);
             this.textBox21.Margin = new System.Windows.Forms.Padding(4);
             this.textBox21.Name = "textBox21";
@@ -697,6 +1016,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox20
             // 
+            this.textBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox20.Location = new System.Drawing.Point(628, 740);
             this.textBox20.Margin = new System.Windows.Forms.Padding(4);
             this.textBox20.Name = "textBox20";
@@ -705,6 +1025,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox19
             // 
+            this.textBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox19.Location = new System.Drawing.Point(628, 681);
             this.textBox19.Margin = new System.Windows.Forms.Padding(4);
             this.textBox19.Name = "textBox19";
@@ -713,6 +1034,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox18
             // 
+            this.textBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox18.Location = new System.Drawing.Point(628, 644);
             this.textBox18.Margin = new System.Windows.Forms.Padding(4);
             this.textBox18.Name = "textBox18";
@@ -721,7 +1043,8 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(628, 600);
+            this.textBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox17.Location = new System.Drawing.Point(628, 606);
             this.textBox17.Margin = new System.Windows.Forms.Padding(4);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(468, 27);
@@ -729,6 +1052,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox16
             // 
+            this.textBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox16.Location = new System.Drawing.Point(628, 559);
             this.textBox16.Margin = new System.Windows.Forms.Padding(4);
             this.textBox16.Name = "textBox16";
@@ -737,6 +1061,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox15
             // 
+            this.textBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox15.Location = new System.Drawing.Point(628, 523);
             this.textBox15.Margin = new System.Windows.Forms.Padding(4);
             this.textBox15.Name = "textBox15";
@@ -745,6 +1070,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox14
             // 
+            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox14.Location = new System.Drawing.Point(628, 487);
             this.textBox14.Margin = new System.Windows.Forms.Padding(4);
             this.textBox14.Name = "textBox14";
@@ -753,7 +1079,8 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(628, 443);
+            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox13.Location = new System.Drawing.Point(628, 451);
             this.textBox13.Margin = new System.Windows.Forms.Padding(4);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(468, 27);
@@ -761,7 +1088,8 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(628, 403);
+            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox12.Location = new System.Drawing.Point(628, 411);
             this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(468, 27);
@@ -769,7 +1097,8 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(628, 362);
+            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox11.Location = new System.Drawing.Point(628, 374);
             this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(468, 27);
@@ -777,7 +1106,8 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(628, 328);
+            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox10.Location = new System.Drawing.Point(628, 334);
             this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(468, 27);
@@ -785,6 +1115,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox9
             // 
+            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox9.Location = new System.Drawing.Point(628, 295);
             this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
@@ -793,6 +1124,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox8
             // 
+            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox8.Location = new System.Drawing.Point(628, 254);
             this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
@@ -801,7 +1133,8 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(628, 212);
+            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox7.Location = new System.Drawing.Point(628, 217);
             this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(468, 27);
@@ -809,7 +1142,8 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(628, 171);
+            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox6.Location = new System.Drawing.Point(628, 179);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(468, 27);
@@ -817,7 +1151,8 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(628, 136);
+            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox5.Location = new System.Drawing.Point(628, 142);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(468, 27);
@@ -825,6 +1160,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox4
             // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Location = new System.Drawing.Point(628, 101);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
@@ -833,6 +1169,7 @@ namespace Inspeccion_Ambulancia
             // 
             // textBox3
             // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Location = new System.Drawing.Point(628, 55);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
@@ -841,6 +1178,7 @@ namespace Inspeccion_Ambulancia
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(800, 15);
@@ -852,6 +1190,7 @@ namespace Inspeccion_Ambulancia
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(487, 15);
@@ -863,6 +1202,7 @@ namespace Inspeccion_Ambulancia
             // 
             // comboBox3
             // 
+            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
@@ -1078,7 +1418,7 @@ namespace Inspeccion_Ambulancia
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1145, 727);
+            this.tabPage2.Size = new System.Drawing.Size(1145, 456);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Limpieza";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1264,7 +1604,6 @@ namespace Inspeccion_Ambulancia
             // 
             // Hora
             // 
-            this.Hora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Hora.Location = new System.Drawing.Point(821, 316);
             this.Hora.Margin = new System.Windows.Forms.Padding(4);
             this.Hora.Name = "Hora";
@@ -1444,8 +1783,8 @@ namespace Inspeccion_Ambulancia
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).EndInit();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1577,6 +1916,32 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.Label lbl_conductor1;
         private System.Windows.Forms.Label lnl_conductor2;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.ComboBox comboBox26;
     }
 }
