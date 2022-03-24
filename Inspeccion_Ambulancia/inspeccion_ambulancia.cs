@@ -26,5 +26,20 @@ namespace Inspeccion_Ambulancia
         {
 
         }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inspeccion_ambulancia_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox18_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
