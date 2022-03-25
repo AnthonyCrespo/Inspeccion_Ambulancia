@@ -155,7 +155,6 @@ namespace Inspeccion_Ambulancia
             this.Hora = new System.Windows.Forms.TextBox();
             this.tb_base_operativa = new System.Windows.Forms.TextBox();
             this.tb_unidad_operativa = new System.Windows.Forms.TextBox();
-            this.tb_provincia = new System.Windows.Forms.TextBox();
             this.conductorRecibe = new System.Windows.Forms.TextBox();
             this.conductorEntrega = new System.Windows.Forms.TextBox();
             this.Fecha = new System.Windows.Forms.DateTimePicker();
@@ -211,8 +210,11 @@ namespace Inspeccion_Ambulancia
             this.comboBox46 = new System.Windows.Forms.ComboBox();
             this.textBox47 = new System.Windows.Forms.TextBox();
             this.comboBox47 = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.provincia = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
+            this.tabPage7.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -222,6 +224,7 @@ namespace Inspeccion_Ambulancia
             ((System.ComponentModel.ISupportInitialize)(this.Noregistro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coor_zonal)).BeginInit();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -229,7 +232,7 @@ namespace Inspeccion_Ambulancia
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(382, 34);
+            this.label1.Location = new System.Drawing.Point(375, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(631, 96);
             this.label1.TabIndex = 0;
@@ -260,6 +263,7 @@ namespace Inspeccion_Ambulancia
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.pictureBox1);
             this.tabPage7.Location = new System.Drawing.Point(4, 29);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -857,7 +861,6 @@ namespace Inspeccion_Ambulancia
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cabina Interior";
             this.tabPage3.UseVisualStyleBackColor = true;
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // comboBox21
             // 
@@ -1596,6 +1599,7 @@ namespace Inspeccion_Ambulancia
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.provincia);
             this.tabPage1.Controls.Add(this.Alfa);
             this.tabPage1.Controls.Add(this.Noregistro);
             this.tabPage1.Controls.Add(this.coor_zonal);
@@ -1603,7 +1607,6 @@ namespace Inspeccion_Ambulancia
             this.tabPage1.Controls.Add(this.Hora);
             this.tabPage1.Controls.Add(this.tb_base_operativa);
             this.tabPage1.Controls.Add(this.tb_unidad_operativa);
-            this.tabPage1.Controls.Add(this.tb_provincia);
             this.tabPage1.Controls.Add(this.conductorRecibe);
             this.tabPage1.Controls.Add(this.conductorEntrega);
             this.tabPage1.Controls.Add(this.Fecha);
@@ -1643,7 +1646,7 @@ namespace Inspeccion_Ambulancia
             // 
             // Noregistro
             // 
-            this.Noregistro.Location = new System.Drawing.Point(910, 105);
+            this.Noregistro.Location = new System.Drawing.Point(910, 81);
             this.Noregistro.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1660,7 +1663,7 @@ namespace Inspeccion_Ambulancia
             // 
             // coor_zonal
             // 
-            this.coor_zonal.Location = new System.Drawing.Point(204, 97);
+            this.coor_zonal.Location = new System.Drawing.Point(204, 73);
             this.coor_zonal.Maximum = new decimal(new int[] {
             9,
             0,
@@ -1692,7 +1695,7 @@ namespace Inspeccion_Ambulancia
             // 
             // Hora
             // 
-            this.Hora.Location = new System.Drawing.Point(821, 316);
+            this.Hora.Location = new System.Drawing.Point(816, 376);
             this.Hora.Margin = new System.Windows.Forms.Padding(4);
             this.Hora.Name = "Hora";
             this.Hora.Size = new System.Drawing.Size(149, 27);
@@ -1708,23 +1711,15 @@ namespace Inspeccion_Ambulancia
             // 
             // tb_unidad_operativa
             // 
-            this.tb_unidad_operativa.Location = new System.Drawing.Point(601, 97);
+            this.tb_unidad_operativa.Location = new System.Drawing.Point(601, 72);
             this.tb_unidad_operativa.Margin = new System.Windows.Forms.Padding(4);
             this.tb_unidad_operativa.Name = "tb_unidad_operativa";
             this.tb_unidad_operativa.Size = new System.Drawing.Size(195, 27);
             this.tb_unidad_operativa.TabIndex = 57;
             // 
-            // tb_provincia
-            // 
-            this.tb_provincia.Location = new System.Drawing.Point(204, 165);
-            this.tb_provincia.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_provincia.Name = "tb_provincia";
-            this.tb_provincia.Size = new System.Drawing.Size(187, 27);
-            this.tb_provincia.TabIndex = 55;
-            // 
             // conductorRecibe
             // 
-            this.conductorRecibe.Location = new System.Drawing.Point(341, 314);
+            this.conductorRecibe.Location = new System.Drawing.Point(336, 374);
             this.conductorRecibe.Margin = new System.Windows.Forms.Padding(4);
             this.conductorRecibe.Name = "conductorRecibe";
             this.conductorRecibe.Size = new System.Drawing.Size(357, 27);
@@ -1732,7 +1727,7 @@ namespace Inspeccion_Ambulancia
             // 
             // conductorEntrega
             // 
-            this.conductorEntrega.Location = new System.Drawing.Point(341, 259);
+            this.conductorEntrega.Location = new System.Drawing.Point(336, 309);
             this.conductorEntrega.Margin = new System.Windows.Forms.Padding(4);
             this.conductorEntrega.Name = "conductorEntrega";
             this.conductorEntrega.Size = new System.Drawing.Size(357, 27);
@@ -1740,7 +1735,7 @@ namespace Inspeccion_Ambulancia
             // 
             // Fecha
             // 
-            this.Fecha.Location = new System.Drawing.Point(821, 259);
+            this.Fecha.Location = new System.Drawing.Point(816, 309);
             this.Fecha.Margin = new System.Windows.Forms.Padding(4);
             this.Fecha.Name = "Fecha";
             this.Fecha.Size = new System.Drawing.Size(274, 27);
@@ -1749,7 +1744,7 @@ namespace Inspeccion_Ambulancia
             // lbl_hora
             // 
             this.lbl_hora.AutoSize = true;
-            this.lbl_hora.Location = new System.Drawing.Point(722, 320);
+            this.lbl_hora.Location = new System.Drawing.Point(717, 380);
             this.lbl_hora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_hora.Name = "lbl_hora";
             this.lbl_hora.Size = new System.Drawing.Size(51, 20);
@@ -1759,7 +1754,7 @@ namespace Inspeccion_Ambulancia
             // lbl_fecha
             // 
             this.lbl_fecha.AutoSize = true;
-            this.lbl_fecha.Location = new System.Drawing.Point(722, 266);
+            this.lbl_fecha.Location = new System.Drawing.Point(717, 316);
             this.lbl_fecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_fecha.Name = "lbl_fecha";
             this.lbl_fecha.Size = new System.Drawing.Size(60, 20);
@@ -1779,7 +1774,7 @@ namespace Inspeccion_Ambulancia
             // lnl_unidad
             // 
             this.lnl_unidad.AutoSize = true;
-            this.lnl_unidad.Location = new System.Drawing.Point(404, 102);
+            this.lnl_unidad.Location = new System.Drawing.Point(404, 79);
             this.lnl_unidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lnl_unidad.Name = "lnl_unidad";
             this.lnl_unidad.Size = new System.Drawing.Size(203, 20);
@@ -1799,7 +1794,7 @@ namespace Inspeccion_Ambulancia
             // lbl_coor_zonal
             // 
             this.lbl_coor_zonal.AutoSize = true;
-            this.lbl_coor_zonal.Location = new System.Drawing.Point(46, 99);
+            this.lbl_coor_zonal.Location = new System.Drawing.Point(46, 75);
             this.lbl_coor_zonal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_coor_zonal.Name = "lbl_coor_zonal";
             this.lbl_coor_zonal.Size = new System.Drawing.Size(157, 20);
@@ -1809,7 +1804,7 @@ namespace Inspeccion_Ambulancia
             // lnl_no_reporte
             // 
             this.lnl_no_reporte.AutoSize = true;
-            this.lnl_no_reporte.Location = new System.Drawing.Point(812, 107);
+            this.lnl_no_reporte.Location = new System.Drawing.Point(812, 83);
             this.lnl_no_reporte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lnl_no_reporte.Name = "lnl_no_reporte";
             this.lnl_no_reporte.Size = new System.Drawing.Size(97, 20);
@@ -1819,7 +1814,7 @@ namespace Inspeccion_Ambulancia
             // lbl_conductor1
             // 
             this.lbl_conductor1.AutoSize = true;
-            this.lbl_conductor1.Location = new System.Drawing.Point(46, 259);
+            this.lbl_conductor1.Location = new System.Drawing.Point(41, 309);
             this.lbl_conductor1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_conductor1.Name = "lbl_conductor1";
             this.lbl_conductor1.Size = new System.Drawing.Size(297, 20);
@@ -1829,7 +1824,7 @@ namespace Inspeccion_Ambulancia
             // lnl_conductor2
             // 
             this.lnl_conductor2.AutoSize = true;
-            this.lnl_conductor2.Location = new System.Drawing.Point(39, 320);
+            this.lnl_conductor2.Location = new System.Drawing.Point(41, 380);
             this.lnl_conductor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lnl_conductor2.Name = "lnl_conductor2";
             this.lnl_conductor2.Size = new System.Drawing.Size(287, 20);
@@ -2317,6 +2312,23 @@ namespace Inspeccion_Ambulancia
             this.comboBox47.Size = new System.Drawing.Size(120, 28);
             this.comboBox47.TabIndex = 295;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(104, 56);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(328, 132);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // provincia
+            // 
+            this.provincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.provincia.FormattingEnabled = true;
+            this.provincia.Location = new System.Drawing.Point(204, 162);
+            this.provincia.Name = "provincia";
+            this.provincia.Size = new System.Drawing.Size(167, 28);
+            this.provincia.TabIndex = 68;
+            // 
             // inspeccion_ambulancia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -2331,8 +2343,10 @@ namespace Inspeccion_Ambulancia
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inspección de Ambulancia";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.inspeccion_ambulancia_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).EndInit();
+            this.tabPage7.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage4.ResumeLayout(false);
@@ -2347,6 +2361,7 @@ namespace Inspeccion_Ambulancia
             ((System.ComponentModel.ISupportInitialize)(this.Noregistro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coor_zonal)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2452,7 +2467,6 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.TextBox Hora;
         private System.Windows.Forms.TextBox tb_base_operativa;
         private System.Windows.Forms.TextBox tb_unidad_operativa;
-        private System.Windows.Forms.TextBox tb_provincia;
         private System.Windows.Forms.TextBox conductorRecibe;
         private System.Windows.Forms.TextBox conductorEntrega;
         private System.Windows.Forms.DateTimePicker Fecha;
@@ -2535,5 +2549,7 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.ComboBox comboBox38;
         private System.Windows.Forms.TextBox textBox37;
         private System.Windows.Forms.ComboBox comboBox37;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox provincia;
     }
 }

@@ -16,7 +16,7 @@ namespace Inspeccion_Ambulancia
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new inspeccion_ambulancia());
+            Application.Run(new main());
         }
     }
 }

@@ -41,5 +41,10 @@ namespace Inspeccion_Ambulancia
         {
 
         }
+
+        private void inspeccion_ambulancia_Load_1(object sender, EventArgs e)
+        {
+            Funciones.cargaComboBox("select provincia from provincias;", provincia);
+        }
     }
 }
