@@ -17,34 +17,33 @@ namespace Inspeccion_Ambulancia
             InitializeComponent();
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void inspeccion_ambulancia_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox18_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void inspeccion_ambulancia_Load_1(object sender, EventArgs e)
         {
             Funciones.cargaComboBox("select provincia from provincias;", provincia);
+        }
+
+        private void btn_3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog abrirImagen = new OpenFileDialog();
+                abrirImagen.Filter = "Image Files|*.jpg;*.jpeg;*.png;...";
+
+
+                //abrir el explorador de archivos
+                if (abrirImagen.ShowDialog() == DialogResult.OK)
+                {
+                    pic_ambulancia.ImageLocation = abrirImagen.FileName;
+                    pic_ambulancia.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+            }
+
+            catch(Exception)
+            {
+                MessageBox.Show("Ocurrió un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }

@@ -34,8 +34,51 @@ namespace Inspeccion_Ambulancia
             this.pic_msp = new System.Windows.Forms.PictureBox();
             this.pic_escudo = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.comboBox47 = new System.Windows.Forms.ComboBox();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.comboBox46 = new System.Windows.Forms.ComboBox();
+            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.comboBox45 = new System.Windows.Forms.ComboBox();
+            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.comboBox44 = new System.Windows.Forms.ComboBox();
+            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.comboBox43 = new System.Windows.Forms.ComboBox();
+            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.comboBox42 = new System.Windows.Forms.ComboBox();
+            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.comboBox41 = new System.Windows.Forms.ComboBox();
+            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.comboBox40 = new System.Windows.Forms.ComboBox();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.comboBox39 = new System.Windows.Forms.ComboBox();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.comboBox38 = new System.Windows.Forms.ComboBox();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.comboBox37 = new System.Windows.Forms.ComboBox();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.comboBox36 = new System.Windows.Forms.ComboBox();
+            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.comboBox35 = new System.Windows.Forms.ComboBox();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.comboBox34 = new System.Windows.Forms.ComboBox();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.comboBox33 = new System.Windows.Forms.ComboBox();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.comboBox32 = new System.Windows.Forms.ComboBox();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.comboBox31 = new System.Windows.Forms.ComboBox();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.comboBox27 = new System.Windows.Forms.ComboBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.comboBox26 = new System.Windows.Forms.ComboBox();
             this.label67 = new System.Windows.Forms.Label();
@@ -148,73 +191,34 @@ namespace Inspeccion_Ambulancia
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.provincia = new System.Windows.Forms.ComboBox();
             this.Alfa = new System.Windows.Forms.NumericUpDown();
+            this.lbl_alfa = new System.Windows.Forms.Label();
+            this.tb_base_operativa = new System.Windows.Forms.TextBox();
+            this.lnl_base_operativa = new System.Windows.Forms.Label();
+            this.lnl_provincia = new System.Windows.Forms.Label();
             this.Noregistro = new System.Windows.Forms.NumericUpDown();
             this.coor_zonal = new System.Windows.Forms.NumericUpDown();
-            this.lbl_alfa = new System.Windows.Forms.Label();
             this.Hora = new System.Windows.Forms.TextBox();
-            this.tb_base_operativa = new System.Windows.Forms.TextBox();
             this.tb_unidad_operativa = new System.Windows.Forms.TextBox();
             this.conductorRecibe = new System.Windows.Forms.TextBox();
             this.conductorEntrega = new System.Windows.Forms.TextBox();
             this.Fecha = new System.Windows.Forms.DateTimePicker();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.lbl_fecha = new System.Windows.Forms.Label();
-            this.lnl_base_operativa = new System.Windows.Forms.Label();
             this.lnl_unidad = new System.Windows.Forms.Label();
-            this.lnl_provincia = new System.Windows.Forms.Label();
             this.lbl_coor_zonal = new System.Windows.Forms.Label();
             this.lnl_no_reporte = new System.Windows.Forms.Label();
             this.lbl_conductor1 = new System.Windows.Forms.Label();
             this.lnl_conductor2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.comboBox31 = new System.Windows.Forms.ComboBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.comboBox32 = new System.Windows.Forms.ComboBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.comboBox33 = new System.Windows.Forms.ComboBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.comboBox34 = new System.Windows.Forms.ComboBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.comboBox35 = new System.Windows.Forms.ComboBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.comboBox36 = new System.Windows.Forms.ComboBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.comboBox37 = new System.Windows.Forms.ComboBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.comboBox38 = new System.Windows.Forms.ComboBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.comboBox39 = new System.Windows.Forms.ComboBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.comboBox40 = new System.Windows.Forms.ComboBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.comboBox41 = new System.Windows.Forms.ComboBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.comboBox42 = new System.Windows.Forms.ComboBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.comboBox43 = new System.Windows.Forms.ComboBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.comboBox44 = new System.Windows.Forms.ComboBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.comboBox45 = new System.Windows.Forms.ComboBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.comboBox46 = new System.Windows.Forms.ComboBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.comboBox47 = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.provincia = new System.Windows.Forms.ComboBox();
+            this.pic_ambulancia = new System.Windows.Forms.PictureBox();
+            this.btn_3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
             this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage6.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -224,7 +228,7 @@ namespace Inspeccion_Ambulancia
             ((System.ComponentModel.ISupportInitialize)(this.Noregistro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coor_zonal)).BeginInit();
             this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_ambulancia)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -272,12 +276,22 @@ namespace Inspeccion_Ambulancia
             this.tabPage7.Text = "Otros datos";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(104, 56);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(328, 132);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.btn_3);
+            this.tabPage6.Controls.Add(this.pic_ambulancia);
             this.tabPage6.Location = new System.Drawing.Point(4, 29);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1145, 456);
+            this.tabPage6.Size = new System.Drawing.Size(1145, 461);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Daños";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -362,6 +376,468 @@ namespace Inspeccion_Ambulancia
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Cabina Exterior";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // textBox47
+            // 
+            this.textBox47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox47.Location = new System.Drawing.Point(628, 875);
+            this.textBox47.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox47.Name = "textBox47";
+            this.textBox47.Size = new System.Drawing.Size(468, 27);
+            this.textBox47.TabIndex = 296;
+            // 
+            // comboBox47
+            // 
+            this.comboBox47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox47.FormattingEnabled = true;
+            this.comboBox47.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox47.Location = new System.Drawing.Point(490, 874);
+            this.comboBox47.Name = "comboBox47";
+            this.comboBox47.Size = new System.Drawing.Size(120, 28);
+            this.comboBox47.TabIndex = 295;
+            // 
+            // textBox46
+            // 
+            this.textBox46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox46.Location = new System.Drawing.Point(628, 841);
+            this.textBox46.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox46.Name = "textBox46";
+            this.textBox46.Size = new System.Drawing.Size(468, 27);
+            this.textBox46.TabIndex = 294;
+            // 
+            // comboBox46
+            // 
+            this.comboBox46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox46.FormattingEnabled = true;
+            this.comboBox46.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox46.Location = new System.Drawing.Point(490, 840);
+            this.comboBox46.Name = "comboBox46";
+            this.comboBox46.Size = new System.Drawing.Size(120, 28);
+            this.comboBox46.TabIndex = 293;
+            // 
+            // textBox45
+            // 
+            this.textBox45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox45.Location = new System.Drawing.Point(628, 807);
+            this.textBox45.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox45.Name = "textBox45";
+            this.textBox45.Size = new System.Drawing.Size(468, 27);
+            this.textBox45.TabIndex = 292;
+            // 
+            // comboBox45
+            // 
+            this.comboBox45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox45.FormattingEnabled = true;
+            this.comboBox45.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox45.Location = new System.Drawing.Point(490, 806);
+            this.comboBox45.Name = "comboBox45";
+            this.comboBox45.Size = new System.Drawing.Size(120, 28);
+            this.comboBox45.TabIndex = 291;
+            // 
+            // textBox44
+            // 
+            this.textBox44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox44.Location = new System.Drawing.Point(628, 772);
+            this.textBox44.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox44.Name = "textBox44";
+            this.textBox44.Size = new System.Drawing.Size(468, 27);
+            this.textBox44.TabIndex = 290;
+            // 
+            // comboBox44
+            // 
+            this.comboBox44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox44.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox44.FormattingEnabled = true;
+            this.comboBox44.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox44.Location = new System.Drawing.Point(490, 771);
+            this.comboBox44.Name = "comboBox44";
+            this.comboBox44.Size = new System.Drawing.Size(120, 28);
+            this.comboBox44.TabIndex = 289;
+            // 
+            // textBox43
+            // 
+            this.textBox43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox43.Location = new System.Drawing.Point(628, 733);
+            this.textBox43.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox43.Name = "textBox43";
+            this.textBox43.Size = new System.Drawing.Size(468, 27);
+            this.textBox43.TabIndex = 288;
+            // 
+            // comboBox43
+            // 
+            this.comboBox43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox43.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox43.FormattingEnabled = true;
+            this.comboBox43.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox43.Location = new System.Drawing.Point(490, 732);
+            this.comboBox43.Name = "comboBox43";
+            this.comboBox43.Size = new System.Drawing.Size(120, 28);
+            this.comboBox43.TabIndex = 287;
+            // 
+            // textBox42
+            // 
+            this.textBox42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox42.Location = new System.Drawing.Point(628, 692);
+            this.textBox42.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox42.Name = "textBox42";
+            this.textBox42.Size = new System.Drawing.Size(468, 27);
+            this.textBox42.TabIndex = 286;
+            // 
+            // comboBox42
+            // 
+            this.comboBox42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox42.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox42.FormattingEnabled = true;
+            this.comboBox42.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox42.Location = new System.Drawing.Point(490, 691);
+            this.comboBox42.Name = "comboBox42";
+            this.comboBox42.Size = new System.Drawing.Size(120, 28);
+            this.comboBox42.TabIndex = 285;
+            // 
+            // textBox41
+            // 
+            this.textBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox41.Location = new System.Drawing.Point(628, 657);
+            this.textBox41.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox41.Name = "textBox41";
+            this.textBox41.Size = new System.Drawing.Size(468, 27);
+            this.textBox41.TabIndex = 284;
+            // 
+            // comboBox41
+            // 
+            this.comboBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox41.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox41.FormattingEnabled = true;
+            this.comboBox41.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox41.Location = new System.Drawing.Point(490, 656);
+            this.comboBox41.Name = "comboBox41";
+            this.comboBox41.Size = new System.Drawing.Size(120, 28);
+            this.comboBox41.TabIndex = 283;
+            // 
+            // textBox40
+            // 
+            this.textBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox40.Location = new System.Drawing.Point(628, 617);
+            this.textBox40.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox40.Name = "textBox40";
+            this.textBox40.Size = new System.Drawing.Size(468, 27);
+            this.textBox40.TabIndex = 282;
+            // 
+            // comboBox40
+            // 
+            this.comboBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox40.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox40.FormattingEnabled = true;
+            this.comboBox40.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox40.Location = new System.Drawing.Point(490, 616);
+            this.comboBox40.Name = "comboBox40";
+            this.comboBox40.Size = new System.Drawing.Size(120, 28);
+            this.comboBox40.TabIndex = 281;
+            // 
+            // textBox39
+            // 
+            this.textBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox39.Location = new System.Drawing.Point(628, 575);
+            this.textBox39.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(468, 27);
+            this.textBox39.TabIndex = 280;
+            // 
+            // comboBox39
+            // 
+            this.comboBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox39.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox39.FormattingEnabled = true;
+            this.comboBox39.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox39.Location = new System.Drawing.Point(490, 574);
+            this.comboBox39.Name = "comboBox39";
+            this.comboBox39.Size = new System.Drawing.Size(120, 28);
+            this.comboBox39.TabIndex = 279;
+            // 
+            // textBox38
+            // 
+            this.textBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox38.Location = new System.Drawing.Point(628, 532);
+            this.textBox38.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(468, 27);
+            this.textBox38.TabIndex = 278;
+            // 
+            // comboBox38
+            // 
+            this.comboBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox38.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox38.FormattingEnabled = true;
+            this.comboBox38.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox38.Location = new System.Drawing.Point(490, 531);
+            this.comboBox38.Name = "comboBox38";
+            this.comboBox38.Size = new System.Drawing.Size(120, 28);
+            this.comboBox38.TabIndex = 277;
+            // 
+            // textBox37
+            // 
+            this.textBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox37.Location = new System.Drawing.Point(628, 498);
+            this.textBox37.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(468, 27);
+            this.textBox37.TabIndex = 276;
+            // 
+            // comboBox37
+            // 
+            this.comboBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox37.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox37.FormattingEnabled = true;
+            this.comboBox37.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox37.Location = new System.Drawing.Point(490, 497);
+            this.comboBox37.Name = "comboBox37";
+            this.comboBox37.Size = new System.Drawing.Size(120, 28);
+            this.comboBox37.TabIndex = 275;
+            // 
+            // textBox36
+            // 
+            this.textBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox36.Location = new System.Drawing.Point(628, 457);
+            this.textBox36.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.Size = new System.Drawing.Size(468, 27);
+            this.textBox36.TabIndex = 274;
+            // 
+            // comboBox36
+            // 
+            this.comboBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox36.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox36.FormattingEnabled = true;
+            this.comboBox36.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox36.Location = new System.Drawing.Point(490, 456);
+            this.comboBox36.Name = "comboBox36";
+            this.comboBox36.Size = new System.Drawing.Size(120, 28);
+            this.comboBox36.TabIndex = 273;
+            // 
+            // textBox35
+            // 
+            this.textBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox35.Location = new System.Drawing.Point(628, 422);
+            this.textBox35.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox35.Name = "textBox35";
+            this.textBox35.Size = new System.Drawing.Size(468, 27);
+            this.textBox35.TabIndex = 272;
+            // 
+            // comboBox35
+            // 
+            this.comboBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox35.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox35.FormattingEnabled = true;
+            this.comboBox35.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox35.Location = new System.Drawing.Point(490, 421);
+            this.comboBox35.Name = "comboBox35";
+            this.comboBox35.Size = new System.Drawing.Size(120, 28);
+            this.comboBox35.TabIndex = 271;
+            // 
+            // textBox34
+            // 
+            this.textBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox34.Location = new System.Drawing.Point(628, 375);
+            this.textBox34.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(468, 27);
+            this.textBox34.TabIndex = 270;
+            // 
+            // comboBox34
+            // 
+            this.comboBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox34.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox34.FormattingEnabled = true;
+            this.comboBox34.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox34.Location = new System.Drawing.Point(490, 374);
+            this.comboBox34.Name = "comboBox34";
+            this.comboBox34.Size = new System.Drawing.Size(120, 28);
+            this.comboBox34.TabIndex = 269;
+            // 
+            // textBox33
+            // 
+            this.textBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox33.Location = new System.Drawing.Point(628, 324);
+            this.textBox33.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(468, 27);
+            this.textBox33.TabIndex = 268;
+            // 
+            // comboBox33
+            // 
+            this.comboBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox33.FormattingEnabled = true;
+            this.comboBox33.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox33.Location = new System.Drawing.Point(490, 323);
+            this.comboBox33.Name = "comboBox33";
+            this.comboBox33.Size = new System.Drawing.Size(120, 28);
+            this.comboBox33.TabIndex = 267;
+            // 
+            // textBox32
+            // 
+            this.textBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox32.Location = new System.Drawing.Point(628, 284);
+            this.textBox32.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox32.Name = "textBox32";
+            this.textBox32.Size = new System.Drawing.Size(468, 27);
+            this.textBox32.TabIndex = 266;
+            // 
+            // comboBox32
+            // 
+            this.comboBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox32.FormattingEnabled = true;
+            this.comboBox32.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox32.Location = new System.Drawing.Point(490, 283);
+            this.comboBox32.Name = "comboBox32";
+            this.comboBox32.Size = new System.Drawing.Size(120, 28);
+            this.comboBox32.TabIndex = 265;
+            // 
+            // textBox31
+            // 
+            this.textBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox31.Location = new System.Drawing.Point(628, 248);
+            this.textBox31.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(468, 27);
+            this.textBox31.TabIndex = 264;
+            // 
+            // comboBox31
+            // 
+            this.comboBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox31.FormattingEnabled = true;
+            this.comboBox31.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox31.Location = new System.Drawing.Point(490, 247);
+            this.comboBox31.Name = "comboBox31";
+            this.comboBox31.Size = new System.Drawing.Size(120, 28);
+            this.comboBox31.TabIndex = 263;
+            // 
+            // textBox30
+            // 
+            this.textBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox30.Location = new System.Drawing.Point(628, 211);
+            this.textBox30.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox30.Name = "textBox30";
+            this.textBox30.Size = new System.Drawing.Size(468, 27);
+            this.textBox30.TabIndex = 262;
+            // 
+            // comboBox30
+            // 
+            this.comboBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox30.FormattingEnabled = true;
+            this.comboBox30.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox30.Location = new System.Drawing.Point(490, 210);
+            this.comboBox30.Name = "comboBox30";
+            this.comboBox30.Size = new System.Drawing.Size(120, 28);
+            this.comboBox30.TabIndex = 261;
+            // 
+            // textBox29
+            // 
+            this.textBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox29.Location = new System.Drawing.Point(628, 172);
+            this.textBox29.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(468, 27);
+            this.textBox29.TabIndex = 260;
+            // 
+            // comboBox29
+            // 
+            this.comboBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox29.FormattingEnabled = true;
+            this.comboBox29.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox29.Location = new System.Drawing.Point(490, 171);
+            this.comboBox29.Name = "comboBox29";
+            this.comboBox29.Size = new System.Drawing.Size(120, 28);
+            this.comboBox29.TabIndex = 259;
+            // 
+            // textBox28
+            // 
+            this.textBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox28.Location = new System.Drawing.Point(628, 130);
+            this.textBox28.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(468, 27);
+            this.textBox28.TabIndex = 258;
+            // 
+            // comboBox28
+            // 
+            this.comboBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox28.FormattingEnabled = true;
+            this.comboBox28.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox28.Location = new System.Drawing.Point(490, 129);
+            this.comboBox28.Name = "comboBox28";
+            this.comboBox28.Size = new System.Drawing.Size(120, 28);
+            this.comboBox28.TabIndex = 257;
+            // 
+            // textBox27
+            // 
+            this.textBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox27.Location = new System.Drawing.Point(628, 92);
+            this.textBox27.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(468, 27);
+            this.textBox27.TabIndex = 256;
+            // 
+            // comboBox27
+            // 
+            this.comboBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox27.FormattingEnabled = true;
+            this.comboBox27.Items.AddRange(new object[] {
+            "Bueno",
+            "Malo"});
+            this.comboBox27.Location = new System.Drawing.Point(490, 91);
+            this.comboBox27.Name = "comboBox27";
+            this.comboBox27.Size = new System.Drawing.Size(120, 28);
+            this.comboBox27.TabIndex = 255;
             // 
             // textBox26
             // 
@@ -1601,20 +2077,20 @@ namespace Inspeccion_Ambulancia
             // 
             this.tabPage1.Controls.Add(this.provincia);
             this.tabPage1.Controls.Add(this.Alfa);
+            this.tabPage1.Controls.Add(this.lbl_alfa);
+            this.tabPage1.Controls.Add(this.tb_base_operativa);
+            this.tabPage1.Controls.Add(this.lnl_base_operativa);
+            this.tabPage1.Controls.Add(this.lnl_provincia);
             this.tabPage1.Controls.Add(this.Noregistro);
             this.tabPage1.Controls.Add(this.coor_zonal);
-            this.tabPage1.Controls.Add(this.lbl_alfa);
             this.tabPage1.Controls.Add(this.Hora);
-            this.tabPage1.Controls.Add(this.tb_base_operativa);
             this.tabPage1.Controls.Add(this.tb_unidad_operativa);
             this.tabPage1.Controls.Add(this.conductorRecibe);
             this.tabPage1.Controls.Add(this.conductorEntrega);
             this.tabPage1.Controls.Add(this.Fecha);
             this.tabPage1.Controls.Add(this.lbl_hora);
             this.tabPage1.Controls.Add(this.lbl_fecha);
-            this.tabPage1.Controls.Add(this.lnl_base_operativa);
             this.tabPage1.Controls.Add(this.lnl_unidad);
-            this.tabPage1.Controls.Add(this.lnl_provincia);
             this.tabPage1.Controls.Add(this.lbl_coor_zonal);
             this.tabPage1.Controls.Add(this.lnl_no_reporte);
             this.tabPage1.Controls.Add(this.lbl_conductor1);
@@ -1627,8 +2103,19 @@ namespace Inspeccion_Ambulancia
             this.tabPage1.Text = "Datos generales";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // provincia
+            // 
+            this.provincia.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.provincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.provincia.FormattingEnabled = true;
+            this.provincia.Location = new System.Drawing.Point(204, 162);
+            this.provincia.Name = "provincia";
+            this.provincia.Size = new System.Drawing.Size(167, 28);
+            this.provincia.TabIndex = 74;
+            // 
             // Alfa
             // 
+            this.Alfa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Alfa.Location = new System.Drawing.Point(910, 168);
             this.Alfa.Minimum = new decimal(new int[] {
             1,
@@ -1637,15 +2124,58 @@ namespace Inspeccion_Ambulancia
             0});
             this.Alfa.Name = "Alfa";
             this.Alfa.Size = new System.Drawing.Size(190, 27);
-            this.Alfa.TabIndex = 67;
+            this.Alfa.TabIndex = 73;
             this.Alfa.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
+            // lbl_alfa
+            // 
+            this.lbl_alfa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_alfa.AutoSize = true;
+            this.lbl_alfa.Location = new System.Drawing.Point(812, 165);
+            this.lbl_alfa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_alfa.Name = "lbl_alfa";
+            this.lbl_alfa.Size = new System.Drawing.Size(73, 20);
+            this.lbl_alfa.TabIndex = 72;
+            this.lbl_alfa.Text = "Alfa No.:";
+            // 
+            // tb_base_operativa
+            // 
+            this.tb_base_operativa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tb_base_operativa.Location = new System.Drawing.Point(601, 165);
+            this.tb_base_operativa.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_base_operativa.Name = "tb_base_operativa";
+            this.tb_base_operativa.Size = new System.Drawing.Size(195, 27);
+            this.tb_base_operativa.TabIndex = 71;
+            // 
+            // lnl_base_operativa
+            // 
+            this.lnl_base_operativa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lnl_base_operativa.AutoSize = true;
+            this.lnl_base_operativa.Location = new System.Drawing.Point(404, 170);
+            this.lnl_base_operativa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lnl_base_operativa.Name = "lnl_base_operativa";
+            this.lnl_base_operativa.Size = new System.Drawing.Size(126, 20);
+            this.lnl_base_operativa.TabIndex = 70;
+            this.lnl_base_operativa.Text = "Base operativa:";
+            // 
+            // lnl_provincia
+            // 
+            this.lnl_provincia.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lnl_provincia.AutoSize = true;
+            this.lnl_provincia.Location = new System.Drawing.Point(46, 165);
+            this.lnl_provincia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lnl_provincia.Name = "lnl_provincia";
+            this.lnl_provincia.Size = new System.Drawing.Size(83, 20);
+            this.lnl_provincia.TabIndex = 69;
+            this.lnl_provincia.Text = "Provincia:";
+            // 
             // Noregistro
             // 
+            this.Noregistro.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Noregistro.Location = new System.Drawing.Point(910, 81);
             this.Noregistro.Minimum = new decimal(new int[] {
             1,
@@ -1663,6 +2193,7 @@ namespace Inspeccion_Ambulancia
             // 
             // coor_zonal
             // 
+            this.coor_zonal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.coor_zonal.Location = new System.Drawing.Point(204, 73);
             this.coor_zonal.Maximum = new decimal(new int[] {
             9,
@@ -1683,34 +2214,18 @@ namespace Inspeccion_Ambulancia
             0,
             0});
             // 
-            // lbl_alfa
-            // 
-            this.lbl_alfa.AutoSize = true;
-            this.lbl_alfa.Location = new System.Drawing.Point(812, 165);
-            this.lbl_alfa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_alfa.Name = "lbl_alfa";
-            this.lbl_alfa.Size = new System.Drawing.Size(73, 20);
-            this.lbl_alfa.TabIndex = 64;
-            this.lbl_alfa.Text = "Alfa No.:";
-            // 
             // Hora
             // 
+            this.Hora.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Hora.Location = new System.Drawing.Point(816, 376);
             this.Hora.Margin = new System.Windows.Forms.Padding(4);
             this.Hora.Name = "Hora";
             this.Hora.Size = new System.Drawing.Size(149, 27);
             this.Hora.TabIndex = 63;
             // 
-            // tb_base_operativa
-            // 
-            this.tb_base_operativa.Location = new System.Drawing.Point(601, 165);
-            this.tb_base_operativa.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_base_operativa.Name = "tb_base_operativa";
-            this.tb_base_operativa.Size = new System.Drawing.Size(195, 27);
-            this.tb_base_operativa.TabIndex = 59;
-            // 
             // tb_unidad_operativa
             // 
+            this.tb_unidad_operativa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tb_unidad_operativa.Location = new System.Drawing.Point(601, 72);
             this.tb_unidad_operativa.Margin = new System.Windows.Forms.Padding(4);
             this.tb_unidad_operativa.Name = "tb_unidad_operativa";
@@ -1719,6 +2234,7 @@ namespace Inspeccion_Ambulancia
             // 
             // conductorRecibe
             // 
+            this.conductorRecibe.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.conductorRecibe.Location = new System.Drawing.Point(336, 374);
             this.conductorRecibe.Margin = new System.Windows.Forms.Padding(4);
             this.conductorRecibe.Name = "conductorRecibe";
@@ -1727,6 +2243,7 @@ namespace Inspeccion_Ambulancia
             // 
             // conductorEntrega
             // 
+            this.conductorEntrega.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.conductorEntrega.Location = new System.Drawing.Point(336, 309);
             this.conductorEntrega.Margin = new System.Windows.Forms.Padding(4);
             this.conductorEntrega.Name = "conductorEntrega";
@@ -1735,6 +2252,7 @@ namespace Inspeccion_Ambulancia
             // 
             // Fecha
             // 
+            this.Fecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Fecha.Location = new System.Drawing.Point(816, 309);
             this.Fecha.Margin = new System.Windows.Forms.Padding(4);
             this.Fecha.Name = "Fecha";
@@ -1743,6 +2261,7 @@ namespace Inspeccion_Ambulancia
             // 
             // lbl_hora
             // 
+            this.lbl_hora.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_hora.AutoSize = true;
             this.lbl_hora.Location = new System.Drawing.Point(717, 380);
             this.lbl_hora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1753,6 +2272,7 @@ namespace Inspeccion_Ambulancia
             // 
             // lbl_fecha
             // 
+            this.lbl_fecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_fecha.AutoSize = true;
             this.lbl_fecha.Location = new System.Drawing.Point(717, 316);
             this.lbl_fecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1761,18 +2281,9 @@ namespace Inspeccion_Ambulancia
             this.lbl_fecha.TabIndex = 60;
             this.lbl_fecha.Text = "Fecha:";
             // 
-            // lnl_base_operativa
-            // 
-            this.lnl_base_operativa.AutoSize = true;
-            this.lnl_base_operativa.Location = new System.Drawing.Point(404, 170);
-            this.lnl_base_operativa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lnl_base_operativa.Name = "lnl_base_operativa";
-            this.lnl_base_operativa.Size = new System.Drawing.Size(126, 20);
-            this.lnl_base_operativa.TabIndex = 58;
-            this.lnl_base_operativa.Text = "Base operativa:";
-            // 
             // lnl_unidad
             // 
+            this.lnl_unidad.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lnl_unidad.AutoSize = true;
             this.lnl_unidad.Location = new System.Drawing.Point(404, 79);
             this.lnl_unidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1781,18 +2292,9 @@ namespace Inspeccion_Ambulancia
             this.lnl_unidad.TabIndex = 56;
             this.lnl_unidad.Text = "Unidad Operativa/Distrito:";
             // 
-            // lnl_provincia
-            // 
-            this.lnl_provincia.AutoSize = true;
-            this.lnl_provincia.Location = new System.Drawing.Point(46, 165);
-            this.lnl_provincia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lnl_provincia.Name = "lnl_provincia";
-            this.lnl_provincia.Size = new System.Drawing.Size(83, 20);
-            this.lnl_provincia.TabIndex = 54;
-            this.lnl_provincia.Text = "Provincia:";
-            // 
             // lbl_coor_zonal
             // 
+            this.lbl_coor_zonal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_coor_zonal.AutoSize = true;
             this.lbl_coor_zonal.Location = new System.Drawing.Point(46, 75);
             this.lbl_coor_zonal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1803,6 +2305,7 @@ namespace Inspeccion_Ambulancia
             // 
             // lnl_no_reporte
             // 
+            this.lnl_no_reporte.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lnl_no_reporte.AutoSize = true;
             this.lnl_no_reporte.Location = new System.Drawing.Point(812, 83);
             this.lnl_no_reporte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1813,6 +2316,7 @@ namespace Inspeccion_Ambulancia
             // 
             // lbl_conductor1
             // 
+            this.lbl_conductor1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_conductor1.AutoSize = true;
             this.lbl_conductor1.Location = new System.Drawing.Point(41, 309);
             this.lbl_conductor1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1823,6 +2327,7 @@ namespace Inspeccion_Ambulancia
             // 
             // lnl_conductor2
             // 
+            this.lnl_conductor2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lnl_conductor2.AutoSize = true;
             this.lnl_conductor2.Location = new System.Drawing.Point(41, 380);
             this.lnl_conductor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1847,493 +2352,35 @@ namespace Inspeccion_Ambulancia
             this.tabControl1.Location = new System.Drawing.Point(46, 147);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1153, 489);
+            this.tabControl1.Size = new System.Drawing.Size(1153, 494);
             this.tabControl1.TabIndex = 1;
             // 
-            // textBox27
-            // 
-            this.textBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox27.Location = new System.Drawing.Point(628, 92);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(468, 27);
-            this.textBox27.TabIndex = 256;
-            // 
-            // comboBox27
-            // 
-            this.comboBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox27.Location = new System.Drawing.Point(490, 91);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(120, 28);
-            this.comboBox27.TabIndex = 255;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox28.Location = new System.Drawing.Point(628, 130);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(468, 27);
-            this.textBox28.TabIndex = 258;
-            // 
-            // comboBox28
-            // 
-            this.comboBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox28.Location = new System.Drawing.Point(490, 129);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(120, 28);
-            this.comboBox28.TabIndex = 257;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox29.Location = new System.Drawing.Point(628, 172);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(468, 27);
-            this.textBox29.TabIndex = 260;
-            // 
-            // comboBox29
-            // 
-            this.comboBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox29.Location = new System.Drawing.Point(490, 171);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(120, 28);
-            this.comboBox29.TabIndex = 259;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox30.Location = new System.Drawing.Point(628, 211);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(468, 27);
-            this.textBox30.TabIndex = 262;
-            // 
-            // comboBox30
-            // 
-            this.comboBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox30.Location = new System.Drawing.Point(490, 210);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(120, 28);
-            this.comboBox30.TabIndex = 261;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox31.Location = new System.Drawing.Point(628, 248);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(468, 27);
-            this.textBox31.TabIndex = 264;
-            // 
-            // comboBox31
-            // 
-            this.comboBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox31.FormattingEnabled = true;
-            this.comboBox31.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox31.Location = new System.Drawing.Point(490, 247);
-            this.comboBox31.Name = "comboBox31";
-            this.comboBox31.Size = new System.Drawing.Size(120, 28);
-            this.comboBox31.TabIndex = 263;
-            // 
-            // textBox32
-            // 
-            this.textBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox32.Location = new System.Drawing.Point(628, 284);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(468, 27);
-            this.textBox32.TabIndex = 266;
-            // 
-            // comboBox32
-            // 
-            this.comboBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox32.FormattingEnabled = true;
-            this.comboBox32.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox32.Location = new System.Drawing.Point(490, 283);
-            this.comboBox32.Name = "comboBox32";
-            this.comboBox32.Size = new System.Drawing.Size(120, 28);
-            this.comboBox32.TabIndex = 265;
-            // 
-            // textBox33
-            // 
-            this.textBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox33.Location = new System.Drawing.Point(628, 324);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(468, 27);
-            this.textBox33.TabIndex = 268;
-            // 
-            // comboBox33
-            // 
-            this.comboBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox33.FormattingEnabled = true;
-            this.comboBox33.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox33.Location = new System.Drawing.Point(490, 323);
-            this.comboBox33.Name = "comboBox33";
-            this.comboBox33.Size = new System.Drawing.Size(120, 28);
-            this.comboBox33.TabIndex = 267;
-            // 
-            // textBox34
-            // 
-            this.textBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox34.Location = new System.Drawing.Point(628, 375);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(468, 27);
-            this.textBox34.TabIndex = 270;
-            // 
-            // comboBox34
-            // 
-            this.comboBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox34.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox34.FormattingEnabled = true;
-            this.comboBox34.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox34.Location = new System.Drawing.Point(490, 374);
-            this.comboBox34.Name = "comboBox34";
-            this.comboBox34.Size = new System.Drawing.Size(120, 28);
-            this.comboBox34.TabIndex = 269;
-            // 
-            // textBox35
-            // 
-            this.textBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox35.Location = new System.Drawing.Point(628, 422);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(468, 27);
-            this.textBox35.TabIndex = 272;
-            // 
-            // comboBox35
-            // 
-            this.comboBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox35.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox35.FormattingEnabled = true;
-            this.comboBox35.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox35.Location = new System.Drawing.Point(490, 421);
-            this.comboBox35.Name = "comboBox35";
-            this.comboBox35.Size = new System.Drawing.Size(120, 28);
-            this.comboBox35.TabIndex = 271;
-            // 
-            // textBox36
-            // 
-            this.textBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox36.Location = new System.Drawing.Point(628, 457);
-            this.textBox36.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(468, 27);
-            this.textBox36.TabIndex = 274;
-            // 
-            // comboBox36
-            // 
-            this.comboBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox36.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox36.FormattingEnabled = true;
-            this.comboBox36.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox36.Location = new System.Drawing.Point(490, 456);
-            this.comboBox36.Name = "comboBox36";
-            this.comboBox36.Size = new System.Drawing.Size(120, 28);
-            this.comboBox36.TabIndex = 273;
-            // 
-            // textBox37
-            // 
-            this.textBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox37.Location = new System.Drawing.Point(628, 498);
-            this.textBox37.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(468, 27);
-            this.textBox37.TabIndex = 276;
-            // 
-            // comboBox37
-            // 
-            this.comboBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox37.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox37.FormattingEnabled = true;
-            this.comboBox37.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox37.Location = new System.Drawing.Point(490, 497);
-            this.comboBox37.Name = "comboBox37";
-            this.comboBox37.Size = new System.Drawing.Size(120, 28);
-            this.comboBox37.TabIndex = 275;
-            // 
-            // textBox38
-            // 
-            this.textBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox38.Location = new System.Drawing.Point(628, 532);
-            this.textBox38.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(468, 27);
-            this.textBox38.TabIndex = 278;
-            // 
-            // comboBox38
-            // 
-            this.comboBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox38.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox38.FormattingEnabled = true;
-            this.comboBox38.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox38.Location = new System.Drawing.Point(490, 531);
-            this.comboBox38.Name = "comboBox38";
-            this.comboBox38.Size = new System.Drawing.Size(120, 28);
-            this.comboBox38.TabIndex = 277;
-            // 
-            // textBox39
-            // 
-            this.textBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox39.Location = new System.Drawing.Point(628, 575);
-            this.textBox39.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(468, 27);
-            this.textBox39.TabIndex = 280;
-            // 
-            // comboBox39
-            // 
-            this.comboBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox39.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox39.FormattingEnabled = true;
-            this.comboBox39.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox39.Location = new System.Drawing.Point(490, 574);
-            this.comboBox39.Name = "comboBox39";
-            this.comboBox39.Size = new System.Drawing.Size(120, 28);
-            this.comboBox39.TabIndex = 279;
-            // 
-            // textBox40
-            // 
-            this.textBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox40.Location = new System.Drawing.Point(628, 617);
-            this.textBox40.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(468, 27);
-            this.textBox40.TabIndex = 282;
-            // 
-            // comboBox40
-            // 
-            this.comboBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox40.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox40.FormattingEnabled = true;
-            this.comboBox40.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox40.Location = new System.Drawing.Point(490, 616);
-            this.comboBox40.Name = "comboBox40";
-            this.comboBox40.Size = new System.Drawing.Size(120, 28);
-            this.comboBox40.TabIndex = 281;
-            // 
-            // textBox41
-            // 
-            this.textBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox41.Location = new System.Drawing.Point(628, 657);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(468, 27);
-            this.textBox41.TabIndex = 284;
-            // 
-            // comboBox41
-            // 
-            this.comboBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox41.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox41.FormattingEnabled = true;
-            this.comboBox41.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox41.Location = new System.Drawing.Point(490, 656);
-            this.comboBox41.Name = "comboBox41";
-            this.comboBox41.Size = new System.Drawing.Size(120, 28);
-            this.comboBox41.TabIndex = 283;
-            // 
-            // textBox42
-            // 
-            this.textBox42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox42.Location = new System.Drawing.Point(628, 692);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(468, 27);
-            this.textBox42.TabIndex = 286;
-            // 
-            // comboBox42
-            // 
-            this.comboBox42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox42.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox42.FormattingEnabled = true;
-            this.comboBox42.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox42.Location = new System.Drawing.Point(490, 691);
-            this.comboBox42.Name = "comboBox42";
-            this.comboBox42.Size = new System.Drawing.Size(120, 28);
-            this.comboBox42.TabIndex = 285;
-            // 
-            // textBox43
-            // 
-            this.textBox43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox43.Location = new System.Drawing.Point(628, 733);
-            this.textBox43.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(468, 27);
-            this.textBox43.TabIndex = 288;
-            // 
-            // comboBox43
-            // 
-            this.comboBox43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox43.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox43.FormattingEnabled = true;
-            this.comboBox43.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox43.Location = new System.Drawing.Point(490, 732);
-            this.comboBox43.Name = "comboBox43";
-            this.comboBox43.Size = new System.Drawing.Size(120, 28);
-            this.comboBox43.TabIndex = 287;
-            // 
-            // textBox44
-            // 
-            this.textBox44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox44.Location = new System.Drawing.Point(628, 772);
-            this.textBox44.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(468, 27);
-            this.textBox44.TabIndex = 290;
-            // 
-            // comboBox44
-            // 
-            this.comboBox44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox44.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox44.FormattingEnabled = true;
-            this.comboBox44.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox44.Location = new System.Drawing.Point(490, 771);
-            this.comboBox44.Name = "comboBox44";
-            this.comboBox44.Size = new System.Drawing.Size(120, 28);
-            this.comboBox44.TabIndex = 289;
-            // 
-            // textBox45
-            // 
-            this.textBox45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox45.Location = new System.Drawing.Point(628, 807);
-            this.textBox45.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(468, 27);
-            this.textBox45.TabIndex = 292;
-            // 
-            // comboBox45
-            // 
-            this.comboBox45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox45.FormattingEnabled = true;
-            this.comboBox45.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox45.Location = new System.Drawing.Point(490, 806);
-            this.comboBox45.Name = "comboBox45";
-            this.comboBox45.Size = new System.Drawing.Size(120, 28);
-            this.comboBox45.TabIndex = 291;
-            // 
-            // textBox46
-            // 
-            this.textBox46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox46.Location = new System.Drawing.Point(628, 841);
-            this.textBox46.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(468, 27);
-            this.textBox46.TabIndex = 294;
-            // 
-            // comboBox46
-            // 
-            this.comboBox46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox46.FormattingEnabled = true;
-            this.comboBox46.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox46.Location = new System.Drawing.Point(490, 840);
-            this.comboBox46.Name = "comboBox46";
-            this.comboBox46.Size = new System.Drawing.Size(120, 28);
-            this.comboBox46.TabIndex = 293;
-            // 
-            // textBox47
-            // 
-            this.textBox47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox47.Location = new System.Drawing.Point(628, 875);
-            this.textBox47.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(468, 27);
-            this.textBox47.TabIndex = 296;
-            // 
-            // comboBox47
-            // 
-            this.comboBox47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox47.FormattingEnabled = true;
-            this.comboBox47.Items.AddRange(new object[] {
-            "Bueno",
-            "Malo"});
-            this.comboBox47.Location = new System.Drawing.Point(490, 874);
-            this.comboBox47.Name = "comboBox47";
-            this.comboBox47.Size = new System.Drawing.Size(120, 28);
-            this.comboBox47.TabIndex = 295;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(104, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(328, 132);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // provincia
-            // 
-            this.provincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.provincia.FormattingEnabled = true;
-            this.provincia.Location = new System.Drawing.Point(204, 162);
-            this.provincia.Name = "provincia";
-            this.provincia.Size = new System.Drawing.Size(167, 28);
-            this.provincia.TabIndex = 68;
+            // pic_ambulancia
+            // 
+            this.pic_ambulancia.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pic_ambulancia.BackColor = System.Drawing.Color.DarkGray;
+            this.pic_ambulancia.Location = new System.Drawing.Point(128, 28);
+            this.pic_ambulancia.Name = "pic_ambulancia";
+            this.pic_ambulancia.Size = new System.Drawing.Size(600, 427);
+            this.pic_ambulancia.TabIndex = 0;
+            this.pic_ambulancia.TabStop = false;
+            // 
+            // btn_3
+            // 
+            this.btn_3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btn_3.Location = new System.Drawing.Point(829, 40);
+            this.btn_3.Name = "btn_3";
+            this.btn_3.Size = new System.Drawing.Size(186, 50);
+            this.btn_3.TabIndex = 1;
+            this.btn_3.Text = "Subir imagen";
+            this.btn_3.UseVisualStyleBackColor = true;
+            this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
             // 
             // inspeccion_ambulancia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1232, 650);
+            this.ClientSize = new System.Drawing.Size(1232, 655);
             this.Controls.Add(this.pic_escudo);
             this.Controls.Add(this.pic_msp);
             this.Controls.Add(this.tabControl1);
@@ -2347,6 +2394,8 @@ namespace Inspeccion_Ambulancia
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).EndInit();
             this.tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage6.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage4.ResumeLayout(false);
@@ -2361,7 +2410,7 @@ namespace Inspeccion_Ambulancia
             ((System.ComponentModel.ISupportInitialize)(this.Noregistro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coor_zonal)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_ambulancia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2460,21 +2509,16 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.NumericUpDown Alfa;
         private System.Windows.Forms.NumericUpDown Noregistro;
         private System.Windows.Forms.NumericUpDown coor_zonal;
-        private System.Windows.Forms.Label lbl_alfa;
         private System.Windows.Forms.TextBox Hora;
-        private System.Windows.Forms.TextBox tb_base_operativa;
         private System.Windows.Forms.TextBox tb_unidad_operativa;
         private System.Windows.Forms.TextBox conductorRecibe;
         private System.Windows.Forms.TextBox conductorEntrega;
         private System.Windows.Forms.DateTimePicker Fecha;
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.Label lbl_fecha;
-        private System.Windows.Forms.Label lnl_base_operativa;
         private System.Windows.Forms.Label lnl_unidad;
-        private System.Windows.Forms.Label lnl_provincia;
         private System.Windows.Forms.Label lbl_coor_zonal;
         private System.Windows.Forms.Label lnl_no_reporte;
         private System.Windows.Forms.Label lbl_conductor1;
@@ -2551,5 +2595,12 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.ComboBox comboBox37;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox provincia;
+        private System.Windows.Forms.NumericUpDown Alfa;
+        private System.Windows.Forms.Label lbl_alfa;
+        private System.Windows.Forms.TextBox tb_base_operativa;
+        private System.Windows.Forms.Label lnl_base_operativa;
+        private System.Windows.Forms.Label lnl_provincia;
+        private System.Windows.Forms.PictureBox pic_ambulancia;
+        private System.Windows.Forms.Button btn_3;
     }
 }
