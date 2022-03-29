@@ -91,6 +91,7 @@ namespace Inspeccion_Ambulancia
 
         private void btn_enviar_Click(object sender, EventArgs e)
         {
+
             // ------------------------------------------------------------------------------
             // ------ Comprobar si todos los campos obligatorios han sido llenados --------
             // ------------------------------------------------------------------------------
@@ -184,7 +185,7 @@ namespace Inspeccion_Ambulancia
             //-----------------------Insertar la informacion en la base de datos -----------
             //------------------------------------------------------------------------------
             //-----------------Datos Generales----------------------
-             NpgsqlCommand cmd = new NpgsqlCommand();
+            NpgsqlCommand cmd = new NpgsqlCommand();
             string strSQL = "insert into datos_generales values ";
             strSQL += "(" + no_reporte.Text;
             strSQL += ", " + coordinacion_zonal.Value.ToString();
@@ -272,20 +273,20 @@ namespace Inspeccion_Ambulancia
             // ----------------- Cabina Exterior  ----------------
             combolist = new List<ComboBox>(){
                              comboBox26, comboBox27, comboBox28, comboBox29, comboBox30, comboBox31, comboBox32, comboBox33, comboBox34, comboBox35,
-                             comboBox36, comboBox37, comboBox38, comboBox39, comboBox40, comboBox41, comboBox42, comboBox43, comboBox44, comboBox45, comboBox46
+                             comboBox36, comboBox37, comboBox38, comboBox39, comboBox40, comboBox41, comboBox42, comboBox43, comboBox44, comboBox45, comboBox46, comboBox47
                          };
 
             textlist = new List<TextBox>() {
                              textBox26, textBox27, textBox28, textBox29, textBox30, textBox31, textBox32, textBox33, textBox34, textBox35, textBox36,
-                             textBox37, textBox38, textBox39, textBox40, textBox41, textBox42, textBox43, textBox44, textBox45, textBox46
+                             textBox37, textBox38, textBox39, textBox40, textBox41, textBox42, textBox43, textBox44, textBox45, textBox46, textBox47
                          };
-            strSQL = "insert into cabina_interior values ";
+            strSQL = "insert into cabina_exterior values ";
 
-            for (int i = 26; i < 47; i++)
+            for (int i = 26; i < 48; i++)
             {
                 estado = (combolist[i - 26].Text.Equals("Bueno")) ? 'y' : 'n';
                 strSQL += "('" + no_reporte.Text + "','" + i + "','" + estado + "','" + textlist[i - 26].Text + "')";
-                if (i != 46) strSQL += ", ";
+                if (i != 47) strSQL += ", ";
             }
             cmd.CommandText = strSQL;
             cmd.Connection = main.cn;
@@ -306,9 +307,40 @@ namespace Inspeccion_Ambulancia
             int width = pic_ambulancia.Size.Width;
             int height = pic_ambulancia.Size.Height;
             Bitmap bm = new Bitmap(width, height);
-
             pic_ambulancia.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
             bm.Save(nombre);
+
+
+            //Guardar observaciones
+            //Si no se ha escrito nada en los textbox, no se guarda nada, de lo contrario
+            //se guardan tantas observaciones como textboxes tengan informacion
+
+            textlist = new List<TextBox>(){
+            textBox48, textBox49, textBox50, textBox51, textBox52, textBox53, textBox54, textBox55,
+            textBox56, textBox57, textBox58, textBox59, textBox60, textBox61, textBox62, textBox63, textBox64, textBox65
+            };
+
+            int j = 48;
+            int k = 1; //contador id observacion: 1 - 18
+            strSQL = "";
+
+            while (j < 66 && !string.IsNullOrEmpty(textlist[j-48].Text))
+            {
+                strSQL += "('" + no_reporte.Text + "'," + k + ",'" + textlist[j - 48].Text + "')";
+                if (j < 65 && !string.IsNullOrEmpty(textlist[j - 47].Text))
+                    strSQL += ", ";
+                j++; k++;
+            }
+
+            //Si hay al menos una observacion, se inserta a la tabla danos_observaciones
+            if (string.Compare(strSQL, "") != 0)
+            {
+                strSQL = "insert into danos values " + strSQL;
+                cmd.CommandText = strSQL;
+                cmd.Connection = main.cn;
+                cmd.ExecuteNonQuery();
+            }
+
 
 
 
