@@ -71,6 +71,11 @@ namespace Inspeccion_Ambulancia
             }
         }
 
+        public static void Mensaje_Llenar_Campos()
+        {
+            MessageBox.Show("Debe completar todos los campos obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
 
 
     }
