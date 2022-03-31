@@ -184,7 +184,11 @@ namespace Inspeccion_Ambulancia
             //------------------------------------------------------------------------------
             //-----------------------Insertar la informacion en la base de datos -----------
             //------------------------------------------------------------------------------
+
+
+
             //-----------------Datos Generales----------------------
+            //--------------------------------------------------------------------------
             NpgsqlCommand cmd = new NpgsqlCommand();
             string strSQL = "insert into datos_generales values ";
             strSQL += "(" + no_reporte.Text;
@@ -202,6 +206,9 @@ namespace Inspeccion_Ambulancia
 
 
             // ----------------- Limpieza ----------------------
+            //--------------------------------------------------------------------------
+
+
             List<ComboBox> combolist = new List<ComboBox>(){
                              comboBox1, comboBox2
                          };
@@ -216,7 +223,7 @@ namespace Inspeccion_Ambulancia
             for (int i = 1; i < 3; i++)
             {
                 estado = (combolist[i - 1].Text.Equals("Si")) ? 'y' : 'n';
-                strSQL += "('" + no_reporte.Text + "','" + i + "','" + estado + "','" + textlist[i - 1].Text + "')";
+                strSQL += "(" + no_reporte.Text + ",'" + i + "','" + estado + "','" + textlist[i - 1].Text + "')";
                 if (i != 2) strSQL += ", ";
             }
             cmd.CommandText = strSQL;
@@ -226,6 +233,9 @@ namespace Inspeccion_Ambulancia
 
 
             // -------------- Cabina Interior ----------------------
+            //--------------------------------------------------------------------------
+
+
             combolist = new List<ComboBox>(){
                              comboBox3, comboBox4, comboBox5, comboBox6, comboBox7, comboBox8, comboBox9, comboBox10, comboBox11, comboBox12,
                              comboBox13, comboBox14, comboBox15, comboBox16, comboBox17, comboBox18, comboBox19, comboBox20, comboBox21
@@ -240,7 +250,7 @@ namespace Inspeccion_Ambulancia
             for (int i = 3; i < 22; i++)
             {
                 estado = (combolist[i - 3].Text.Equals("Bueno")) ? 'y' : 'n';
-                strSQL += "('" + no_reporte.Text + "','" + i + "','" + estado + "','" + textlist[i - 3].Text + "')";
+                strSQL += "(" + no_reporte.Text + ",'" + i + "','" + estado + "','" + textlist[i - 3].Text + "')";
                 if (i != 21) strSQL += ", ";
             }
             cmd.CommandText = strSQL;
@@ -249,6 +259,7 @@ namespace Inspeccion_Ambulancia
 
 
             // ----------------- Documentos ----------------------
+            //--------------------------------------------------------------------------
             combolist = new List<ComboBox>(){
                              comboBox22, comboBox23, comboBox24, comboBox25
                          };
@@ -262,7 +273,7 @@ namespace Inspeccion_Ambulancia
             for (int i = 22; i < 26; i++)
             {
                 estado = (combolist[i - 22].Text.Equals("Si")) ? 'y' : 'n';
-                strSQL += "('" + no_reporte.Text + "','" + i + "','" + estado + "','" + textlist[i - 22].Text + "')";
+                strSQL += "(" + no_reporte.Text + ",'" + i + "','" + estado + "','" + textlist[i - 22].Text + "')";
                 if (i != 25) strSQL += ", ";
             }
             cmd.CommandText = strSQL;
@@ -271,6 +282,7 @@ namespace Inspeccion_Ambulancia
 
 
             // ----------------- Cabina Exterior  ----------------
+            //--------------------------------------------------------------------------
             combolist = new List<ComboBox>(){
                              comboBox26, comboBox27, comboBox28, comboBox29, comboBox30, comboBox31, comboBox32, comboBox33, comboBox34, comboBox35,
                              comboBox36, comboBox37, comboBox38, comboBox39, comboBox40, comboBox41, comboBox42, comboBox43, comboBox44, comboBox45, comboBox46, comboBox47
@@ -293,10 +305,11 @@ namespace Inspeccion_Ambulancia
             cmd.ExecuteNonQuery();
 
 
-            // ----------------- Daños  ----------------
+            // ---------------------------- Daños  -------------------------------------
+            //--------------------------------------------------------------------------
             string nombre = @"C:\Users\Anthony\Pictures\Hospital\" + no_reporte.Text + "_ambulancia.jpg";
             strSQL = "insert into danos values ";
-            strSQL += "('" + no_reporte.Text + "','" + nombre + "')";
+            strSQL += "(" + no_reporte.Text + ",'" + nombre + "')";
 
             cmd.CommandText = strSQL;
             cmd.Connection = main.cn;
@@ -324,7 +337,7 @@ namespace Inspeccion_Ambulancia
             int k = 1; //contador id observacion: 1 - 18
             strSQL = "";
 
-            while (j < 66 && !string.IsNullOrEmpty(textlist[j-48].Text))
+            while (j < 66 && !string.IsNullOrEmpty(textlist[j - 48].Text))
             {
                 strSQL += "('" + no_reporte.Text + "'," + k + ",'" + textlist[j - 48].Text + "')";
                 if (j < 65 && !string.IsNullOrEmpty(textlist[j - 47].Text))
@@ -335,7 +348,7 @@ namespace Inspeccion_Ambulancia
             //Si hay al menos una observacion, se inserta a la tabla danos_observaciones
             if (string.Compare(strSQL, "") != 0)
             {
-                strSQL = "insert into danos values " + strSQL;
+                strSQL = "insert into descripcion_danos values " + strSQL;
                 cmd.CommandText = strSQL;
                 cmd.Connection = main.cn;
                 cmd.ExecuteNonQuery();
@@ -344,9 +357,35 @@ namespace Inspeccion_Ambulancia
 
 
 
-
             // ----------------- Otros datos  ----------------
 
+            string nombre1 = @"C:\Users\Anthony\Pictures\Hospital\" + no_reporte.Text + "_combustible.jpg";
+            string nombre2 = @"C:\Users\Anthony\Pictures\Hospital\" + no_reporte.Text + "_temperatura.jpg";
+            strSQL = "insert into otros_datos values ";
+            strSQL += "(" + no_reporte.Text + ",'" + nombre1 + "','" + nombre2 + "'," + kilometraje.Text +  ",'" + observaciones_generales.Text +"')";
+            cmd.CommandText = strSQL;
+            cmd.Connection = main.cn;
+            cmd.ExecuteNonQuery();
+
+
+            //Guardar imagen combustible
+            width = pic_combustible.Size.Width;
+            height = pic_combustible.Size.Height;
+            bm = new Bitmap(width, height);
+            pic_combustible.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
+            bm.Save(nombre1);
+
+
+            //Guardar imagen_temperatura
+            width = pic_temperatura.Size.Width;
+            height = pic_temperatura.Size.Height;
+            bm = new Bitmap(width, height);
+            pic_temperatura.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
+            bm.Save(nombre2);
+
+
+            Funciones.Mensaje_Registro_Insertado();
+            Close();
         }
     }
 }

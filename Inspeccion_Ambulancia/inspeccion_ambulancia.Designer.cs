@@ -257,7 +257,7 @@ namespace Inspeccion_Ambulancia
             this.btn_4 = new System.Windows.Forms.Button();
             this.kilometraje = new System.Windows.Forms.NumericUpDown();
             this.label82 = new System.Windows.Forms.Label();
-            this.textBox67 = new System.Windows.Forms.TextBox();
+            this.observaciones_generales = new System.Windows.Forms.TextBox();
             this.label81 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.pic_temperatura = new System.Windows.Forms.PictureBox();
@@ -2850,7 +2850,7 @@ namespace Inspeccion_Ambulancia
             this.Otros_datos.Controls.Add(this.btn_4);
             this.Otros_datos.Controls.Add(this.kilometraje);
             this.Otros_datos.Controls.Add(this.label82);
-            this.Otros_datos.Controls.Add(this.textBox67);
+            this.Otros_datos.Controls.Add(this.observaciones_generales);
             this.Otros_datos.Controls.Add(this.label81);
             this.Otros_datos.Controls.Add(this.label80);
             this.Otros_datos.Controls.Add(this.pic_temperatura);
@@ -2922,15 +2922,15 @@ namespace Inspeccion_Ambulancia
             this.label82.TabIndex = 317;
             this.label82.Text = "KM";
             // 
-            // textBox67
+            // observaciones_generales
             // 
-            this.textBox67.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox67.Location = new System.Drawing.Point(329, 402);
-            this.textBox67.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox67.Multiline = true;
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(540, 59);
-            this.textBox67.TabIndex = 316;
+            this.observaciones_generales.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.observaciones_generales.Location = new System.Drawing.Point(329, 402);
+            this.observaciones_generales.Margin = new System.Windows.Forms.Padding(4);
+            this.observaciones_generales.Multiline = true;
+            this.observaciones_generales.Name = "observaciones_generales";
+            this.observaciones_generales.Size = new System.Drawing.Size(540, 59);
+            this.observaciones_generales.TabIndex = 316;
             // 
             // label81
             // 
@@ -2947,7 +2947,7 @@ namespace Inspeccion_Ambulancia
             this.label80.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label80.AutoSize = true;
             this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(128, 332);
+            this.label80.Location = new System.Drawing.Point(128, 327);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(261, 20);
             this.label80.TabIndex = 8;
@@ -3268,7 +3268,7 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.Button btn_4;
         private System.Windows.Forms.NumericUpDown kilometraje;
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.TextBox textBox67;
+        private System.Windows.Forms.TextBox observaciones_generales;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.PictureBox pic_temperatura;

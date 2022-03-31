@@ -77,6 +77,12 @@ namespace Inspeccion_Ambulancia
         }
 
 
+        public static void Mensaje_Registro_Insertado()
+        {
+            MessageBox.Show("El registro ha sido insertado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+
 
     }
 }
