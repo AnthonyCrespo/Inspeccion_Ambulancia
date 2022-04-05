@@ -34,8 +34,10 @@ namespace Inspeccion_Ambulancia
             cmd.CommandText = strSQL;
             cmd.Connection = main.cn;
             NpgsqlDataReader dr = cmd.ExecuteReader();
-            dr.Read();
-            no_reporte.Value = (int)dr[0];
+            if (dr.Read())
+                no_reporte.Value = (int) dr[0];
+            else
+                no_reporte.Value = 1;
             dr.Close();
             // Desactivar NumericUpDown
             no_reporte.Enabled = false;

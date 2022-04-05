@@ -82,6 +82,10 @@ namespace Inspeccion_Ambulancia
             MessageBox.Show("La información ha sido ingresada correctamente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        public static void Mensaje_No_Registros()
+        {
+            MessageBox.Show("No se han encontrado resultados para la búsqueda.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
 
 
     }

@@ -32,23 +32,23 @@ namespace Inspeccion_Ambulancia
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(reporte));
             this.Informe = new System.Windows.Forms.TabControl();
             this.Buscador = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.pic_escudo = new System.Windows.Forms.PictureBox();
-            this.pic_msp = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.grd = new System.Windows.Forms.DataGridView();
-            this.buscar_por = new System.Windows.Forms.ComboBox();
-            this.fecha = new System.Windows.Forms.DateTimePicker();
-            this.numero_reporte = new System.Windows.Forms.NumericUpDown();
             this.btn_buscar = new System.Windows.Forms.Button();
+            this.no_reporte = new System.Windows.Forms.NumericUpDown();
+            this.fecha = new System.Windows.Forms.DateTimePicker();
+            this.buscar_por = new System.Windows.Forms.ComboBox();
+            this.grd = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pic_msp = new System.Windows.Forms.PictureBox();
+            this.pic_escudo = new System.Windows.Forms.PictureBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Informe.SuspendLayout();
             this.Buscador.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.no_reporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numero_reporte)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Informe
@@ -66,7 +66,7 @@ namespace Inspeccion_Ambulancia
             // Buscador
             // 
             this.Buscador.Controls.Add(this.btn_buscar);
-            this.Buscador.Controls.Add(this.numero_reporte);
+            this.Buscador.Controls.Add(this.no_reporte);
             this.Buscador.Controls.Add(this.fecha);
             this.Buscador.Controls.Add(this.buscar_por);
             this.Buscador.Controls.Add(this.grd);
@@ -79,39 +79,65 @@ namespace Inspeccion_Ambulancia
             this.Buscador.Text = "Buscador";
             this.Buscador.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // btn_buscar
             // 
-            this.tabPage2.Controls.Add(this.pic_escudo);
-            this.tabPage2.Controls.Add(this.pic_msp);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1277, 563);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Informe";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.btn_buscar.Location = new System.Drawing.Point(626, 11);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(174, 42);
+            this.btn_buscar.TabIndex = 65;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
-            // pic_escudo
+            // no_reporte
             // 
-            this.pic_escudo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pic_escudo.Image = ((System.Drawing.Image)(resources.GetObject("pic_escudo.Image")));
-            this.pic_escudo.Location = new System.Drawing.Point(1099, -7);
-            this.pic_escudo.Name = "pic_escudo";
-            this.pic_escudo.Size = new System.Drawing.Size(82, 92);
-            this.pic_escudo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_escudo.TabIndex = 9;
-            this.pic_escudo.TabStop = false;
+            this.no_reporte.Location = new System.Drawing.Point(310, 21);
+            this.no_reporte.Name = "no_reporte";
+            this.no_reporte.Size = new System.Drawing.Size(120, 24);
+            this.no_reporte.TabIndex = 64;
             // 
-            // pic_msp
+            // fecha
             // 
-            this.pic_msp.Image = ((System.Drawing.Image)(resources.GetObject("pic_msp.Image")));
-            this.pic_msp.Location = new System.Drawing.Point(94, -2);
-            this.pic_msp.Name = "pic_msp";
-            this.pic_msp.Size = new System.Drawing.Size(153, 77);
-            this.pic_msp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_msp.TabIndex = 8;
-            this.pic_msp.TabStop = false;
+            this.fecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.fecha.CustomFormat = "";
+            this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.fecha.Location = new System.Drawing.Point(459, 21);
+            this.fecha.Margin = new System.Windows.Forms.Padding(4);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(149, 24);
+            this.fecha.TabIndex = 63;
+            // 
+            // buscar_por
+            // 
+            this.buscar_por.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.buscar_por.FormattingEnabled = true;
+            this.buscar_por.Items.AddRange(new object[] {
+            "No. de Reporte",
+            "Fecha"});
+            this.buscar_por.Location = new System.Drawing.Point(132, 19);
+            this.buscar_por.Name = "buscar_por";
+            this.buscar_por.Size = new System.Drawing.Size(152, 26);
+            this.buscar_por.TabIndex = 4;
+            this.buscar_por.SelectedIndexChanged += new System.EventHandler(this.buscar_por_SelectedIndexChanged);
+            // 
+            // grd
+            // 
+            this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grd.Location = new System.Drawing.Point(215, 70);
+            this.grd.Name = "grd";
+            this.grd.RowHeadersWidth = 51;
+            this.grd.RowTemplate.Height = 24;
+            this.grd.Size = new System.Drawing.Size(865, 623);
+            this.grd.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Buscar por:";
             // 
             // label1
             // 
@@ -126,64 +152,39 @@ namespace Inspeccion_Ambulancia
     "RTE VITAL AVANZADO\r\nCAMBIO DE TURNO\r\nMECÁNICO\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label2
+            // pic_msp
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Buscar por:";
+            this.pic_msp.Image = ((System.Drawing.Image)(resources.GetObject("pic_msp.Image")));
+            this.pic_msp.Location = new System.Drawing.Point(94, -2);
+            this.pic_msp.Name = "pic_msp";
+            this.pic_msp.Size = new System.Drawing.Size(153, 77);
+            this.pic_msp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_msp.TabIndex = 8;
+            this.pic_msp.TabStop = false;
             // 
-            // grd
+            // pic_escudo
             // 
-            this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grd.Location = new System.Drawing.Point(189, 75);
-            this.grd.Name = "grd";
-            this.grd.RowHeadersWidth = 51;
-            this.grd.RowTemplate.Height = 24;
-            this.grd.Size = new System.Drawing.Size(925, 623);
-            this.grd.TabIndex = 3;
+            this.pic_escudo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_escudo.Image = ((System.Drawing.Image)(resources.GetObject("pic_escudo.Image")));
+            this.pic_escudo.Location = new System.Drawing.Point(1099, -7);
+            this.pic_escudo.Name = "pic_escudo";
+            this.pic_escudo.Size = new System.Drawing.Size(82, 92);
+            this.pic_escudo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_escudo.TabIndex = 9;
+            this.pic_escudo.TabStop = false;
             // 
-            // buscar_por
+            // tabPage2
             // 
-            this.buscar_por.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.buscar_por.FormattingEnabled = true;
-            this.buscar_por.Items.AddRange(new object[] {
-            "No. de Reporte",
-            "Fecha"});
-            this.buscar_por.Location = new System.Drawing.Point(132, 19);
-            this.buscar_por.Name = "buscar_por";
-            this.buscar_por.Size = new System.Drawing.Size(152, 26);
-            this.buscar_por.TabIndex = 4;
-            // 
-            // fecha
-            // 
-            this.fecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.fecha.CustomFormat = "";
-            this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fecha.Location = new System.Drawing.Point(312, 21);
-            this.fecha.Margin = new System.Windows.Forms.Padding(4);
-            this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(149, 24);
-            this.fecha.TabIndex = 63;
-            // 
-            // numero_reporte
-            // 
-            this.numero_reporte.Location = new System.Drawing.Point(483, 21);
-            this.numero_reporte.Name = "numero_reporte";
-            this.numero_reporte.Size = new System.Drawing.Size(120, 24);
-            this.numero_reporte.TabIndex = 64;
-            // 
-            // btn_buscar
-            // 
-            this.btn_buscar.Location = new System.Drawing.Point(626, 11);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(174, 42);
-            this.btn_buscar.TabIndex = 65;
-            this.btn_buscar.Text = "Buscar";
-            this.btn_buscar.UseVisualStyleBackColor = true;
-            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            this.tabPage2.Controls.Add(this.pic_escudo);
+            this.tabPage2.Controls.Add(this.pic_msp);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 27);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1277, 752);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Informe";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // reporte
             // 
@@ -197,12 +198,12 @@ namespace Inspeccion_Ambulancia
             this.Informe.ResumeLayout(false);
             this.Buscador.ResumeLayout(false);
             this.Buscador.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.no_reporte)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numero_reporte)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,15 +212,15 @@ namespace Inspeccion_Ambulancia
 
         private System.Windows.Forms.TabControl Informe;
         private System.Windows.Forms.TabPage Buscador;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView grd;
+        private System.Windows.Forms.ComboBox buscar_por;
+        private System.Windows.Forms.NumericUpDown no_reporte;
+        private System.Windows.Forms.DateTimePicker fecha;
+        private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.PictureBox pic_escudo;
         private System.Windows.Forms.PictureBox pic_msp;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView grd;
-        private System.Windows.Forms.ComboBox buscar_por;
-        private System.Windows.Forms.NumericUpDown numero_reporte;
-        private System.Windows.Forms.DateTimePicker fecha;
-        private System.Windows.Forms.Button btn_buscar;
     }
 }

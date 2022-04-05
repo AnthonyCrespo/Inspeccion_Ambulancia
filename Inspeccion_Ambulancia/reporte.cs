@@ -21,7 +21,7 @@ namespace Inspeccion_Ambulancia
         private void reporte_Load(object sender, EventArgs e)
         {
             grd.ColumnCount = 6;
-            grd.Columns[0].HeaderText = "Nº de reporte";
+            grd.Columns[0].HeaderText = "No. de reporte";
             grd.Columns[1].HeaderText = "Entrega";
             grd.Columns[2].HeaderText = "Recibe";
             grd.Columns[3].HeaderText = "Base Operativa";
@@ -30,26 +30,50 @@ namespace Inspeccion_Ambulancia
             grd.Columns[5].HeaderText = "Fecha";
             // Format for the data column
             grd.Columns[5].DefaultCellStyle.Format = "dd/MM/yyyy";
+
+
+
+            //Desactivar No. de reporte y fecha.
+            fecha.Enabled = no_reporte.Enabled = false;
+
+            //Valores por defecto
+            no_reporte.Value = 1;
+            no_reporte.Minimum = 1;
         }
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
+
+
+
+            // ---------------------- Buscar por no. reporte ------------------------------
             if (buscar_por.SelectedIndex == 0)
             {
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 //Query
-                string str = "select no_reporte, conductor_entrega, conductor_recibe, unidad_operativa, hora, fecha from datos_generales where no_reporte = " + numero_reporte.Value.ToString();
+                string str = "select no_reporte, conductor_entrega, conductor_recibe, unidad_operativa, hora, fecha from datos_generales where no_reporte = " + no_reporte.Value.ToString();
                 cmd.CommandText = str;
                 cmd.Connection = main.cn;
                 grd.Rows.Clear(); //Grid Rows are always cleared
                 NpgsqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
+
+                if (dr != null && dr.HasRows)
                 {
-                    grd.Rows.Add(dr[0], dr[1], dr[2], dr[3], dr[4], dr[5]);
+                    while (dr.Read())
+                    {
+                        grd.Rows.Add(dr[0], dr[1], dr[2], dr[3], dr[4], dr[5]);
+                    }
+                }
+                else
+                {
+                    Funciones.Mensaje_No_Registros();
                 }
                 dr.Close();
-            }   
-            else if(buscar_por.SelectedIndex == 1)
+            }
+
+
+            // ---------------------- Buscar por fecha ------------------------------
+            else if (buscar_por.SelectedIndex == 1)
             {
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 //Query
@@ -58,11 +82,39 @@ namespace Inspeccion_Ambulancia
                 cmd.Connection = main.cn;
                 grd.Rows.Clear(); //Grid Rows are always cleared
                 NpgsqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
+                if (dr != null && dr.HasRows)
                 {
-                    grd.Rows.Add(dr[0], dr[1], dr[2], dr[3], dr[4], dr[5]);
+                    while (dr.Read())
+                    {
+                        grd.Rows.Add(dr[0], dr[1], dr[2], dr[3], dr[4], dr[5]);
+                    }
+                }
+                else
+                {
+                    Funciones.Mensaje_No_Registros();
                 }
                 dr.Close();
+            }
+        }
+
+
+
+
+        private void buscar_por_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (buscar_por.SelectedIndex == 0)
+            {
+                no_reporte.Enabled = true;
+                fecha.Enabled = false;    
+            }
+            else if (buscar_por.SelectedIndex == 1)
+            {
+                no_reporte.Enabled = false;
+                fecha.Enabled = true;
+            }
+            else
+            {
+                no_reporte.Enabled = fecha.Enabled = false;
             }
         }
     }
