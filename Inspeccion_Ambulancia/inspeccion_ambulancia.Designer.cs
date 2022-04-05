@@ -2996,7 +2996,6 @@ namespace Inspeccion_Ambulancia
             this.Name = "inspeccion_ambulancia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inspección de Ambulancia";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.inspeccion_ambulancia_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).EndInit();
