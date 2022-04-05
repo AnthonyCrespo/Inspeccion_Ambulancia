@@ -61,6 +61,7 @@ namespace Inspeccion_Ambulancia
             this.Controls.Add(this.btn_2);
             this.Controls.Add(this.btn_1);
             this.Name = "main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.main_Load);
             this.ResumeLayout(false);

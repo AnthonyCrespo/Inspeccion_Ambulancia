@@ -31,10 +31,13 @@ namespace Inspeccion_Ambulancia
             // Format for the data column
             grd.Columns[5].DefaultCellStyle.Format = "dd/MM/yyyy";
 
-
+            fecha.CustomFormat = " dd/MM/yyyy";
 
             //Desactivar No. de reporte y fecha.
             fecha.Enabled = no_reporte.Enabled = false;
+            //Desactivar boton generar_reporte
+
+            btn_generar_reporte.Enabled = false;
 
             //Valores por defecto
             no_reporte.Value = 1;
@@ -95,6 +98,11 @@ namespace Inspeccion_Ambulancia
                 }
                 dr.Close();
             }
+
+            if (grd.SelectedRows.Count > 0)
+                btn_generar_reporte.Enabled = true;
+            else
+                btn_generar_reporte.Enabled = false;
         }
 
 
@@ -116,6 +124,11 @@ namespace Inspeccion_Ambulancia
             {
                 no_reporte.Enabled = fecha.Enabled = false;
             }
+        }
+
+        private void btn_generar_reporte_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(grd.CurrentRow.Cells[0].Value.ToString());
         }
     }
 }

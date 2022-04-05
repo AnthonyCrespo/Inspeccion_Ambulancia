@@ -32,23 +32,24 @@ namespace Inspeccion_Ambulancia
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(reporte));
             this.Informe = new System.Windows.Forms.TabControl();
             this.Buscador = new System.Windows.Forms.TabPage();
+            this.btn_generar_reporte = new System.Windows.Forms.Button();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.no_reporte = new System.Windows.Forms.NumericUpDown();
             this.fecha = new System.Windows.Forms.DateTimePicker();
             this.buscar_por = new System.Windows.Forms.ComboBox();
             this.grd = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pic_msp = new System.Windows.Forms.PictureBox();
-            this.pic_escudo = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pic_escudo = new System.Windows.Forms.PictureBox();
+            this.pic_msp = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.Informe.SuspendLayout();
             this.Buscador.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.no_reporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
             this.SuspendLayout();
             // 
             // Informe
@@ -65,6 +66,7 @@ namespace Inspeccion_Ambulancia
             // 
             // Buscador
             // 
+            this.Buscador.Controls.Add(this.btn_generar_reporte);
             this.Buscador.Controls.Add(this.btn_buscar);
             this.Buscador.Controls.Add(this.no_reporte);
             this.Buscador.Controls.Add(this.fecha);
@@ -78,6 +80,17 @@ namespace Inspeccion_Ambulancia
             this.Buscador.TabIndex = 0;
             this.Buscador.Text = "Buscador";
             this.Buscador.UseVisualStyleBackColor = true;
+            // 
+            // btn_generar_reporte
+            // 
+            this.btn_generar_reporte.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_generar_reporte.Location = new System.Drawing.Point(925, 699);
+            this.btn_generar_reporte.Name = "btn_generar_reporte";
+            this.btn_generar_reporte.Size = new System.Drawing.Size(155, 47);
+            this.btn_generar_reporte.TabIndex = 66;
+            this.btn_generar_reporte.Text = "Generar Reporte";
+            this.btn_generar_reporte.UseVisualStyleBackColor = true;
+            this.btn_generar_reporte.Click += new System.EventHandler(this.btn_generar_reporte_Click);
             // 
             // btn_buscar
             // 
@@ -122,11 +135,16 @@ namespace Inspeccion_Ambulancia
             // 
             // grd
             // 
+            this.grd.AllowUserToAddRows = false;
+            this.grd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grd.Location = new System.Drawing.Point(215, 70);
+            this.grd.MultiSelect = false;
             this.grd.Name = "grd";
+            this.grd.ReadOnly = true;
             this.grd.RowHeadersWidth = 51;
             this.grd.RowTemplate.Height = 24;
+            this.grd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grd.Size = new System.Drawing.Size(865, 623);
             this.grd.TabIndex = 3;
             // 
@@ -138,40 +156,6 @@ namespace Inspeccion_Ambulancia
             this.label2.Size = new System.Drawing.Size(85, 18);
             this.label2.TabIndex = 0;
             this.label2.Text = "Buscar por:";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(398, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(502, 72);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "DIRECCIÓN NACIONAL DE ATENCIÓN PREHOSPITALARIA\r\nINSPECCIÓN DIARIA AMBULANCIA SOPO" +
-    "RTE VITAL AVANZADO\r\nCAMBIO DE TURNO\r\nMECÁNICO\r\n";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pic_msp
-            // 
-            this.pic_msp.Image = ((System.Drawing.Image)(resources.GetObject("pic_msp.Image")));
-            this.pic_msp.Location = new System.Drawing.Point(94, -2);
-            this.pic_msp.Name = "pic_msp";
-            this.pic_msp.Size = new System.Drawing.Size(153, 77);
-            this.pic_msp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_msp.TabIndex = 8;
-            this.pic_msp.TabStop = false;
-            // 
-            // pic_escudo
-            // 
-            this.pic_escudo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pic_escudo.Image = ((System.Drawing.Image)(resources.GetObject("pic_escudo.Image")));
-            this.pic_escudo.Location = new System.Drawing.Point(1099, -7);
-            this.pic_escudo.Name = "pic_escudo";
-            this.pic_escudo.Size = new System.Drawing.Size(82, 92);
-            this.pic_escudo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_escudo.TabIndex = 9;
-            this.pic_escudo.TabStop = false;
             // 
             // tabPage2
             // 
@@ -186,6 +170,40 @@ namespace Inspeccion_Ambulancia
             this.tabPage2.Text = "Informe";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // pic_escudo
+            // 
+            this.pic_escudo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_escudo.Image = ((System.Drawing.Image)(resources.GetObject("pic_escudo.Image")));
+            this.pic_escudo.Location = new System.Drawing.Point(1099, -7);
+            this.pic_escudo.Name = "pic_escudo";
+            this.pic_escudo.Size = new System.Drawing.Size(82, 92);
+            this.pic_escudo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_escudo.TabIndex = 9;
+            this.pic_escudo.TabStop = false;
+            // 
+            // pic_msp
+            // 
+            this.pic_msp.Image = ((System.Drawing.Image)(resources.GetObject("pic_msp.Image")));
+            this.pic_msp.Location = new System.Drawing.Point(94, -2);
+            this.pic_msp.Name = "pic_msp";
+            this.pic_msp.Size = new System.Drawing.Size(153, 77);
+            this.pic_msp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_msp.TabIndex = 8;
+            this.pic_msp.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(398, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(502, 72);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "DIRECCIÓN NACIONAL DE ATENCIÓN PREHOSPITALARIA\r\nINSPECCIÓN DIARIA AMBULANCIA SOPO" +
+    "RTE VITAL AVANZADO\r\nCAMBIO DE TURNO\r\nMECÁNICO\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // reporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -193,6 +211,7 @@ namespace Inspeccion_Ambulancia
             this.ClientSize = new System.Drawing.Size(1309, 807);
             this.Controls.Add(this.Informe);
             this.Name = "reporte";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte";
             this.Load += new System.EventHandler(this.reporte_Load);
             this.Informe.ResumeLayout(false);
@@ -200,10 +219,10 @@ namespace Inspeccion_Ambulancia
             this.Buscador.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.no_reporte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -222,5 +241,6 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.PictureBox pic_escudo;
         private System.Windows.Forms.PictureBox pic_msp;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_generar_reporte;
     }
 }
