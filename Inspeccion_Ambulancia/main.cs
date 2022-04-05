@@ -30,5 +30,10 @@ namespace Inspeccion_Ambulancia
         {
             Funciones.agregar_formulario(new inspeccion_ambulancia(), "Inspección de Ambulancia");
         }
+
+        private void btn_2_Click(object sender, EventArgs e)
+        {
+            Funciones.agregar_formulario(new reporte(), "Reporte");
+        }
     }
 }

@@ -51,6 +51,7 @@ namespace Inspeccion_Ambulancia
             this.btn_2.TabIndex = 1;
             this.btn_2.Text = "Observar reporte";
             this.btn_2.UseVisualStyleBackColor = true;
+            this.btn_2.Click += new System.EventHandler(this.btn_2_Click);
             // 
             // main
             // 

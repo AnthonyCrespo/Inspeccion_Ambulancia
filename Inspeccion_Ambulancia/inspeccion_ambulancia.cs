@@ -19,6 +19,7 @@ namespace Inspeccion_Ambulancia
         }
 
 
+        // -------------------------- Carga del Formulario ---------------------------------
         private void inspeccion_ambulancia_Load_1(object sender, EventArgs e)
         {
             Funciones.cargaComboBox("select nombre from provincias;", provincia);
@@ -27,67 +28,45 @@ namespace Inspeccion_Ambulancia
             provincia.SelectedIndex = provincia.Items.IndexOf("Imbabura");
 
 
+            // Cargar número de reporte
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            string strSQL = "select max(no_reporte)+1 from datos_generales";
+            cmd.CommandText = strSQL;
+            cmd.Connection = main.cn;
+            NpgsqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            no_reporte.Value = (int)dr[0];
         }
 
+        //------------------------------------------------------------------------------
+        //----------------------- Carga de imagenes -------------------------------------
+        //------------------------------------------------------------------------------
+
+
+        // ---------------------- Cargar imagen de la ambulancia --------------------------------
         private void btn_3_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    OpenFileDialog abrirImagen = new OpenFileDialog();
-            //    abrirImagen.Filter = "Image Files|*.jpg;*.jpeg;*.png;...";
-
-
-            //    //abrir el explorador de archivos
-            //    if (abrirImagen.ShowDialog() == DialogResult.OK)
-            //    {
-            //        pic_ambulancia.ImageLocation = abrirImagen.FileName;
-            //        pic_ambulancia.SizeMode = PictureBoxSizeMode.StretchImage;
-            //    }
-            //}
-
-            //catch(Exception)
-            //{
-            //    MessageBox.Show("Ocurrió un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-
             Funciones.cargar_foto(pic_ambulancia);
-
         }
 
-        private void btn_4_Click(object sender, EventArgs e)
-        {
-            if (pic_ambulancia.Image != null)
-            {
-                int width = pic_ambulancia.Size.Width;
-                int height = pic_ambulancia.Size.Height;
-                Bitmap bm = new Bitmap(width, height);
-                //string h = DateTime.Now.ToString("HH:mm");
-
-                pic_ambulancia.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
-                bm.Save(@"C:\Users\Anthony\Documents\image_1.jpg");
-                MessageBox.Show("Imagen guardada con éxito!");
-            }
-            else
-            {
-                MessageBox.Show("Es necesario que suba una imagen.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-        }
-
-        private void textBox66_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-        }
-
+        // ---------------------- Cargar imagen de combustible --------------------------------
         private void btn_4_Click_1(object sender, EventArgs e)
         {
             Funciones.cargar_foto(pic_combustible);
         }
 
+
+        // ---------------------- Cargar imagen de temperatura --------------------------------
         private void btn_5_Click(object sender, EventArgs e)
         {
             Funciones.cargar_foto(pic_temperatura);
         }
+
+
+
+        //--------------------------------------------------------------------------
+        // ---------------------- Enviar formulario --------------------------------
+        //--------------------------------------------------------------------------
 
         private void btn_enviar_Click(object sender, EventArgs e)
         {
@@ -99,8 +78,7 @@ namespace Inspeccion_Ambulancia
             {
                 if (string.IsNullOrEmpty(c.Text))
                 {
-                    //Funciones.Mensaje_Llenar_Campos();
-                    MessageBox.Show("Datos Generales");
+                    Funciones.Mensaje_Llenar_Campos("'Datos Generales'");
                     return;
 
                 }
@@ -111,7 +89,7 @@ namespace Inspeccion_Ambulancia
                 if (string.IsNullOrEmpty(cb.Text))
                 {
                     //Funciones.Mensaje_Llenar_Campos();
-                    MessageBox.Show("Limpieza");
+                    Funciones.Mensaje_Llenar_Campos("'Limpieza'");
                     return;
                 }
             }
@@ -120,8 +98,7 @@ namespace Inspeccion_Ambulancia
             {
                 if (string.IsNullOrEmpty(cb.Text))
                 {
-                    //Funciones.Mensaje_Llenar_Campos();
-                    MessageBox.Show("Cabina Interior");
+                    Funciones.Mensaje_Llenar_Campos("'Cabina Interior'");
                     return;
                 }
             }
@@ -130,8 +107,7 @@ namespace Inspeccion_Ambulancia
             {
                 if (string.IsNullOrEmpty(cb.Text))
                 {
-                    //Funciones.Mensaje_Llenar_Campos();
-                    MessageBox.Show("Documentos");
+                    Funciones.Mensaje_Llenar_Campos("'Documentos'");
                     return;
                 }
             }
@@ -140,8 +116,7 @@ namespace Inspeccion_Ambulancia
             {
                 if (string.IsNullOrEmpty(cb.Text))
                 {
-                    //Funciones.Mensaje_Llenar_Campos();
-                    MessageBox.Show("Cabina Exterior");
+                    Funciones.Mensaje_Llenar_Campos("'Cabina Exterior'");
                     return;
                 }
             }
@@ -151,11 +126,10 @@ namespace Inspeccion_Ambulancia
             // Comprobar si se ha subido una foto
             if (pic_ambulancia.Image == null)
             {
-                MessageBox.Show("Daños foto");
+                MessageBox.Show("Es obligatorio cargar la imagen en la sección 'Daños'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            //Funciones.Mensaje_Llenar_Campos();
 
 
 
@@ -166,16 +140,16 @@ namespace Inspeccion_Ambulancia
             {
                 if (c.GetType() != typeof(PictureBox) && string.IsNullOrEmpty(c.Text))
                 {
-                    //Funciones.Mensaje_Llenar_Campos();
-                    MessageBox.Show("Otros datos");
+                    Funciones.Mensaje_Llenar_Campos("'Otros datos'");
                     return;
                 }
 
-                if (c.GetType() == typeof(PictureBox) && (pic_combustible.Image == null || pic_temperatura.Image == null))
+                if (c.GetType() == typeof(PictureBox))
                 {
-                    //Funciones.Mensaje_Llenar_Campos();
-                    MessageBox.Show("Otros datos imagenes de combustible y/o temperatura");
-                    return;
+                    if (pic_combustible.Image == null)
+                        MessageBox.Show("Es obligatorio cargar la imagen de Combustible en 'Otros datos'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (pic_temperatura.Image == null)
+                        MessageBox.Show("Es obligatorio cargar la imagen de Temperatura en 'Otros datos'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 

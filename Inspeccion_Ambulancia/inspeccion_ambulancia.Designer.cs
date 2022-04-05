@@ -73,7 +73,6 @@ namespace Inspeccion_Ambulancia
             this.textBox48 = new System.Windows.Forms.TextBox();
             this.label57 = new System.Windows.Forms.Label();
             this.pic_ambulancia = new System.Windows.Forms.PictureBox();
-            this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_3 = new System.Windows.Forms.Button();
             this.Cabina_Exterior = new System.Windows.Forms.TabPage();
             this.textBox47 = new System.Windows.Forms.TextBox();
@@ -360,7 +359,6 @@ namespace Inspeccion_Ambulancia
             this.Danos.Controls.Add(this.textBox48);
             this.Danos.Controls.Add(this.label57);
             this.Danos.Controls.Add(this.pic_ambulancia);
-            this.Danos.Controls.Add(this.btn_guardar);
             this.Danos.Controls.Add(this.btn_3);
             this.Danos.Location = new System.Drawing.Point(4, 29);
             this.Danos.Name = "Danos";
@@ -759,16 +757,6 @@ namespace Inspeccion_Ambulancia
             this.pic_ambulancia.Size = new System.Drawing.Size(400, 287);
             this.pic_ambulancia.TabIndex = 3;
             this.pic_ambulancia.TabStop = false;
-            // 
-            // btn_guardar
-            // 
-            this.btn_guardar.Location = new System.Drawing.Point(297, 457);
-            this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(186, 50);
-            this.btn_guardar.TabIndex = 2;
-            this.btn_guardar.Text = "Guardar";
-            this.btn_guardar.UseVisualStyleBackColor = true;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_4_Click);
             // 
             // btn_3
             // 
@@ -3222,7 +3210,6 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.Label lnl_provincia;
         private System.Windows.Forms.Button btn_3;
         private System.Windows.Forms.PictureBox pic_ambulancia;
-        private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.TextBox textBox48;
         private System.Windows.Forms.TextBox textBox59;

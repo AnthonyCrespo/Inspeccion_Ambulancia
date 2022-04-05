@@ -71,15 +71,15 @@ namespace Inspeccion_Ambulancia
             }
         }
 
-        public static void Mensaje_Llenar_Campos()
+        public static void Mensaje_Llenar_Campos(string tab)
         {
-            MessageBox.Show("Debe completar todos los campos obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show("La sección "+tab+" contiene campos obligatorios sin completar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
 
         public static void Mensaje_Registro_Insertado()
         {
-            MessageBox.Show("El registro ha sido insertado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("La información ha sido ingresada correctamente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
 
