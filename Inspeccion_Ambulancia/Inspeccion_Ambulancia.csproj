@@ -91,6 +91,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="documento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="documento.Designer.cs">
+      <DependentUpon>documento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Funciones.cs" />
     <Compile Include="inspeccion_ambulancia.cs">
       <SubType>Form</SubType>
@@ -112,6 +118,9 @@
     <Compile Include="reporte.Designer.cs">
       <DependentUpon>reporte.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="documento.resx">
+      <DependentUpon>documento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="inspeccion_ambulancia.resx">
       <DependentUpon>inspeccion_ambulancia.cs</DependentUpon>
     </EmbeddedResource>

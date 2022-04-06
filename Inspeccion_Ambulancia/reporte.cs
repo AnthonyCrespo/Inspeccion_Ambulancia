@@ -26,7 +26,6 @@ namespace Inspeccion_Ambulancia
             grd.Columns[2].HeaderText = "Recibe";
             grd.Columns[3].HeaderText = "Base Operativa";
             grd.Columns[4].HeaderText = "Hora";
-
             grd.Columns[5].HeaderText = "Fecha";
             // Format for the data column
             grd.Columns[5].DefaultCellStyle.Format = "dd/MM/yyyy";
@@ -128,7 +127,8 @@ namespace Inspeccion_Ambulancia
 
         private void btn_generar_reporte_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(grd.CurrentRow.Cells[0].Value.ToString());
+            //MessageBox.Show(grd.CurrentRow.Cells[0].Value.ToString());
+            Funciones.agregar_formulario(new documento(this), "Visualizador");
         }
     }
 }

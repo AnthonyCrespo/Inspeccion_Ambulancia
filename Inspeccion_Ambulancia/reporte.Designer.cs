@@ -232,7 +232,6 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.TabControl Informe;
         private System.Windows.Forms.TabPage Buscador;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView grd;
         private System.Windows.Forms.ComboBox buscar_por;
         private System.Windows.Forms.NumericUpDown no_reporte;
         private System.Windows.Forms.DateTimePicker fecha;
@@ -242,5 +241,6 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.PictureBox pic_msp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_generar_reporte;
+        public System.Windows.Forms.DataGridView grd;
     }
 }
