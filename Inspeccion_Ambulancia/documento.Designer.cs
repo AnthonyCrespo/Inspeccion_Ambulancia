@@ -133,6 +133,16 @@ namespace Inspeccion_Ambulancia
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
+            this.g2 = new System.Windows.Forms.Label();
+            this.g3 = new System.Windows.Forms.Label();
+            this.g4 = new System.Windows.Forms.Label();
+            this.g5 = new System.Windows.Forms.Label();
+            this.g6 = new System.Windows.Forms.Label();
+            this.g8 = new System.Windows.Forms.Label();
+            this.g9 = new System.Windows.Forms.Label();
+            this.g7 = new System.Windows.Forms.Label();
+            this.g10 = new System.Windows.Forms.Label();
+            this.g1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).BeginInit();
@@ -144,9 +154,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.pic_escudo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pic_escudo.Image = ((System.Drawing.Image)(resources.GetObject("pic_escudo.Image")));
-            this.pic_escudo.Location = new System.Drawing.Point(1460, -3);
+            this.pic_escudo.Location = new System.Drawing.Point(1474, 1);
             this.pic_escudo.Name = "pic_escudo";
-            this.pic_escudo.Size = new System.Drawing.Size(82, 92);
+            this.pic_escudo.Size = new System.Drawing.Size(68, 68);
             this.pic_escudo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_escudo.TabIndex = 12;
             this.pic_escudo.TabStop = false;
@@ -157,7 +167,7 @@ namespace Inspeccion_Ambulancia
             this.pic_msp.Image = ((System.Drawing.Image)(resources.GetObject("pic_msp.Image")));
             this.pic_msp.Location = new System.Drawing.Point(30, 1);
             this.pic_msp.Name = "pic_msp";
-            this.pic_msp.Size = new System.Drawing.Size(153, 77);
+            this.pic_msp.Size = new System.Drawing.Size(140, 77);
             this.pic_msp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_msp.TabIndex = 11;
             this.pic_msp.TabStop = false;
@@ -1270,6 +1280,106 @@ namespace Inspeccion_Ambulancia
             this.label88.TabIndex = 333;
             this.label88.Text = "10";
             // 
+            // g2
+            // 
+            this.g2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.g2.AutoSize = true;
+            this.g2.Location = new System.Drawing.Point(176, 81);
+            this.g2.Name = "g2";
+            this.g2.Size = new System.Drawing.Size(44, 17);
+            this.g2.TabIndex = 342;
+            this.g2.Text = "         ";
+            // 
+            // g3
+            // 
+            this.g3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.g3.AutoSize = true;
+            this.g3.Location = new System.Drawing.Point(322, 98);
+            this.g3.Name = "g3";
+            this.g3.Size = new System.Drawing.Size(44, 17);
+            this.g3.TabIndex = 343;
+            this.g3.Text = "         ";
+            // 
+            // g4
+            // 
+            this.g4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.g4.AutoSize = true;
+            this.g4.Location = new System.Drawing.Point(322, 115);
+            this.g4.Name = "g4";
+            this.g4.Size = new System.Drawing.Size(44, 17);
+            this.g4.TabIndex = 344;
+            this.g4.Text = "         ";
+            // 
+            // g5
+            // 
+            this.g5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.g5.AutoSize = true;
+            this.g5.Location = new System.Drawing.Point(649, 81);
+            this.g5.Name = "g5";
+            this.g5.Size = new System.Drawing.Size(44, 17);
+            this.g5.TabIndex = 345;
+            this.g5.Text = "         ";
+            // 
+            // g6
+            // 
+            this.g6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.g6.AutoSize = true;
+            this.g6.Location = new System.Drawing.Point(909, 81);
+            this.g6.Name = "g6";
+            this.g6.Size = new System.Drawing.Size(44, 17);
+            this.g6.TabIndex = 346;
+            this.g6.Text = "         ";
+            // 
+            // g8
+            // 
+            this.g8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.g8.AutoSize = true;
+            this.g8.Location = new System.Drawing.Point(949, 98);
+            this.g8.Name = "g8";
+            this.g8.Size = new System.Drawing.Size(44, 17);
+            this.g8.TabIndex = 347;
+            this.g8.Text = "         ";
+            // 
+            // g9
+            // 
+            this.g9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.g9.AutoSize = true;
+            this.g9.Location = new System.Drawing.Point(949, 115);
+            this.g9.Name = "g9";
+            this.g9.Size = new System.Drawing.Size(44, 17);
+            this.g9.TabIndex = 348;
+            this.g9.Text = "         ";
+            // 
+            // g7
+            // 
+            this.g7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.g7.AutoSize = true;
+            this.g7.Location = new System.Drawing.Point(1178, 81);
+            this.g7.Name = "g7";
+            this.g7.Size = new System.Drawing.Size(44, 17);
+            this.g7.TabIndex = 349;
+            this.g7.Text = "         ";
+            // 
+            // g10
+            // 
+            this.g10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.g10.AutoSize = true;
+            this.g10.Location = new System.Drawing.Point(1234, 115);
+            this.g10.Name = "g10";
+            this.g10.Size = new System.Drawing.Size(44, 17);
+            this.g10.TabIndex = 350;
+            this.g10.Text = "         ";
+            // 
+            // g1
+            // 
+            this.g1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.g1.AutoSize = true;
+            this.g1.Location = new System.Drawing.Point(1451, 81);
+            this.g1.Name = "g1";
+            this.g1.Size = new System.Drawing.Size(44, 17);
+            this.g1.TabIndex = 351;
+            this.g1.Text = "         ";
+            // 
             // documento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1278,6 +1388,16 @@ namespace Inspeccion_Ambulancia
             this.AutoScrollMargin = new System.Drawing.Size(10, 10);
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1555, 1055);
+            this.Controls.Add(this.g1);
+            this.Controls.Add(this.g10);
+            this.Controls.Add(this.g7);
+            this.Controls.Add(this.g9);
+            this.Controls.Add(this.g8);
+            this.Controls.Add(this.g6);
+            this.Controls.Add(this.g5);
+            this.Controls.Add(this.g4);
+            this.Controls.Add(this.g3);
+            this.Controls.Add(this.g2);
             this.Controls.Add(this.label76);
             this.Controls.Add(this.label77);
             this.Controls.Add(this.label82);
@@ -1502,5 +1622,15 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label87;
         private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label g2;
+        private System.Windows.Forms.Label g3;
+        private System.Windows.Forms.Label g4;
+        private System.Windows.Forms.Label g5;
+        private System.Windows.Forms.Label g6;
+        private System.Windows.Forms.Label g8;
+        private System.Windows.Forms.Label g9;
+        private System.Windows.Forms.Label g7;
+        private System.Windows.Forms.Label g10;
+        private System.Windows.Forms.Label g1;
     }
 }
