@@ -83,7 +83,7 @@ namespace Inspeccion_Ambulancia
             this.label79 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.pic_combustible = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_temperatura = new System.Windows.Forms.PictureBox();
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -143,10 +143,87 @@ namespace Inspeccion_Ambulancia
             this.g7 = new System.Windows.Forms.Label();
             this.g10 = new System.Windows.Forms.Label();
             this.g1 = new System.Windows.Forms.Label();
+            this.lo_1 = new System.Windows.Forms.Label();
+            this.lo_2 = new System.Windows.Forms.Label();
+            this.l1 = new System.Windows.Forms.Label();
+            this.l2 = new System.Windows.Forms.Label();
+            this.l4 = new System.Windows.Forms.Label();
+            this.l3 = new System.Windows.Forms.Label();
+            this.ci2 = new System.Windows.Forms.Label();
+            this.ci1 = new System.Windows.Forms.Label();
+            this.ci4 = new System.Windows.Forms.Label();
+            this.ci3 = new System.Windows.Forms.Label();
+            this.ci6 = new System.Windows.Forms.Label();
+            this.ci5 = new System.Windows.Forms.Label();
+            this.ci8 = new System.Windows.Forms.Label();
+            this.ci7 = new System.Windows.Forms.Label();
+            this.ci10 = new System.Windows.Forms.Label();
+            this.ci9 = new System.Windows.Forms.Label();
+            this.ci12 = new System.Windows.Forms.Label();
+            this.ci11 = new System.Windows.Forms.Label();
+            this.ci14 = new System.Windows.Forms.Label();
+            this.ci13 = new System.Windows.Forms.Label();
+            this.ci16 = new System.Windows.Forms.Label();
+            this.ci15 = new System.Windows.Forms.Label();
+            this.ci18 = new System.Windows.Forms.Label();
+            this.ci17 = new System.Windows.Forms.Label();
+            this.ci20 = new System.Windows.Forms.Label();
+            this.ci19 = new System.Windows.Forms.Label();
+            this.ci22 = new System.Windows.Forms.Label();
+            this.ci21 = new System.Windows.Forms.Label();
+            this.ci24 = new System.Windows.Forms.Label();
+            this.ci23 = new System.Windows.Forms.Label();
+            this.ci26 = new System.Windows.Forms.Label();
+            this.ci25 = new System.Windows.Forms.Label();
+            this.ci28 = new System.Windows.Forms.Label();
+            this.ci27 = new System.Windows.Forms.Label();
+            this.ci30 = new System.Windows.Forms.Label();
+            this.ci29 = new System.Windows.Forms.Label();
+            this.ci32 = new System.Windows.Forms.Label();
+            this.ci31 = new System.Windows.Forms.Label();
+            this.ci34 = new System.Windows.Forms.Label();
+            this.ci33 = new System.Windows.Forms.Label();
+            this.ci36 = new System.Windows.Forms.Label();
+            this.ci35 = new System.Windows.Forms.Label();
+            this.ci38 = new System.Windows.Forms.Label();
+            this.ci37 = new System.Windows.Forms.Label();
+            this.cio2 = new System.Windows.Forms.Label();
+            this.cio1 = new System.Windows.Forms.Label();
+            this.cio3 = new System.Windows.Forms.Label();
+            this.cio4 = new System.Windows.Forms.Label();
+            this.cio5 = new System.Windows.Forms.Label();
+            this.cio6 = new System.Windows.Forms.Label();
+            this.cio7 = new System.Windows.Forms.Label();
+            this.cio8 = new System.Windows.Forms.Label();
+            this.cio14 = new System.Windows.Forms.Label();
+            this.cio13 = new System.Windows.Forms.Label();
+            this.cio12 = new System.Windows.Forms.Label();
+            this.cio11 = new System.Windows.Forms.Label();
+            this.cio10 = new System.Windows.Forms.Label();
+            this.cio9 = new System.Windows.Forms.Label();
+            this.cio15 = new System.Windows.Forms.Label();
+            this.cio16 = new System.Windows.Forms.Label();
+            this.cio17 = new System.Windows.Forms.Label();
+            this.cio18 = new System.Windows.Forms.Label();
+            this.cio19 = new System.Windows.Forms.Label();
+            this.do3 = new System.Windows.Forms.Label();
+            this.do2 = new System.Windows.Forms.Label();
+            this.do1 = new System.Windows.Forms.Label();
+            this.d6 = new System.Windows.Forms.Label();
+            this.d5 = new System.Windows.Forms.Label();
+            this.d4 = new System.Windows.Forms.Label();
+            this.d3 = new System.Windows.Forms.Label();
+            this.d2 = new System.Windows.Forms.Label();
+            this.d1 = new System.Windows.Forms.Label();
+            this.do4 = new System.Windows.Forms.Label();
+            this.d8 = new System.Windows.Forms.Label();
+            this.d7 = new System.Windows.Forms.Label();
+            this.kilometraje = new System.Windows.Forms.Label();
+            this.observaciones_generales = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_temperatura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_ambulancia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -313,7 +390,7 @@ namespace Inspeccion_Ambulancia
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(451, 142);
+            this.label3.Location = new System.Drawing.Point(450, 142);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(22, 17);
@@ -326,7 +403,7 @@ namespace Inspeccion_Ambulancia
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(517, 142);
+            this.label4.Location = new System.Drawing.Point(543, 142);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 17);
@@ -339,7 +416,7 @@ namespace Inspeccion_Ambulancia
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(634, 142);
+            this.label5.Location = new System.Drawing.Point(617, 142);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(118, 17);
@@ -375,7 +452,7 @@ namespace Inspeccion_Ambulancia
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(634, 210);
+            this.label6.Location = new System.Drawing.Point(617, 227);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 17);
@@ -388,7 +465,7 @@ namespace Inspeccion_Ambulancia
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(521, 210);
+            this.label9.Location = new System.Drawing.Point(534, 227);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(51, 17);
@@ -401,7 +478,7 @@ namespace Inspeccion_Ambulancia
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(438, 210);
+            this.label10.Location = new System.Drawing.Point(435, 227);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(62, 17);
@@ -414,7 +491,7 @@ namespace Inspeccion_Ambulancia
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(83, 210);
+            this.label11.Location = new System.Drawing.Point(83, 227);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(141, 17);
@@ -426,8 +503,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(33, 448);
-            this.label22.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Location = new System.Drawing.Point(33, 465);
+            this.label22.Margin = new System.Windows.Forms.Padding(0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(168, 17);
             this.label22.TabIndex = 139;
@@ -437,8 +515,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(33, 431);
-            this.label21.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Location = new System.Drawing.Point(33, 448);
+            this.label21.Margin = new System.Windows.Forms.Padding(0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(129, 17);
             this.label21.TabIndex = 135;
@@ -448,8 +527,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(32, 414);
-            this.label20.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Location = new System.Drawing.Point(32, 431);
+            this.label20.Margin = new System.Windows.Forms.Padding(0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(148, 17);
             this.label20.TabIndex = 136;
@@ -459,8 +539,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(31, 397);
-            this.label19.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Location = new System.Drawing.Point(31, 414);
+            this.label19.Margin = new System.Windows.Forms.Padding(0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(163, 17);
             this.label19.TabIndex = 137;
@@ -470,8 +551,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(33, 380);
-            this.label18.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Location = new System.Drawing.Point(33, 397);
+            this.label18.Margin = new System.Windows.Forms.Padding(0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(158, 17);
             this.label18.TabIndex = 138;
@@ -481,8 +563,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(33, 363);
-            this.label17.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Location = new System.Drawing.Point(33, 380);
+            this.label17.Margin = new System.Windows.Forms.Padding(0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(290, 17);
             this.label17.TabIndex = 141;
@@ -492,8 +575,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(33, 346);
-            this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Location = new System.Drawing.Point(33, 363);
+            this.label16.Margin = new System.Windows.Forms.Padding(0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(195, 17);
             this.label16.TabIndex = 140;
@@ -503,8 +587,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(32, 329);
-            this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Location = new System.Drawing.Point(32, 346);
+            this.label15.Margin = new System.Windows.Forms.Padding(0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(288, 17);
             this.label15.TabIndex = 148;
@@ -514,8 +599,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(32, 312);
-            this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Location = new System.Drawing.Point(32, 329);
+            this.label14.Margin = new System.Windows.Forms.Padding(0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(156, 17);
             this.label14.TabIndex = 147;
@@ -525,8 +611,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(33, 295);
-            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Location = new System.Drawing.Point(33, 312);
+            this.label13.Margin = new System.Windows.Forms.Padding(0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(160, 17);
             this.label13.TabIndex = 146;
@@ -536,8 +623,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(31, 278);
-            this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Location = new System.Drawing.Point(31, 295);
+            this.label12.Margin = new System.Windows.Forms.Padding(0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(286, 17);
             this.label12.TabIndex = 144;
@@ -547,8 +635,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(31, 261);
-            this.label23.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Location = new System.Drawing.Point(31, 278);
+            this.label23.Margin = new System.Windows.Forms.Padding(0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(179, 17);
             this.label23.TabIndex = 143;
@@ -558,8 +647,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(31, 244);
-            this.label24.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Location = new System.Drawing.Point(31, 261);
+            this.label24.Margin = new System.Windows.Forms.Padding(0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(210, 17);
             this.label24.TabIndex = 142;
@@ -569,8 +659,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(32, 227);
-            this.label25.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Location = new System.Drawing.Point(32, 244);
+            this.label25.Margin = new System.Windows.Forms.Padding(0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(78, 17);
             this.label25.TabIndex = 145;
@@ -581,7 +672,7 @@ namespace Inspeccion_Ambulancia
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(634, 584);
+            this.label26.Location = new System.Drawing.Point(617, 612);
             this.label26.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(118, 17);
@@ -594,7 +685,7 @@ namespace Inspeccion_Ambulancia
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(531, 584);
+            this.label27.Location = new System.Drawing.Point(543, 612);
             this.label27.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(31, 17);
@@ -607,7 +698,7 @@ namespace Inspeccion_Ambulancia
             this.label28.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(465, 584);
+            this.label28.Location = new System.Drawing.Point(450, 612);
             this.label28.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(22, 17);
@@ -620,7 +711,7 @@ namespace Inspeccion_Ambulancia
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(103, 584);
+            this.label29.Location = new System.Drawing.Point(103, 612);
             this.label29.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(117, 17);
@@ -632,7 +723,7 @@ namespace Inspeccion_Ambulancia
             // 
             this.label32.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(31, 669);
+            this.label32.Location = new System.Drawing.Point(31, 697);
             this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(223, 17);
@@ -643,7 +734,7 @@ namespace Inspeccion_Ambulancia
             // 
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(31, 652);
+            this.label31.Location = new System.Drawing.Point(31, 680);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(401, 17);
@@ -654,7 +745,7 @@ namespace Inspeccion_Ambulancia
             // 
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(31, 635);
+            this.label30.Location = new System.Drawing.Point(31, 663);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(194, 17);
@@ -665,7 +756,7 @@ namespace Inspeccion_Ambulancia
             // 
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(32, 601);
+            this.label33.Location = new System.Drawing.Point(32, 629);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(393, 34);
@@ -677,8 +768,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(33, 567);
-            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Location = new System.Drawing.Point(33, 584);
+            this.label34.Margin = new System.Windows.Forms.Padding(0);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(204, 17);
             this.label34.TabIndex = 194;
@@ -688,8 +780,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label35.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(31, 499);
-            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Location = new System.Drawing.Point(31, 516);
+            this.label35.Margin = new System.Windows.Forms.Padding(0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(233, 17);
             this.label35.TabIndex = 191;
@@ -699,8 +792,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label36.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(33, 482);
-            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label36.BackColor = System.Drawing.Color.Transparent;
+            this.label36.Location = new System.Drawing.Point(33, 499);
+            this.label36.Margin = new System.Windows.Forms.Padding(0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(137, 17);
             this.label36.TabIndex = 192;
@@ -710,8 +804,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label37.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(33, 465);
-            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.Location = new System.Drawing.Point(33, 482);
+            this.label37.Margin = new System.Windows.Forms.Padding(0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(187, 17);
             this.label37.TabIndex = 193;
@@ -721,8 +816,9 @@ namespace Inspeccion_Ambulancia
             // 
             this.label38.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(32, 516);
-            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Location = new System.Drawing.Point(32, 533);
+            this.label38.Margin = new System.Windows.Forms.Padding(0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(377, 51);
             this.label38.TabIndex = 190;
@@ -735,7 +831,7 @@ namespace Inspeccion_Ambulancia
             this.label79.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label79.AutoSize = true;
             this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(508, 686);
+            this.label79.Location = new System.Drawing.Point(508, 732);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(145, 20);
             this.label79.TabIndex = 196;
@@ -746,7 +842,7 @@ namespace Inspeccion_Ambulancia
             this.label78.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label78.AutoSize = true;
             this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(82, 686);
+            this.label78.Location = new System.Drawing.Point(82, 732);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(232, 20);
             this.label78.TabIndex = 195;
@@ -756,28 +852,28 @@ namespace Inspeccion_Ambulancia
             // 
             this.pic_combustible.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pic_combustible.BackColor = System.Drawing.Color.Gainsboro;
-            this.pic_combustible.Location = new System.Drawing.Point(36, 709);
+            this.pic_combustible.Location = new System.Drawing.Point(36, 755);
             this.pic_combustible.Name = "pic_combustible";
             this.pic_combustible.Size = new System.Drawing.Size(330, 123);
             this.pic_combustible.TabIndex = 197;
             this.pic_combustible.TabStop = false;
             // 
-            // pictureBox1
+            // pic_temperatura
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox1.Location = new System.Drawing.Point(422, 709);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(330, 123);
-            this.pictureBox1.TabIndex = 198;
-            this.pictureBox1.TabStop = false;
+            this.pic_temperatura.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pic_temperatura.BackColor = System.Drawing.Color.Gainsboro;
+            this.pic_temperatura.Location = new System.Drawing.Point(422, 755);
+            this.pic_temperatura.Name = "pic_temperatura";
+            this.pic_temperatura.Size = new System.Drawing.Size(330, 123);
+            this.pic_temperatura.TabIndex = 198;
+            this.pic_temperatura.TabStop = false;
             // 
             // label80
             // 
             this.label80.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label80.AutoSize = true;
             this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(62, 835);
+            this.label80.Location = new System.Drawing.Point(62, 881);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(261, 20);
             this.label80.TabIndex = 199;
@@ -787,7 +883,7 @@ namespace Inspeccion_Ambulancia
             // 
             this.label81.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(63, 866);
+            this.label81.Location = new System.Drawing.Point(63, 912);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(174, 17);
             this.label81.TabIndex = 208;
@@ -1380,6 +1476,952 @@ namespace Inspeccion_Ambulancia
             this.g1.TabIndex = 351;
             this.g1.Text = "         ";
             // 
+            // lo_1
+            // 
+            this.lo_1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lo_1.AutoSize = true;
+            this.lo_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lo_1.Location = new System.Drawing.Point(597, 163);
+            this.lo_1.Name = "lo_1";
+            this.lo_1.Size = new System.Drawing.Size(40, 16);
+            this.lo_1.TabIndex = 353;
+            this.lo_1.Text = "obs   ";
+            // 
+            // lo_2
+            // 
+            this.lo_2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lo_2.AutoSize = true;
+            this.lo_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lo_2.Location = new System.Drawing.Point(597, 192);
+            this.lo_2.Name = "lo_2";
+            this.lo_2.Size = new System.Drawing.Size(43, 16);
+            this.lo_2.TabIndex = 354;
+            this.lo_2.Text = "obs    ";
+            // 
+            // l1
+            // 
+            this.l1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.l1.AutoSize = true;
+            this.l1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1.Location = new System.Drawing.Point(447, 165);
+            this.l1.Name = "l1";
+            this.l1.Size = new System.Drawing.Size(20, 15);
+            this.l1.TabIndex = 355;
+            this.l1.Text = " X";
+            this.l1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l1.Visible = false;
+            // 
+            // l2
+            // 
+            this.l2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.l2.AutoSize = true;
+            this.l2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2.Location = new System.Drawing.Point(543, 165);
+            this.l2.Name = "l2";
+            this.l2.Size = new System.Drawing.Size(20, 15);
+            this.l2.TabIndex = 356;
+            this.l2.Text = " X";
+            this.l2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l2.Visible = false;
+            // 
+            // l4
+            // 
+            this.l4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.l4.AutoSize = true;
+            this.l4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4.Location = new System.Drawing.Point(543, 193);
+            this.l4.Name = "l4";
+            this.l4.Size = new System.Drawing.Size(20, 15);
+            this.l4.TabIndex = 358;
+            this.l4.Text = " X";
+            this.l4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l4.Visible = false;
+            // 
+            // l3
+            // 
+            this.l3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.l3.AutoSize = true;
+            this.l3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3.Location = new System.Drawing.Point(448, 193);
+            this.l3.Name = "l3";
+            this.l3.Size = new System.Drawing.Size(20, 15);
+            this.l3.TabIndex = 357;
+            this.l3.Text = " X";
+            this.l3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l3.Visible = false;
+            // 
+            // ci2
+            // 
+            this.ci2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci2.AutoSize = true;
+            this.ci2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci2.Location = new System.Drawing.Point(544, 244);
+            this.ci2.Name = "ci2";
+            this.ci2.Size = new System.Drawing.Size(20, 15);
+            this.ci2.TabIndex = 360;
+            this.ci2.Text = " X";
+            this.ci2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci2.Visible = false;
+            // 
+            // ci1
+            // 
+            this.ci1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci1.AutoSize = true;
+            this.ci1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci1.Location = new System.Drawing.Point(449, 244);
+            this.ci1.Name = "ci1";
+            this.ci1.Size = new System.Drawing.Size(20, 15);
+            this.ci1.TabIndex = 359;
+            this.ci1.Text = " X";
+            this.ci1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci1.Visible = false;
+            // 
+            // ci4
+            // 
+            this.ci4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci4.AutoSize = true;
+            this.ci4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci4.Location = new System.Drawing.Point(544, 261);
+            this.ci4.Name = "ci4";
+            this.ci4.Size = new System.Drawing.Size(20, 15);
+            this.ci4.TabIndex = 362;
+            this.ci4.Text = " X";
+            this.ci4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci4.Visible = false;
+            // 
+            // ci3
+            // 
+            this.ci3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci3.AutoSize = true;
+            this.ci3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci3.Location = new System.Drawing.Point(449, 261);
+            this.ci3.Name = "ci3";
+            this.ci3.Size = new System.Drawing.Size(20, 15);
+            this.ci3.TabIndex = 361;
+            this.ci3.Text = " X";
+            this.ci3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci3.Visible = false;
+            // 
+            // ci6
+            // 
+            this.ci6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci6.AutoSize = true;
+            this.ci6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci6.Location = new System.Drawing.Point(544, 278);
+            this.ci6.Name = "ci6";
+            this.ci6.Size = new System.Drawing.Size(20, 15);
+            this.ci6.TabIndex = 364;
+            this.ci6.Text = " X";
+            this.ci6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci6.Visible = false;
+            // 
+            // ci5
+            // 
+            this.ci5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci5.AutoSize = true;
+            this.ci5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci5.Location = new System.Drawing.Point(449, 278);
+            this.ci5.Name = "ci5";
+            this.ci5.Size = new System.Drawing.Size(20, 15);
+            this.ci5.TabIndex = 363;
+            this.ci5.Text = " X";
+            this.ci5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci5.Visible = false;
+            // 
+            // ci8
+            // 
+            this.ci8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci8.AutoSize = true;
+            this.ci8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci8.Location = new System.Drawing.Point(544, 295);
+            this.ci8.Name = "ci8";
+            this.ci8.Size = new System.Drawing.Size(20, 15);
+            this.ci8.TabIndex = 366;
+            this.ci8.Text = " X";
+            this.ci8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci8.Visible = false;
+            // 
+            // ci7
+            // 
+            this.ci7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci7.AutoSize = true;
+            this.ci7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci7.Location = new System.Drawing.Point(449, 295);
+            this.ci7.Name = "ci7";
+            this.ci7.Size = new System.Drawing.Size(20, 15);
+            this.ci7.TabIndex = 365;
+            this.ci7.Text = " X";
+            this.ci7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci7.Visible = false;
+            // 
+            // ci10
+            // 
+            this.ci10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci10.AutoSize = true;
+            this.ci10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci10.Location = new System.Drawing.Point(544, 312);
+            this.ci10.Name = "ci10";
+            this.ci10.Size = new System.Drawing.Size(20, 15);
+            this.ci10.TabIndex = 368;
+            this.ci10.Text = " X";
+            this.ci10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci10.Visible = false;
+            // 
+            // ci9
+            // 
+            this.ci9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci9.AutoSize = true;
+            this.ci9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci9.Location = new System.Drawing.Point(449, 312);
+            this.ci9.Name = "ci9";
+            this.ci9.Size = new System.Drawing.Size(20, 15);
+            this.ci9.TabIndex = 367;
+            this.ci9.Text = " X";
+            this.ci9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci9.Visible = false;
+            // 
+            // ci12
+            // 
+            this.ci12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci12.AutoSize = true;
+            this.ci12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci12.Location = new System.Drawing.Point(544, 329);
+            this.ci12.Name = "ci12";
+            this.ci12.Size = new System.Drawing.Size(20, 15);
+            this.ci12.TabIndex = 370;
+            this.ci12.Text = " X";
+            this.ci12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci12.Visible = false;
+            // 
+            // ci11
+            // 
+            this.ci11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci11.AutoSize = true;
+            this.ci11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci11.Location = new System.Drawing.Point(449, 329);
+            this.ci11.Name = "ci11";
+            this.ci11.Size = new System.Drawing.Size(20, 15);
+            this.ci11.TabIndex = 369;
+            this.ci11.Text = " X";
+            this.ci11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci11.Visible = false;
+            // 
+            // ci14
+            // 
+            this.ci14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci14.AutoSize = true;
+            this.ci14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci14.Location = new System.Drawing.Point(544, 346);
+            this.ci14.Name = "ci14";
+            this.ci14.Size = new System.Drawing.Size(20, 15);
+            this.ci14.TabIndex = 372;
+            this.ci14.Text = " X";
+            this.ci14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci14.Visible = false;
+            // 
+            // ci13
+            // 
+            this.ci13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci13.AutoSize = true;
+            this.ci13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci13.Location = new System.Drawing.Point(449, 346);
+            this.ci13.Name = "ci13";
+            this.ci13.Size = new System.Drawing.Size(20, 15);
+            this.ci13.TabIndex = 371;
+            this.ci13.Text = " X";
+            this.ci13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci13.Visible = false;
+            // 
+            // ci16
+            // 
+            this.ci16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci16.AutoSize = true;
+            this.ci16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci16.Location = new System.Drawing.Point(544, 363);
+            this.ci16.Name = "ci16";
+            this.ci16.Size = new System.Drawing.Size(20, 15);
+            this.ci16.TabIndex = 374;
+            this.ci16.Text = " X";
+            this.ci16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci16.Visible = false;
+            // 
+            // ci15
+            // 
+            this.ci15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci15.AutoSize = true;
+            this.ci15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci15.Location = new System.Drawing.Point(449, 363);
+            this.ci15.Name = "ci15";
+            this.ci15.Size = new System.Drawing.Size(20, 15);
+            this.ci15.TabIndex = 373;
+            this.ci15.Text = " X";
+            this.ci15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci15.Visible = false;
+            // 
+            // ci18
+            // 
+            this.ci18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci18.AutoSize = true;
+            this.ci18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci18.Location = new System.Drawing.Point(544, 380);
+            this.ci18.Name = "ci18";
+            this.ci18.Size = new System.Drawing.Size(20, 15);
+            this.ci18.TabIndex = 376;
+            this.ci18.Text = " X";
+            this.ci18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci18.Visible = false;
+            // 
+            // ci17
+            // 
+            this.ci17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci17.AutoSize = true;
+            this.ci17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci17.Location = new System.Drawing.Point(449, 380);
+            this.ci17.Name = "ci17";
+            this.ci17.Size = new System.Drawing.Size(20, 15);
+            this.ci17.TabIndex = 375;
+            this.ci17.Text = " X";
+            this.ci17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci17.Visible = false;
+            // 
+            // ci20
+            // 
+            this.ci20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci20.AutoSize = true;
+            this.ci20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci20.Location = new System.Drawing.Point(544, 397);
+            this.ci20.Name = "ci20";
+            this.ci20.Size = new System.Drawing.Size(20, 15);
+            this.ci20.TabIndex = 378;
+            this.ci20.Text = " X";
+            this.ci20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci20.Visible = false;
+            // 
+            // ci19
+            // 
+            this.ci19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci19.AutoSize = true;
+            this.ci19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci19.Location = new System.Drawing.Point(449, 397);
+            this.ci19.Name = "ci19";
+            this.ci19.Size = new System.Drawing.Size(20, 15);
+            this.ci19.TabIndex = 377;
+            this.ci19.Text = " X";
+            this.ci19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci19.Visible = false;
+            // 
+            // ci22
+            // 
+            this.ci22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci22.AutoSize = true;
+            this.ci22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci22.Location = new System.Drawing.Point(544, 414);
+            this.ci22.Name = "ci22";
+            this.ci22.Size = new System.Drawing.Size(20, 15);
+            this.ci22.TabIndex = 380;
+            this.ci22.Text = " X";
+            this.ci22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci22.Visible = false;
+            // 
+            // ci21
+            // 
+            this.ci21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci21.AutoSize = true;
+            this.ci21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci21.Location = new System.Drawing.Point(449, 414);
+            this.ci21.Name = "ci21";
+            this.ci21.Size = new System.Drawing.Size(20, 15);
+            this.ci21.TabIndex = 379;
+            this.ci21.Text = " X";
+            this.ci21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci21.Visible = false;
+            // 
+            // ci24
+            // 
+            this.ci24.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci24.AutoSize = true;
+            this.ci24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci24.Location = new System.Drawing.Point(544, 431);
+            this.ci24.Name = "ci24";
+            this.ci24.Size = new System.Drawing.Size(20, 15);
+            this.ci24.TabIndex = 382;
+            this.ci24.Text = " X";
+            this.ci24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci24.Visible = false;
+            // 
+            // ci23
+            // 
+            this.ci23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci23.AutoSize = true;
+            this.ci23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci23.Location = new System.Drawing.Point(449, 431);
+            this.ci23.Name = "ci23";
+            this.ci23.Size = new System.Drawing.Size(20, 15);
+            this.ci23.TabIndex = 381;
+            this.ci23.Text = " X";
+            this.ci23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci23.Visible = false;
+            // 
+            // ci26
+            // 
+            this.ci26.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci26.AutoSize = true;
+            this.ci26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci26.Location = new System.Drawing.Point(544, 448);
+            this.ci26.Name = "ci26";
+            this.ci26.Size = new System.Drawing.Size(20, 15);
+            this.ci26.TabIndex = 384;
+            this.ci26.Text = " X";
+            this.ci26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci26.Visible = false;
+            // 
+            // ci25
+            // 
+            this.ci25.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci25.AutoSize = true;
+            this.ci25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci25.Location = new System.Drawing.Point(449, 448);
+            this.ci25.Name = "ci25";
+            this.ci25.Size = new System.Drawing.Size(20, 15);
+            this.ci25.TabIndex = 383;
+            this.ci25.Text = " X";
+            this.ci25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci25.Visible = false;
+            // 
+            // ci28
+            // 
+            this.ci28.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci28.AutoSize = true;
+            this.ci28.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci28.Location = new System.Drawing.Point(544, 465);
+            this.ci28.Name = "ci28";
+            this.ci28.Size = new System.Drawing.Size(20, 15);
+            this.ci28.TabIndex = 386;
+            this.ci28.Text = " X";
+            this.ci28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci28.Visible = false;
+            // 
+            // ci27
+            // 
+            this.ci27.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci27.AutoSize = true;
+            this.ci27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci27.Location = new System.Drawing.Point(449, 465);
+            this.ci27.Name = "ci27";
+            this.ci27.Size = new System.Drawing.Size(20, 15);
+            this.ci27.TabIndex = 385;
+            this.ci27.Text = " X";
+            this.ci27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci27.Visible = false;
+            // 
+            // ci30
+            // 
+            this.ci30.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci30.AutoSize = true;
+            this.ci30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci30.Location = new System.Drawing.Point(544, 482);
+            this.ci30.Name = "ci30";
+            this.ci30.Size = new System.Drawing.Size(20, 15);
+            this.ci30.TabIndex = 388;
+            this.ci30.Text = " X";
+            this.ci30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci30.Visible = false;
+            // 
+            // ci29
+            // 
+            this.ci29.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci29.AutoSize = true;
+            this.ci29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci29.Location = new System.Drawing.Point(449, 482);
+            this.ci29.Name = "ci29";
+            this.ci29.Size = new System.Drawing.Size(20, 15);
+            this.ci29.TabIndex = 387;
+            this.ci29.Text = " X";
+            this.ci29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci29.Visible = false;
+            // 
+            // ci32
+            // 
+            this.ci32.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci32.AutoSize = true;
+            this.ci32.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci32.Location = new System.Drawing.Point(544, 499);
+            this.ci32.Name = "ci32";
+            this.ci32.Size = new System.Drawing.Size(20, 15);
+            this.ci32.TabIndex = 390;
+            this.ci32.Text = " X";
+            this.ci32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci32.Visible = false;
+            // 
+            // ci31
+            // 
+            this.ci31.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci31.AutoSize = true;
+            this.ci31.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci31.Location = new System.Drawing.Point(449, 499);
+            this.ci31.Name = "ci31";
+            this.ci31.Size = new System.Drawing.Size(20, 15);
+            this.ci31.TabIndex = 389;
+            this.ci31.Text = " X";
+            this.ci31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci31.Visible = false;
+            // 
+            // ci34
+            // 
+            this.ci34.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci34.AutoSize = true;
+            this.ci34.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci34.Location = new System.Drawing.Point(545, 517);
+            this.ci34.Name = "ci34";
+            this.ci34.Size = new System.Drawing.Size(20, 15);
+            this.ci34.TabIndex = 392;
+            this.ci34.Text = " X";
+            this.ci34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci34.Visible = false;
+            // 
+            // ci33
+            // 
+            this.ci33.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci33.AutoSize = true;
+            this.ci33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci33.Location = new System.Drawing.Point(450, 517);
+            this.ci33.Name = "ci33";
+            this.ci33.Size = new System.Drawing.Size(20, 15);
+            this.ci33.TabIndex = 391;
+            this.ci33.Text = " X";
+            this.ci33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci33.Visible = false;
+            // 
+            // ci36
+            // 
+            this.ci36.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci36.AutoSize = true;
+            this.ci36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci36.Location = new System.Drawing.Point(544, 552);
+            this.ci36.Name = "ci36";
+            this.ci36.Size = new System.Drawing.Size(20, 15);
+            this.ci36.TabIndex = 396;
+            this.ci36.Text = " X";
+            this.ci36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci36.Visible = false;
+            // 
+            // ci35
+            // 
+            this.ci35.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci35.AutoSize = true;
+            this.ci35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci35.Location = new System.Drawing.Point(449, 552);
+            this.ci35.Name = "ci35";
+            this.ci35.Size = new System.Drawing.Size(20, 15);
+            this.ci35.TabIndex = 395;
+            this.ci35.Text = " X";
+            this.ci35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci35.Visible = false;
+            // 
+            // ci38
+            // 
+            this.ci38.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci38.AutoSize = true;
+            this.ci38.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci38.Location = new System.Drawing.Point(544, 584);
+            this.ci38.Name = "ci38";
+            this.ci38.Size = new System.Drawing.Size(20, 15);
+            this.ci38.TabIndex = 398;
+            this.ci38.Text = " X";
+            this.ci38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci38.Visible = false;
+            // 
+            // ci37
+            // 
+            this.ci37.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ci37.AutoSize = true;
+            this.ci37.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ci37.Location = new System.Drawing.Point(449, 584);
+            this.ci37.Name = "ci37";
+            this.ci37.Size = new System.Drawing.Size(20, 15);
+            this.ci37.TabIndex = 397;
+            this.ci37.Text = " X";
+            this.ci37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ci37.Visible = false;
+            // 
+            // cio2
+            // 
+            this.cio2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio2.AutoSize = true;
+            this.cio2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio2.Location = new System.Drawing.Point(597, 259);
+            this.cio2.Name = "cio2";
+            this.cio2.Size = new System.Drawing.Size(31, 16);
+            this.cio2.TabIndex = 400;
+            this.cio2.Text = "obs";
+            // 
+            // cio1
+            // 
+            this.cio1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio1.AutoSize = true;
+            this.cio1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio1.Location = new System.Drawing.Point(597, 243);
+            this.cio1.Name = "cio1";
+            this.cio1.Size = new System.Drawing.Size(31, 16);
+            this.cio1.TabIndex = 399;
+            this.cio1.Text = "obs";
+            // 
+            // cio3
+            // 
+            this.cio3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio3.AutoSize = true;
+            this.cio3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio3.Location = new System.Drawing.Point(597, 276);
+            this.cio3.Name = "cio3";
+            this.cio3.Size = new System.Drawing.Size(31, 16);
+            this.cio3.TabIndex = 401;
+            this.cio3.Text = "obs";
+            // 
+            // cio4
+            // 
+            this.cio4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio4.AutoSize = true;
+            this.cio4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio4.Location = new System.Drawing.Point(597, 294);
+            this.cio4.Name = "cio4";
+            this.cio4.Size = new System.Drawing.Size(31, 16);
+            this.cio4.TabIndex = 402;
+            this.cio4.Text = "obs";
+            // 
+            // cio5
+            // 
+            this.cio5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio5.AutoSize = true;
+            this.cio5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio5.Location = new System.Drawing.Point(597, 311);
+            this.cio5.Name = "cio5";
+            this.cio5.Size = new System.Drawing.Size(31, 16);
+            this.cio5.TabIndex = 403;
+            this.cio5.Text = "obs";
+            // 
+            // cio6
+            // 
+            this.cio6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio6.AutoSize = true;
+            this.cio6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio6.Location = new System.Drawing.Point(597, 328);
+            this.cio6.Name = "cio6";
+            this.cio6.Size = new System.Drawing.Size(31, 16);
+            this.cio6.TabIndex = 404;
+            this.cio6.Text = "obs";
+            // 
+            // cio7
+            // 
+            this.cio7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio7.AutoSize = true;
+            this.cio7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio7.Location = new System.Drawing.Point(597, 347);
+            this.cio7.Name = "cio7";
+            this.cio7.Size = new System.Drawing.Size(31, 16);
+            this.cio7.TabIndex = 405;
+            this.cio7.Text = "obs";
+            // 
+            // cio8
+            // 
+            this.cio8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio8.AutoSize = true;
+            this.cio8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio8.Location = new System.Drawing.Point(597, 364);
+            this.cio8.Name = "cio8";
+            this.cio8.Size = new System.Drawing.Size(31, 16);
+            this.cio8.TabIndex = 406;
+            this.cio8.Text = "obs";
+            // 
+            // cio14
+            // 
+            this.cio14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio14.AutoSize = true;
+            this.cio14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio14.Location = new System.Drawing.Point(597, 465);
+            this.cio14.Name = "cio14";
+            this.cio14.Size = new System.Drawing.Size(31, 16);
+            this.cio14.TabIndex = 412;
+            this.cio14.Text = "obs";
+            // 
+            // cio13
+            // 
+            this.cio13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio13.AutoSize = true;
+            this.cio13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio13.Location = new System.Drawing.Point(597, 447);
+            this.cio13.Name = "cio13";
+            this.cio13.Size = new System.Drawing.Size(31, 16);
+            this.cio13.TabIndex = 411;
+            this.cio13.Text = "obs";
+            // 
+            // cio12
+            // 
+            this.cio12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio12.AutoSize = true;
+            this.cio12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio12.Location = new System.Drawing.Point(597, 430);
+            this.cio12.Name = "cio12";
+            this.cio12.Size = new System.Drawing.Size(31, 16);
+            this.cio12.TabIndex = 410;
+            this.cio12.Text = "obs";
+            // 
+            // cio11
+            // 
+            this.cio11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio11.AutoSize = true;
+            this.cio11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio11.Location = new System.Drawing.Point(597, 413);
+            this.cio11.Name = "cio11";
+            this.cio11.Size = new System.Drawing.Size(31, 16);
+            this.cio11.TabIndex = 409;
+            this.cio11.Text = "obs";
+            // 
+            // cio10
+            // 
+            this.cio10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio10.AutoSize = true;
+            this.cio10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio10.Location = new System.Drawing.Point(597, 397);
+            this.cio10.Name = "cio10";
+            this.cio10.Size = new System.Drawing.Size(31, 16);
+            this.cio10.TabIndex = 408;
+            this.cio10.Text = "obs";
+            // 
+            // cio9
+            // 
+            this.cio9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio9.AutoSize = true;
+            this.cio9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio9.Location = new System.Drawing.Point(597, 381);
+            this.cio9.Name = "cio9";
+            this.cio9.Size = new System.Drawing.Size(31, 16);
+            this.cio9.TabIndex = 407;
+            this.cio9.Text = "obs";
+            // 
+            // cio15
+            // 
+            this.cio15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio15.AutoSize = true;
+            this.cio15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio15.Location = new System.Drawing.Point(597, 483);
+            this.cio15.Name = "cio15";
+            this.cio15.Size = new System.Drawing.Size(31, 16);
+            this.cio15.TabIndex = 413;
+            this.cio15.Text = "obs";
+            // 
+            // cio16
+            // 
+            this.cio16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio16.AutoSize = true;
+            this.cio16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio16.Location = new System.Drawing.Point(597, 500);
+            this.cio16.Name = "cio16";
+            this.cio16.Size = new System.Drawing.Size(31, 16);
+            this.cio16.TabIndex = 414;
+            this.cio16.Text = "obs";
+            // 
+            // cio17
+            // 
+            this.cio17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio17.AutoSize = true;
+            this.cio17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio17.Location = new System.Drawing.Point(597, 517);
+            this.cio17.Name = "cio17";
+            this.cio17.Size = new System.Drawing.Size(31, 16);
+            this.cio17.TabIndex = 415;
+            this.cio17.Text = "obs";
+            // 
+            // cio18
+            // 
+            this.cio18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio18.AutoSize = true;
+            this.cio18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio18.Location = new System.Drawing.Point(597, 552);
+            this.cio18.Name = "cio18";
+            this.cio18.Size = new System.Drawing.Size(31, 16);
+            this.cio18.TabIndex = 416;
+            this.cio18.Text = "obs";
+            // 
+            // cio19
+            // 
+            this.cio19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cio19.AutoSize = true;
+            this.cio19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cio19.Location = new System.Drawing.Point(597, 583);
+            this.cio19.Name = "cio19";
+            this.cio19.Size = new System.Drawing.Size(31, 16);
+            this.cio19.TabIndex = 417;
+            this.cio19.Text = "obs";
+            // 
+            // do3
+            // 
+            this.do3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.do3.AutoSize = true;
+            this.do3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.do3.Location = new System.Drawing.Point(598, 680);
+            this.do3.Name = "do3";
+            this.do3.Size = new System.Drawing.Size(31, 16);
+            this.do3.TabIndex = 426;
+            this.do3.Text = "obs";
+            // 
+            // do2
+            // 
+            this.do2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.do2.AutoSize = true;
+            this.do2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.do2.Location = new System.Drawing.Point(598, 663);
+            this.do2.Name = "do2";
+            this.do2.Size = new System.Drawing.Size(31, 16);
+            this.do2.TabIndex = 425;
+            this.do2.Text = "obs";
+            // 
+            // do1
+            // 
+            this.do1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.do1.AutoSize = true;
+            this.do1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.do1.Location = new System.Drawing.Point(598, 628);
+            this.do1.Name = "do1";
+            this.do1.Size = new System.Drawing.Size(31, 16);
+            this.do1.TabIndex = 424;
+            this.do1.Text = "obs";
+            // 
+            // d6
+            // 
+            this.d6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.d6.AutoSize = true;
+            this.d6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d6.Location = new System.Drawing.Point(545, 682);
+            this.d6.Name = "d6";
+            this.d6.Size = new System.Drawing.Size(20, 15);
+            this.d6.TabIndex = 423;
+            this.d6.Text = " X";
+            this.d6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.d6.Visible = false;
+            // 
+            // d5
+            // 
+            this.d5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.d5.AutoSize = true;
+            this.d5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d5.Location = new System.Drawing.Point(450, 682);
+            this.d5.Name = "d5";
+            this.d5.Size = new System.Drawing.Size(20, 15);
+            this.d5.TabIndex = 422;
+            this.d5.Text = " X";
+            this.d5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.d5.Visible = false;
+            // 
+            // d4
+            // 
+            this.d4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.d4.AutoSize = true;
+            this.d4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d4.Location = new System.Drawing.Point(545, 665);
+            this.d4.Name = "d4";
+            this.d4.Size = new System.Drawing.Size(20, 15);
+            this.d4.TabIndex = 421;
+            this.d4.Text = " X";
+            this.d4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.d4.Visible = false;
+            // 
+            // d3
+            // 
+            this.d3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.d3.AutoSize = true;
+            this.d3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d3.Location = new System.Drawing.Point(450, 665);
+            this.d3.Name = "d3";
+            this.d3.Size = new System.Drawing.Size(20, 15);
+            this.d3.TabIndex = 420;
+            this.d3.Text = " X";
+            this.d3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.d3.Visible = false;
+            // 
+            // d2
+            // 
+            this.d2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.d2.AutoSize = true;
+            this.d2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d2.Location = new System.Drawing.Point(545, 629);
+            this.d2.Name = "d2";
+            this.d2.Size = new System.Drawing.Size(20, 15);
+            this.d2.TabIndex = 419;
+            this.d2.Text = " X";
+            this.d2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.d2.Visible = false;
+            // 
+            // d1
+            // 
+            this.d1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.d1.AutoSize = true;
+            this.d1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d1.Location = new System.Drawing.Point(450, 629);
+            this.d1.Name = "d1";
+            this.d1.Size = new System.Drawing.Size(20, 15);
+            this.d1.TabIndex = 418;
+            this.d1.Text = " X";
+            this.d1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.d1.Visible = false;
+            // 
+            // do4
+            // 
+            this.do4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.do4.AutoSize = true;
+            this.do4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.do4.Location = new System.Drawing.Point(597, 696);
+            this.do4.Name = "do4";
+            this.do4.Size = new System.Drawing.Size(31, 16);
+            this.do4.TabIndex = 429;
+            this.do4.Text = "obs";
+            // 
+            // d8
+            // 
+            this.d8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.d8.AutoSize = true;
+            this.d8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d8.Location = new System.Drawing.Point(545, 697);
+            this.d8.Name = "d8";
+            this.d8.Size = new System.Drawing.Size(20, 15);
+            this.d8.TabIndex = 428;
+            this.d8.Text = " X";
+            this.d8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.d8.Visible = false;
+            // 
+            // d7
+            // 
+            this.d7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.d7.AutoSize = true;
+            this.d7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d7.Location = new System.Drawing.Point(450, 697);
+            this.d7.Name = "d7";
+            this.d7.Size = new System.Drawing.Size(20, 15);
+            this.d7.TabIndex = 427;
+            this.d7.Text = " X";
+            this.d7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.d7.Visible = false;
+            // 
+            // kilometraje
+            // 
+            this.kilometraje.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.kilometraje.AutoSize = true;
+            this.kilometraje.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kilometraje.Location = new System.Drawing.Point(418, 881);
+            this.kilometraje.Name = "kilometraje";
+            this.kilometraje.Size = new System.Drawing.Size(42, 20);
+            this.kilometraje.TabIndex = 430;
+            this.kilometraje.Text = " KM";
+            // 
+            // observaciones_generales
+            // 
+            this.observaciones_generales.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.observaciones_generales.AutoSize = true;
+            this.observaciones_generales.Location = new System.Drawing.Point(63, 935);
+            this.observaciones_generales.Name = "observaciones_generales";
+            this.observaciones_generales.Size = new System.Drawing.Size(31, 17);
+            this.observaciones_generales.TabIndex = 431;
+            this.observaciones_generales.Text = "obs";
+            // 
             // documento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1388,6 +2430,83 @@ namespace Inspeccion_Ambulancia
             this.AutoScrollMargin = new System.Drawing.Size(10, 10);
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1555, 1055);
+            this.Controls.Add(this.observaciones_generales);
+            this.Controls.Add(this.kilometraje);
+            this.Controls.Add(this.do4);
+            this.Controls.Add(this.d8);
+            this.Controls.Add(this.d7);
+            this.Controls.Add(this.do3);
+            this.Controls.Add(this.do2);
+            this.Controls.Add(this.do1);
+            this.Controls.Add(this.d6);
+            this.Controls.Add(this.d5);
+            this.Controls.Add(this.d4);
+            this.Controls.Add(this.d3);
+            this.Controls.Add(this.d2);
+            this.Controls.Add(this.d1);
+            this.Controls.Add(this.cio19);
+            this.Controls.Add(this.cio18);
+            this.Controls.Add(this.cio17);
+            this.Controls.Add(this.cio16);
+            this.Controls.Add(this.cio15);
+            this.Controls.Add(this.cio14);
+            this.Controls.Add(this.cio13);
+            this.Controls.Add(this.cio12);
+            this.Controls.Add(this.cio11);
+            this.Controls.Add(this.cio10);
+            this.Controls.Add(this.cio9);
+            this.Controls.Add(this.cio8);
+            this.Controls.Add(this.cio7);
+            this.Controls.Add(this.cio6);
+            this.Controls.Add(this.cio5);
+            this.Controls.Add(this.cio4);
+            this.Controls.Add(this.cio3);
+            this.Controls.Add(this.cio2);
+            this.Controls.Add(this.cio1);
+            this.Controls.Add(this.ci38);
+            this.Controls.Add(this.ci37);
+            this.Controls.Add(this.ci36);
+            this.Controls.Add(this.ci35);
+            this.Controls.Add(this.ci34);
+            this.Controls.Add(this.ci33);
+            this.Controls.Add(this.ci32);
+            this.Controls.Add(this.ci31);
+            this.Controls.Add(this.ci30);
+            this.Controls.Add(this.ci29);
+            this.Controls.Add(this.ci28);
+            this.Controls.Add(this.ci27);
+            this.Controls.Add(this.ci26);
+            this.Controls.Add(this.ci25);
+            this.Controls.Add(this.ci24);
+            this.Controls.Add(this.ci23);
+            this.Controls.Add(this.ci22);
+            this.Controls.Add(this.ci21);
+            this.Controls.Add(this.ci20);
+            this.Controls.Add(this.ci19);
+            this.Controls.Add(this.ci18);
+            this.Controls.Add(this.ci17);
+            this.Controls.Add(this.ci16);
+            this.Controls.Add(this.ci15);
+            this.Controls.Add(this.ci14);
+            this.Controls.Add(this.ci13);
+            this.Controls.Add(this.ci12);
+            this.Controls.Add(this.ci11);
+            this.Controls.Add(this.ci10);
+            this.Controls.Add(this.ci9);
+            this.Controls.Add(this.ci8);
+            this.Controls.Add(this.ci7);
+            this.Controls.Add(this.ci6);
+            this.Controls.Add(this.ci5);
+            this.Controls.Add(this.ci4);
+            this.Controls.Add(this.ci3);
+            this.Controls.Add(this.ci2);
+            this.Controls.Add(this.ci1);
+            this.Controls.Add(this.l4);
+            this.Controls.Add(this.l3);
+            this.Controls.Add(this.l2);
+            this.Controls.Add(this.l1);
+            this.Controls.Add(this.lo_2);
+            this.Controls.Add(this.lo_1);
             this.Controls.Add(this.g1);
             this.Controls.Add(this.g10);
             this.Controls.Add(this.g7);
@@ -1447,7 +2566,7 @@ namespace Inspeccion_Ambulancia
             this.Controls.Add(this.label42);
             this.Controls.Add(this.label81);
             this.Controls.Add(this.label80);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pic_temperatura);
             this.Controls.Add(this.pic_combustible);
             this.Controls.Add(this.label79);
             this.Controls.Add(this.label78);
@@ -1510,7 +2629,7 @@ namespace Inspeccion_Ambulancia
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_temperatura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_ambulancia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1572,7 +2691,7 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.PictureBox pic_combustible;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_temperatura;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label39;
@@ -1632,5 +2751,82 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.Label g7;
         private System.Windows.Forms.Label g10;
         private System.Windows.Forms.Label g1;
+        private System.Windows.Forms.Label lo_1;
+        private System.Windows.Forms.Label lo_2;
+        private System.Windows.Forms.Label l1;
+        private System.Windows.Forms.Label l2;
+        private System.Windows.Forms.Label l4;
+        private System.Windows.Forms.Label l3;
+        private System.Windows.Forms.Label ci2;
+        private System.Windows.Forms.Label ci1;
+        private System.Windows.Forms.Label ci4;
+        private System.Windows.Forms.Label ci3;
+        private System.Windows.Forms.Label ci6;
+        private System.Windows.Forms.Label ci5;
+        private System.Windows.Forms.Label ci8;
+        private System.Windows.Forms.Label ci7;
+        private System.Windows.Forms.Label ci10;
+        private System.Windows.Forms.Label ci9;
+        private System.Windows.Forms.Label ci12;
+        private System.Windows.Forms.Label ci11;
+        private System.Windows.Forms.Label ci14;
+        private System.Windows.Forms.Label ci13;
+        private System.Windows.Forms.Label ci16;
+        private System.Windows.Forms.Label ci15;
+        private System.Windows.Forms.Label ci18;
+        private System.Windows.Forms.Label ci17;
+        private System.Windows.Forms.Label ci20;
+        private System.Windows.Forms.Label ci19;
+        private System.Windows.Forms.Label ci22;
+        private System.Windows.Forms.Label ci21;
+        private System.Windows.Forms.Label ci24;
+        private System.Windows.Forms.Label ci23;
+        private System.Windows.Forms.Label ci26;
+        private System.Windows.Forms.Label ci25;
+        private System.Windows.Forms.Label ci28;
+        private System.Windows.Forms.Label ci27;
+        private System.Windows.Forms.Label ci30;
+        private System.Windows.Forms.Label ci29;
+        private System.Windows.Forms.Label ci32;
+        private System.Windows.Forms.Label ci31;
+        private System.Windows.Forms.Label ci34;
+        private System.Windows.Forms.Label ci33;
+        private System.Windows.Forms.Label ci36;
+        private System.Windows.Forms.Label ci35;
+        private System.Windows.Forms.Label ci38;
+        private System.Windows.Forms.Label ci37;
+        private System.Windows.Forms.Label cio2;
+        private System.Windows.Forms.Label cio1;
+        private System.Windows.Forms.Label cio3;
+        private System.Windows.Forms.Label cio4;
+        private System.Windows.Forms.Label cio5;
+        private System.Windows.Forms.Label cio6;
+        private System.Windows.Forms.Label cio7;
+        private System.Windows.Forms.Label cio8;
+        private System.Windows.Forms.Label cio14;
+        private System.Windows.Forms.Label cio13;
+        private System.Windows.Forms.Label cio12;
+        private System.Windows.Forms.Label cio11;
+        private System.Windows.Forms.Label cio10;
+        private System.Windows.Forms.Label cio9;
+        private System.Windows.Forms.Label cio15;
+        private System.Windows.Forms.Label cio16;
+        private System.Windows.Forms.Label cio17;
+        private System.Windows.Forms.Label cio18;
+        private System.Windows.Forms.Label cio19;
+        private System.Windows.Forms.Label do3;
+        private System.Windows.Forms.Label do2;
+        private System.Windows.Forms.Label do1;
+        private System.Windows.Forms.Label d6;
+        private System.Windows.Forms.Label d5;
+        private System.Windows.Forms.Label d4;
+        private System.Windows.Forms.Label d3;
+        private System.Windows.Forms.Label d2;
+        private System.Windows.Forms.Label d1;
+        private System.Windows.Forms.Label do4;
+        private System.Windows.Forms.Label d8;
+        private System.Windows.Forms.Label d7;
+        private System.Windows.Forms.Label kilometraje;
+        private System.Windows.Forms.Label observaciones_generales;
     }
 }
