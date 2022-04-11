@@ -110,7 +110,38 @@ namespace Inspeccion_Ambulancia
                 k++;
             };
             dr.Close();
+
+
+
+            //Cabina Exterior
+            label_list = new List<Label>(){
+                ce1, ce2, ce3, ce4, ce5, ce6, ce7, ce8, ce9, ce10, ce11, ce12, ce13, ce14, ce15, ce16, ce17, ce18, ce19, ce20, ce21, ce22,
+                ce23, ce24, ce25, ce26, ce27, ce28, ce29, ce30, ce31, ce32, ce33, ce34, ce35, ce36, ce37, ce38, ce39, ce40, ce41, ce42, ce43, ce44
+            };
+            observaciones = new List<Label>(){
+                ceo1, ceo2, ceo3, ceo4, ceo5, ceo6, ceo7, ceo8, ceo9, ceo10, ceo11, ceo12, ceo13, ceo14, ceo15, ceo16, ceo17, ceo18, ceo19, ceo20, ceo21, ceo22
+            };
+
+            str = "select * from cabina_exterior where no_reporte = " + no_reporte.ToString();
+            cmd.CommandText = str;
+            cmd.Connection = main.cn;
+            dr = cmd.ExecuteReader();
+            j = 0; //Numero de pregunta
+            k = 0; //Numero de observación
+            while (dr.Read())
+            {
+                if (dr[2].ToString() == "True")
+                    label_list[j].Visible = true;
+                else if (dr[2].ToString() == "False")
+                    label_list[j + 1].Visible = true;
+
+                j += 2;
+                observaciones[k].Text = dr[3].ToString();
+                k++;
+            };
+            dr.Close();
             
+
 
             //Documentos
 
@@ -142,14 +173,11 @@ namespace Inspeccion_Ambulancia
             dr.Close();
 
             // Otros datos
-            // -- Combustible
 
             str = "select * from otros_datos where no_reporte = " + no_reporte.ToString();
             cmd.CommandText = str;
             cmd.Connection = main.cn;
             dr = cmd.ExecuteReader();
-            j = 0; //Numero de pregunta
-            k = 0; //Numero de observación
             dr.Read();
             pic_combustible.Image = Image.FromFile(dr[1].ToString());
             pic_combustible.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -157,6 +185,36 @@ namespace Inspeccion_Ambulancia
             pic_temperatura.SizeMode = PictureBoxSizeMode.StretchImage;
             kilometraje.Text = dr[3].ToString() + " KM";
             observaciones_generales.Text = dr[4].ToString();
+            dr.Close();
+
+            // Daños
+            str = "select * from danos where no_reporte = " + no_reporte.ToString();
+            cmd.CommandText = str;
+            cmd.Connection = main.cn;
+            dr = cmd.ExecuteReader();
+            dr.Read();
+            pic_ambulancia.Image = Image.FromFile(dr[1].ToString());
+            pic_ambulancia.SizeMode = PictureBoxSizeMode.StretchImage;
+            dr.Close();
+
+            //Descripcion de Daños
+
+            label_list = new List<Label>(){
+                de1, de2, de3, de4, de5, de6, de7, de8, de9, de10, de11, de12, de13, de14, de15, de16, de17, de18
+            };
+
+            str = "select * from descripcion_danos where no_reporte = " + no_reporte.ToString();
+            cmd.CommandText = str;
+            cmd.Connection = main.cn;
+            dr = cmd.ExecuteReader();
+            j = 0; //Numero de pregunta
+            while (dr.Read())
+            {
+                label_list[j].Text = dr[2].ToString();
+                label_list[j].Visible = true;
+                j ++;
+            };
+            dr.Close();
         }
 
     }
