@@ -2660,6 +2660,11 @@ namespace Inspeccion_Ambulancia
             // 
             this.no_reporte.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.no_reporte.Location = new System.Drawing.Point(910, 73);
+            this.no_reporte.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
             this.no_reporte.Minimum = new decimal(new int[] {
             1,
             0,
@@ -2895,6 +2900,11 @@ namespace Inspeccion_Ambulancia
             // 
             this.kilometraje.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.kilometraje.Location = new System.Drawing.Point(405, 325);
+            this.kilometraje.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
             this.kilometraje.Name = "kilometraje";
             this.kilometraje.Size = new System.Drawing.Size(137, 27);
             this.kilometraje.TabIndex = 318;
@@ -2993,6 +3003,7 @@ namespace Inspeccion_Ambulancia
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "inspeccion_ambulancia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inspección de Ambulancia";

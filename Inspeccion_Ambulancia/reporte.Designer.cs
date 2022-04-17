@@ -105,6 +105,11 @@ namespace Inspeccion_Ambulancia
             // no_reporte
             // 
             this.no_reporte.Location = new System.Drawing.Point(310, 21);
+            this.no_reporte.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
             this.no_reporte.Name = "no_reporte";
             this.no_reporte.Size = new System.Drawing.Size(120, 24);
             this.no_reporte.TabIndex = 64;
@@ -138,14 +143,14 @@ namespace Inspeccion_Ambulancia
             this.grd.AllowUserToAddRows = false;
             this.grd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grd.Location = new System.Drawing.Point(215, 70);
+            this.grd.Location = new System.Drawing.Point(201, 70);
             this.grd.MultiSelect = false;
             this.grd.Name = "grd";
             this.grd.ReadOnly = true;
             this.grd.RowHeadersWidth = 51;
             this.grd.RowTemplate.Height = 24;
             this.grd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grd.Size = new System.Drawing.Size(865, 623);
+            this.grd.Size = new System.Drawing.Size(879, 623);
             this.grd.TabIndex = 3;
             // 
             // label2

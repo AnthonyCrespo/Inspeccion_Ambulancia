@@ -92,7 +92,7 @@ namespace Inspeccion_Ambulancia
                  cio1, cio2, cio3, cio4, cio5, cio6, cio7, cio8, cio9, cio10, cio11, cio12, cio13, cio14, cio15, cio16, cio17, cio18, cio19
             };
 
-            str = "select * from cabina_interior where no_reporte = " + no_reporte.ToString();
+            str = "select * from cabina_interior where no_reporte = " + no_reporte.ToString() + " order by no_pregunta";
             cmd.CommandText = str;
             cmd.Connection = main.cn;
             dr = cmd.ExecuteReader();
@@ -122,7 +122,7 @@ namespace Inspeccion_Ambulancia
                 ceo1, ceo2, ceo3, ceo4, ceo5, ceo6, ceo7, ceo8, ceo9, ceo10, ceo11, ceo12, ceo13, ceo14, ceo15, ceo16, ceo17, ceo18, ceo19, ceo20, ceo21, ceo22
             };
 
-            str = "select * from cabina_exterior where no_reporte = " + no_reporte.ToString();
+            str = "select * from cabina_exterior where no_reporte = " + no_reporte.ToString() + " order by no_pregunta";
             cmd.CommandText = str;
             cmd.Connection = main.cn;
             dr = cmd.ExecuteReader();
@@ -153,7 +153,7 @@ namespace Inspeccion_Ambulancia
                  do1, do2, do3, do4
             };
 
-            str = "select * from documentos where no_reporte = " + no_reporte.ToString();
+            str = "select * from documentos where no_reporte = " + no_reporte.ToString() + " order by no_pregunta";
             cmd.CommandText = str;
             cmd.Connection = main.cn;
             dr = cmd.ExecuteReader();
