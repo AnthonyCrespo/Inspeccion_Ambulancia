@@ -42,15 +42,6 @@ namespace Inspeccion_Ambulancia
 
             for (int i = 0; i < 9; i++)
                 label_list[i].Text = dr[i].ToString();
-            //g1.Text = dr[0].ToString();
-            //g2.Text = dr[1].ToString();
-            //g3.Text = dr[2].ToString();
-            //g4.Text = dr[3].ToString();
-            //g5.Text = dr[4].ToString();
-            //g6.Text = dr[5].ToString();
-            //g7.Text = dr[6].ToString();
-            //g8.Text = dr[7].ToString();
-            //g9.Text = dr[8].ToString();
             g10.Text = DateTime.Parse(dr[9].ToString()).ToString("dd-MM-yyyy");
             dr.Close();
 
@@ -65,7 +56,7 @@ namespace Inspeccion_Ambulancia
 
 
             // Limpieza
-            str = "select * from limpieza where no_reporte = " + no_reporte.ToString();
+            str = "select * from limpieza where no_reporte = " + no_reporte.ToString() + " order by no_pregunta";
             cmd.CommandText = str;
             cmd.Connection = main.cn;
             dr = cmd.ExecuteReader();
@@ -203,7 +194,7 @@ namespace Inspeccion_Ambulancia
                 de1, de2, de3, de4, de5, de6, de7, de8, de9, de10, de11, de12, de13, de14, de15, de16, de17, de18
             };
 
-            str = "select * from descripcion_danos where no_reporte = " + no_reporte.ToString();
+            str = "select * from descripcion_danos where no_reporte = " + no_reporte.ToString() + " order by id_descripcion";
             cmd.CommandText = str;
             cmd.Connection = main.cn;
             dr = cmd.ExecuteReader();
