@@ -24,6 +24,8 @@ namespace Inspeccion_Ambulancia
             string str = "Server = 127.0.0.1;Port = 5432; Database=test; User Id = postgres; Password = 1234;";
             cn.ConnectionString = str;
             cn.Open();
+
+            MaximizeBox = false;
         }
 
         private void btn_1_Click(object sender, EventArgs e)

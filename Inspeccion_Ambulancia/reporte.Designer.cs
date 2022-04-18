@@ -29,6 +29,7 @@ namespace Inspeccion_Ambulancia
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(reporte));
             this.Buscador = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.grd = new System.Windows.Forms.DataGridView();
@@ -159,6 +160,7 @@ namespace Inspeccion_Ambulancia
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1309, 807);
             this.Controls.Add(this.Informe);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "reporte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte";
