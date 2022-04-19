@@ -5,7 +5,7 @@ create table datos_generales(
     conductor_recibe varchar not null,
     provincia varchar not null,
     unidad_operativa varchar not null,
-    alfa integer not null,
+    ambulancia varchar not null,
     base_operativa varchar,
     hora time not null,
     fecha date not null
@@ -26,12 +26,9 @@ create table cabina_exterior() inherits(preguntas);
 
 
 
-create table danos(
-    no_reporte integer not null,
-    imagen varchar not null
-);
 
-create table descripcion_danos(
+
+create table danos(
     no_reporte integer not null,
     id_descripcion int not null,
     descripcion varchar
@@ -42,9 +39,9 @@ create table descripcion_danos(
 
 create table otros_datos(
     no_reporte integer not null,
-    combustible varchar not null,
+    combustible int not null,
     temperatura varchar not null,
-    kilometraje int,
+    kilometraje int not null,
     observaciones_generales varchar
 );
 

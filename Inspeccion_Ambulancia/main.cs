@@ -21,7 +21,7 @@ namespace Inspeccion_Ambulancia
 
         private void main_Load(object sender, EventArgs e)
         {
-            string str = "Server = 127.0.0.1;Port = 5432; Database=test; User Id = postgres; Password = 1234;";
+            string str = "Server = 127.0.0.1;Port = 5432; Database=test2; User Id = postgres; Password = 1234;";
             cn.ConnectionString = str;
             cn.Open();
 

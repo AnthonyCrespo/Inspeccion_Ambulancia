@@ -46,30 +46,6 @@ namespace Inspeccion_Ambulancia
             no_reporte.Enabled = false;
         }
 
-        //------------------------------------------------------------------------------
-        //----------------------- Carga de imagenes -------------------------------------
-        //------------------------------------------------------------------------------
-
-
-        // ---------------------- Cargar imagen de la ambulancia --------------------------------
-        private void btn_3_Click(object sender, EventArgs e)
-        {
-            Funciones.cargar_foto(pic_ambulancia);
-        }
-
-        // ---------------------- Cargar imagen de combustible --------------------------------
-        private void btn_4_Click_1(object sender, EventArgs e)
-        {
-            Funciones.cargar_foto(pic_combustible);
-        }
-
-
-        // ---------------------- Cargar imagen de temperatura --------------------------------
-        private void btn_5_Click(object sender, EventArgs e)
-        {
-            Funciones.cargar_foto(pic_temperatura);
-        }
-
 
 
         //--------------------------------------------------------------------------
@@ -79,89 +55,89 @@ namespace Inspeccion_Ambulancia
         private void btn_enviar_Click(object sender, EventArgs e)
         {
 
+
+
             // ------------------------------------------------------------------------------
             // ------ Comprobar si todos los campos obligatorios han sido llenados --------
             // ------------------------------------------------------------------------------
-            foreach (Control c in Datos_generales.Controls)
-            {
-                if (string.IsNullOrEmpty(c.Text))
-                {
-                    Funciones.Mensaje_Llenar_Campos("'Datos Generales'");
-                    return;
+            //foreach (Control c in Datos_generales.Controls)
+            //{
+            //    if (string.IsNullOrEmpty(c.Text))
+            //    {
+            //        Funciones.Mensaje_Llenar_Campos("'Datos Generales'");
+            //        return;
 
-                }
-            }
+            //    }
+            //}
 
-            foreach (ComboBox cb in Limpieza.Controls.OfType<ComboBox>())
-            {
-                if (string.IsNullOrEmpty(cb.Text))
-                {
-                    //Funciones.Mensaje_Llenar_Campos();
-                    Funciones.Mensaje_Llenar_Campos("'Limpieza'");
-                    return;
-                }
-            }
+            //foreach (ComboBox cb in Limpieza.Controls.OfType<ComboBox>())
+            //{
+            //    if (string.IsNullOrEmpty(cb.Text))
+            //    {
+            //        //Funciones.Mensaje_Llenar_Campos();
+            //        Funciones.Mensaje_Llenar_Campos("'Limpieza'");
+            //        return;
+            //    }
+            //}
 
-            foreach (ComboBox cb in Cabina_Interior.Controls.OfType<ComboBox>())
-            {
-                if (string.IsNullOrEmpty(cb.Text))
-                {
-                    Funciones.Mensaje_Llenar_Campos("'Cabina Interior'");
-                    return;
-                }
-            }
+            //foreach (ComboBox cb in Cabina_Interior.Controls.OfType<ComboBox>())
+            //{
+            //    if (string.IsNullOrEmpty(cb.Text))
+            //    {
+            //        Funciones.Mensaje_Llenar_Campos("'Cabina Interior'");
+            //        return;
+            //    }
+            //}
 
-            foreach (ComboBox cb in Documentos.Controls.OfType<ComboBox>())
-            {
-                if (string.IsNullOrEmpty(cb.Text))
-                {
-                    Funciones.Mensaje_Llenar_Campos("'Documentos'");
-                    return;
-                }
-            }
+            //foreach (ComboBox cb in Documentos.Controls.OfType<ComboBox>())
+            //{
+            //    if (string.IsNullOrEmpty(cb.Text))
+            //    {
+            //        Funciones.Mensaje_Llenar_Campos("'Documentos'");
+            //        return;
+            //    }
+            //}
 
-            foreach (ComboBox cb in Cabina_Exterior.Controls.OfType<ComboBox>())
-            {
-                if (string.IsNullOrEmpty(cb.Text))
-                {
-                    Funciones.Mensaje_Llenar_Campos("'Cabina Exterior'");
-                    return;
-                }
-            }
-
-
-            // ------ Daños -----
-            // Comprobar si se ha subido una foto
-            if (pic_ambulancia.Image == null)
-            {
-                MessageBox.Show("Es obligatorio cargar la imagen en la sección 'Daños'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            //foreach (ComboBox cb in Cabina_Exterior.Controls.OfType<ComboBox>())
+            //{
+            //    if (string.IsNullOrEmpty(cb.Text))
+            //    {
+            //        Funciones.Mensaje_Llenar_Campos("'Cabina Exterior'");
+            //        return;
+            //    }
+            //}
 
 
+            //// ------ Daños -----
+            //// Comprobar si se ha subido una foto
+            //if (pic_ambulancia.Image == null)
+            //{
+            //    MessageBox.Show("Es obligatorio cargar la imagen en la sección 'Daños'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
 
 
-            // Otros datos
-
-            foreach (Control c in Otros_datos.Controls)
-
-            {
-                if (c.GetType() != typeof(PictureBox) && string.IsNullOrEmpty(c.Text))
-                {
-                    Funciones.Mensaje_Llenar_Campos("'Otros datos'");
-                    return;
-                }
-
-                if (c.GetType() == typeof(PictureBox))
-                {
-                    if (pic_combustible.Image == null)
-                        MessageBox.Show("Es obligatorio cargar la imagen de Combustible en 'Otros datos'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    if (pic_temperatura.Image == null)
-                        MessageBox.Show("Es obligatorio cargar la imagen de Temperatura en 'Otros datos'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
 
 
+            //// Otros datos
+
+            //foreach (Control c in Otros_datos.Controls)
+
+            //{
+            //    if (c.GetType() != typeof(PictureBox) && string.IsNullOrEmpty(c.Text))
+            //    {
+            //        Funciones.Mensaje_Llenar_Campos("'Otros datos'");
+            //        return;
+            //    }
+
+            //    if (c.GetType() == typeof(PictureBox))
+            //    {
+            //        if (pic_combustible.Image == null)
+            //            MessageBox.Show("Es obligatorio cargar la imagen de Combustible en 'Otros datos'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //        if (pic_temperatura.Image == null)
+            //            MessageBox.Show("Es obligatorio cargar la imagen de Temperatura en 'Otros datos'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //}
 
             //------------------------------------------------------------------------------
             //-----------------------Insertar la informacion en la base de datos -----------
@@ -178,7 +154,7 @@ namespace Inspeccion_Ambulancia
             strSQL += ", trim('" + conductor_entrega.Text + "'), trim('" + conductor_recibe.Text + "')";
             strSQL += ", '" + provincia.Text + "'";
             strSQL += ", '" + unidad_operativa.Text + "'";
-            strSQL += ", " + alfa.Value.ToString();
+            strSQL += ", '" + ambulancia.Text + "'";
             strSQL += ", '" + base_operativa.Text + "'";
             strSQL += ", '" + hora.Text + "', '";
             strSQL += fecha.Value.Date + "')";
@@ -289,21 +265,21 @@ namespace Inspeccion_Ambulancia
 
             // ---------------------------- Daños  -------------------------------------
             //--------------------------------------------------------------------------
-            string nombre = @"C:\Users\Anthony\Pictures\Hospital\" + no_reporte.Text + "_ambulancia.jpg";
-            strSQL = "insert into danos values ";
-            strSQL += "(" + no_reporte.Text + ",'" + nombre + "')";
+            //string nombre = @"C:\Users\Anthony\Pictures\Hospital\" + no_reporte.Text + "_ambulancia.jpg";
+            //strSQL = "insert into danos values ";
+            //strSQL += "(" + no_reporte.Text + ",'" + nombre + "')";
 
-            cmd.CommandText = strSQL;
-            cmd.Connection = main.cn;
-            cmd.ExecuteNonQuery();
+            //cmd.CommandText = strSQL;
+            //cmd.Connection = main.cn;
+            //cmd.ExecuteNonQuery();
 
 
-            //Save image
-            int width = pic_ambulancia.Size.Width;
-            int height = pic_ambulancia.Size.Height;
-            Bitmap bm = new Bitmap(width, height);
-            pic_ambulancia.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
-            bm.Save(nombre);
+            ////Save image
+            //int width = pic_ambulancia.Size.Width;
+            //int height = pic_ambulancia.Size.Height;
+            //Bitmap bm = new Bitmap(width, height);
+            //pic_ambulancia.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
+            //bm.Save(nombre);
 
 
             //Guardar observaciones
@@ -312,25 +288,29 @@ namespace Inspeccion_Ambulancia
 
             textlist = new List<TextBox>(){
             textBox48, textBox49, textBox50, textBox51, textBox52, textBox53, textBox54, textBox55,
-            textBox56, textBox57, textBox58, textBox59, textBox60, textBox61, textBox62, textBox63, textBox64, textBox65
+            textBox56, textBox57
             };
 
             int j = 48;
             int k = 1; //contador id observacion: 1 - 18
             strSQL = "";
 
-            while (j < 66 && !string.IsNullOrEmpty(textlist[j - 48].Text))
+            bool empty = true;
+            while (j < 58)
             {
-                strSQL += "('" + no_reporte.Text + "'," + k + ",'" + textlist[j - 48].Text + "')";
-                if (j < 65 && !string.IsNullOrEmpty(textlist[j - 47].Text))
-                    strSQL += ", ";
+                if (!string.IsNullOrEmpty(textlist[j - 48].Text))
+                {
+                    empty = false;
+                    strSQL += "insert into danos values ('" + no_reporte.Text + "'," + k + ",'" + textlist[j - 48].Text + "'); ";
+                    //if (j < 56  || (j == 56 && !string.IsNullOrEmpty(textlist[j+1].Text)))
+                }
                 j++; k++;
             }
 
             //Si hay al menos una observacion, se inserta a la tabla danos_observaciones
-            if (string.Compare(strSQL, "") != 0)
+            if (!empty)
             {
-                strSQL = "insert into descripcion_danos values " + strSQL;
+                MessageBox.Show(strSQL);
                 cmd.CommandText = strSQL;
                 cmd.Connection = main.cn;
                 cmd.ExecuteNonQuery();
@@ -341,29 +321,30 @@ namespace Inspeccion_Ambulancia
 
             // ----------------- Otros datos  ----------------
 
-            string nombre1 = @"C:\Users\Anthony\Pictures\Hospital\" + no_reporte.Text + "_combustible.jpg";
-            string nombre2 = @"C:\Users\Anthony\Pictures\Hospital\" + no_reporte.Text + "_temperatura.jpg";
+            //string nombre1 = @"C:\Users\Anthony\Pictures\Hospital\" + no_reporte.Text + "_combustible.jpg";
+            //string nombre2 = @"C:\Users\Anthony\Pictures\Hospital\" + no_reporte.Text + "_temperatura.jpg";
             strSQL = "insert into otros_datos values ";
-            strSQL += "(" + no_reporte.Text + ",'" + nombre1 + "','" + nombre2 + "'," + kilometraje.Text +  ",'" + observaciones_generales.Text +"')";
+            strSQL += "(" + no_reporte.Text + "," + combustible.Text + ",'" + temperatura.Text + "'," + kilometraje.Text +  ",'" + observaciones_generales.Text +"')";
+            MessageBox.Show(strSQL);
             cmd.CommandText = strSQL;
             cmd.Connection = main.cn;
             cmd.ExecuteNonQuery();
 
 
-            //Guardar imagen combustible
-            width = pic_combustible.Size.Width;
-            height = pic_combustible.Size.Height;
-            bm = new Bitmap(width, height);
-            pic_combustible.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
-            bm.Save(nombre1);
+            ////Guardar imagen combustible
+            //width = pic_combustible.Size.Width;
+            //height = pic_combustible.Size.Height;
+            //bm = new Bitmap(width, height);
+            //pic_combustible.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
+            //bm.Save(nombre1);
 
 
-            //Guardar imagen_temperatura
-            width = pic_temperatura.Size.Width;
-            height = pic_temperatura.Size.Height;
-            bm = new Bitmap(width, height);
-            pic_temperatura.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
-            bm.Save(nombre2);
+            ////Guardar imagen_temperatura
+            //width = pic_temperatura.Size.Width;
+            //height = pic_temperatura.Size.Height;
+            //bm = new Bitmap(width, height);
+            //pic_temperatura.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
+            //bm.Save(nombre2);
 
 
             Funciones.Mensaje_Registro_Insertado();

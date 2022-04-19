@@ -48,28 +48,6 @@ namespace Inspeccion_Ambulancia
             form.BringToFront();
         }
 
-        /// Cargar foto
-        public static void cargar_foto(PictureBox pb)
-        {
-            try
-            {
-                OpenFileDialog abrirImagen = new OpenFileDialog();
-                abrirImagen.Filter = "Image Files|*.jpg;*.jpeg;*.png;...";
-
-
-                //abrir el explorador de archivos
-                if (abrirImagen.ShowDialog() == DialogResult.OK)
-                {
-                    pb.ImageLocation = abrirImagen.FileName;
-                    pb.SizeMode = PictureBoxSizeMode.StretchImage;
-                }
-            }
-
-            catch (Exception)
-            {
-                MessageBox.Show("Ocurrió un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         public static void Mensaje_Llenar_Campos(string tab)
         {

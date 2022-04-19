@@ -170,39 +170,41 @@ namespace Inspeccion_Ambulancia
             cmd.Connection = main.cn;
             dr = cmd.ExecuteReader();
             dr.Read();
-            pic_combustible.Image = Image.FromFile(dr[1].ToString());
-            pic_combustible.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic_temperatura.Image = Image.FromFile(dr[2].ToString());
-            pic_temperatura.SizeMode = PictureBoxSizeMode.StretchImage;
+            //pic_combustible.Image = Image.FromFile(dr[1].ToString());
+            //pic_combustible.SizeMode = PictureBoxSizeMode.StretchImage;
+            //pic_temperatura.Image = Image.FromFile(dr[2].ToString());
+            //pic_temperatura.SizeMode = PictureBoxSizeMode.StretchImage;
+            combustible.Text = dr[1].ToString() + " %";
+            temperatura.Text = dr[2].ToString();
             kilometraje.Text = dr[3].ToString() + " KM";
             observaciones_generales.Text = dr[4].ToString();
             dr.Close();
 
             // Daños
-            str = "select * from danos where no_reporte = " + no_reporte.ToString();
-            cmd.CommandText = str;
-            cmd.Connection = main.cn;
-            dr = cmd.ExecuteReader();
-            dr.Read();
-            pic_ambulancia.Image = Image.FromFile(dr[1].ToString());
-            pic_ambulancia.SizeMode = PictureBoxSizeMode.StretchImage;
-            dr.Close();
+            //str = "select * from danos where no_reporte = " + no_reporte.ToString();
+            //cmd.CommandText = str;
+            //cmd.Connection = main.cn;
+            //dr = cmd.ExecuteReader();
+            //dr.Read();
+            //pic_ambulancia.Image = Image.FromFile(dr[1].ToString());
+            //pic_ambulancia.SizeMode = PictureBoxSizeMode.StretchImage;
+            //dr.Close();
 
-            //Descripcion de Daños
+            ////Descripcion de Daños
 
             label_list = new List<Label>(){
-                de1, de2, de3, de4, de5, de6, de7, de8, de9, de10, de11, de12, de13, de14, de15, de16, de17, de18
+                de1, de2, de3, de4, de5, de6, de7, de8, de9, de10
             };
 
-            str = "select * from descripcion_danos where no_reporte = " + no_reporte.ToString() + " order by id_descripcion";
+            str = "select * from danos where no_reporte = " + no_reporte.ToString() + " order by id_descripcion";
             cmd.CommandText = str;
             cmd.Connection = main.cn;
             dr = cmd.ExecuteReader();
             j = 0; //Numero de pregunta
             while (dr.Read())
             {
-                label_list[j].Text = dr[2].ToString();
-                label_list[j].Visible = true;
+                label_list[Convert.ToInt32(dr[1])-1].Text = dr[2].ToString();
+                label_list[Convert.ToInt32(dr[1]) - 1].Visible = true;
                 j ++;
             };
             dr.Close();

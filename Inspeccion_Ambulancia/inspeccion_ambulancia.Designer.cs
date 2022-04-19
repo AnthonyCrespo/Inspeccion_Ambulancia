@@ -34,16 +34,6 @@ namespace Inspeccion_Ambulancia
             this.pic_msp = new System.Windows.Forms.PictureBox();
             this.pic_escudo = new System.Windows.Forms.PictureBox();
             this.Danos = new System.Windows.Forms.TabPage();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
@@ -53,15 +43,6 @@ namespace Inspeccion_Ambulancia
             this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.textBox65 = new System.Windows.Forms.TextBox();
-            this.textBox64 = new System.Windows.Forms.TextBox();
-            this.textBox63 = new System.Windows.Forms.TextBox();
-            this.textBox62 = new System.Windows.Forms.TextBox();
-            this.textBox61 = new System.Windows.Forms.TextBox();
-            this.textBox60 = new System.Windows.Forms.TextBox();
-            this.textBox59 = new System.Windows.Forms.TextBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
-            this.textBox57 = new System.Windows.Forms.TextBox();
             this.textBox56 = new System.Windows.Forms.TextBox();
             this.textBox55 = new System.Windows.Forms.TextBox();
             this.textBox54 = new System.Windows.Forms.TextBox();
@@ -73,7 +54,6 @@ namespace Inspeccion_Ambulancia
             this.textBox48 = new System.Windows.Forms.TextBox();
             this.label57 = new System.Windows.Forms.Label();
             this.pic_ambulancia = new System.Windows.Forms.PictureBox();
-            this.btn_3 = new System.Windows.Forms.Button();
             this.Cabina_Exterior = new System.Windows.Forms.TabPage();
             this.textBox47 = new System.Windows.Forms.TextBox();
             this.comboBox47 = new System.Windows.Forms.ComboBox();
@@ -231,7 +211,6 @@ namespace Inspeccion_Ambulancia
             this.Datos_generales = new System.Windows.Forms.TabPage();
             this.hora = new System.Windows.Forms.DateTimePicker();
             this.provincia = new System.Windows.Forms.ComboBox();
-            this.alfa = new System.Windows.Forms.NumericUpDown();
             this.lbl_alfa = new System.Windows.Forms.Label();
             this.base_operativa = new System.Windows.Forms.TextBox();
             this.lnl_base_operativa = new System.Windows.Forms.Label();
@@ -252,8 +231,6 @@ namespace Inspeccion_Ambulancia
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Otros_datos = new System.Windows.Forms.TabPage();
             this.btn_enviar = new System.Windows.Forms.Button();
-            this.btn_5 = new System.Windows.Forms.Button();
-            this.btn_4 = new System.Windows.Forms.Button();
             this.kilometraje = new System.Windows.Forms.NumericUpDown();
             this.label82 = new System.Windows.Forms.Label();
             this.observaciones_generales = new System.Windows.Forms.TextBox();
@@ -263,6 +240,11 @@ namespace Inspeccion_Ambulancia
             this.label79 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.pic_combustible = new System.Windows.Forms.PictureBox();
+            this.combustible = new System.Windows.Forms.NumericUpDown();
+            this.temperatura = new System.Windows.Forms.ComboBox();
+            this.ambulancia = new System.Windows.Forms.TextBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.textBox57 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
             this.Danos.SuspendLayout();
@@ -272,7 +254,6 @@ namespace Inspeccion_Ambulancia
             this.Cabina_Interior.SuspendLayout();
             this.Limpieza.SuspendLayout();
             this.Datos_generales.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.alfa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.no_reporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coordinacion_zonal)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -280,6 +261,7 @@ namespace Inspeccion_Ambulancia
             ((System.ComponentModel.ISupportInitialize)(this.kilometraje)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_temperatura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combustible)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -321,15 +303,7 @@ namespace Inspeccion_Ambulancia
             this.Danos.AutoScroll = true;
             this.Danos.AutoScrollMargin = new System.Drawing.Size(0, 50);
             this.Danos.Controls.Add(this.label58);
-            this.Danos.Controls.Add(this.label72);
-            this.Danos.Controls.Add(this.label75);
-            this.Danos.Controls.Add(this.label76);
-            this.Danos.Controls.Add(this.label77);
-            this.Danos.Controls.Add(this.label71);
-            this.Danos.Controls.Add(this.label69);
-            this.Danos.Controls.Add(this.label70);
-            this.Danos.Controls.Add(this.label68);
-            this.Danos.Controls.Add(this.label73);
+            this.Danos.Controls.Add(this.textBox57);
             this.Danos.Controls.Add(this.label74);
             this.Danos.Controls.Add(this.label66);
             this.Danos.Controls.Add(this.label65);
@@ -339,15 +313,6 @@ namespace Inspeccion_Ambulancia
             this.Danos.Controls.Add(this.label61);
             this.Danos.Controls.Add(this.label60);
             this.Danos.Controls.Add(this.label59);
-            this.Danos.Controls.Add(this.textBox65);
-            this.Danos.Controls.Add(this.textBox64);
-            this.Danos.Controls.Add(this.textBox63);
-            this.Danos.Controls.Add(this.textBox62);
-            this.Danos.Controls.Add(this.textBox61);
-            this.Danos.Controls.Add(this.textBox60);
-            this.Danos.Controls.Add(this.textBox59);
-            this.Danos.Controls.Add(this.textBox58);
-            this.Danos.Controls.Add(this.textBox57);
             this.Danos.Controls.Add(this.textBox56);
             this.Danos.Controls.Add(this.textBox55);
             this.Danos.Controls.Add(this.textBox54);
@@ -359,7 +324,6 @@ namespace Inspeccion_Ambulancia
             this.Danos.Controls.Add(this.textBox48);
             this.Danos.Controls.Add(this.label57);
             this.Danos.Controls.Add(this.pic_ambulancia);
-            this.Danos.Controls.Add(this.btn_3);
             this.Danos.Location = new System.Drawing.Point(4, 29);
             this.Danos.Name = "Danos";
             this.Danos.Padding = new System.Windows.Forms.Padding(3);
@@ -367,115 +331,6 @@ namespace Inspeccion_Ambulancia
             this.Danos.TabIndex = 5;
             this.Danos.Text = "Daños";
             this.Danos.UseVisualStyleBackColor = true;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(80, 434);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(367, 17);
-            this.label58.TabIndex = 333;
-            this.label58.Text = "Por favor, suba la imagen en formato JPG, JPEG, o PNG";
-            // 
-            // label72
-            // 
-            this.label72.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.Location = new System.Drawing.Point(556, 678);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(29, 20);
-            this.label72.TabIndex = 332;
-            this.label72.Text = "18";
-            // 
-            // label75
-            // 
-            this.label75.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.Location = new System.Drawing.Point(556, 644);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(29, 20);
-            this.label75.TabIndex = 331;
-            this.label75.Text = "17";
-            // 
-            // label76
-            // 
-            this.label76.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.Location = new System.Drawing.Point(556, 608);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(29, 20);
-            this.label76.TabIndex = 330;
-            this.label76.Text = "16";
-            // 
-            // label77
-            // 
-            this.label77.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label77.AutoSize = true;
-            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.Location = new System.Drawing.Point(556, 573);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(29, 20);
-            this.label77.TabIndex = 329;
-            this.label77.Text = "15";
-            // 
-            // label71
-            // 
-            this.label71.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(556, 541);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(29, 20);
-            this.label71.TabIndex = 328;
-            this.label71.Text = "14";
-            // 
-            // label69
-            // 
-            this.label69.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(556, 508);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(29, 20);
-            this.label69.TabIndex = 327;
-            this.label69.Text = "13";
-            // 
-            // label70
-            // 
-            this.label70.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(556, 472);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(29, 20);
-            this.label70.TabIndex = 326;
-            this.label70.Text = "12";
-            // 
-            // label68
-            // 
-            this.label68.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(556, 437);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(29, 20);
-            this.label68.TabIndex = 325;
-            this.label68.Text = "11";
-            // 
-            // label73
-            // 
-            this.label73.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(556, 401);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(29, 20);
-            this.label73.TabIndex = 324;
-            this.label73.Text = "10";
             // 
             // label74
             // 
@@ -576,87 +431,6 @@ namespace Inspeccion_Ambulancia
             this.label59.TabIndex = 315;
             this.label59.Text = "1";
             // 
-            // textBox65
-            // 
-            this.textBox65.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox65.Location = new System.Drawing.Point(592, 678);
-            this.textBox65.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(468, 27);
-            this.textBox65.TabIndex = 314;
-            // 
-            // textBox64
-            // 
-            this.textBox64.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox64.Location = new System.Drawing.Point(592, 643);
-            this.textBox64.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(468, 27);
-            this.textBox64.TabIndex = 313;
-            // 
-            // textBox63
-            // 
-            this.textBox63.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox63.Location = new System.Drawing.Point(592, 608);
-            this.textBox63.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(468, 27);
-            this.textBox63.TabIndex = 312;
-            // 
-            // textBox62
-            // 
-            this.textBox62.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox62.Location = new System.Drawing.Point(592, 573);
-            this.textBox62.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(468, 27);
-            this.textBox62.TabIndex = 311;
-            // 
-            // textBox61
-            // 
-            this.textBox61.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox61.Location = new System.Drawing.Point(592, 538);
-            this.textBox61.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(468, 27);
-            this.textBox61.TabIndex = 310;
-            // 
-            // textBox60
-            // 
-            this.textBox60.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox60.Location = new System.Drawing.Point(592, 503);
-            this.textBox60.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(468, 27);
-            this.textBox60.TabIndex = 309;
-            // 
-            // textBox59
-            // 
-            this.textBox59.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox59.Location = new System.Drawing.Point(592, 469);
-            this.textBox59.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(468, 27);
-            this.textBox59.TabIndex = 308;
-            // 
-            // textBox58
-            // 
-            this.textBox58.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox58.Location = new System.Drawing.Point(592, 434);
-            this.textBox58.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(468, 27);
-            this.textBox58.TabIndex = 307;
-            // 
-            // textBox57
-            // 
-            this.textBox57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox57.Location = new System.Drawing.Point(592, 398);
-            this.textBox57.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(468, 27);
-            this.textBox57.TabIndex = 306;
-            // 
             // textBox56
             // 
             this.textBox56.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -752,21 +526,13 @@ namespace Inspeccion_Ambulancia
             // pic_ambulancia
             // 
             this.pic_ambulancia.BackColor = System.Drawing.Color.LightGray;
-            this.pic_ambulancia.Location = new System.Drawing.Point(83, 118);
+            this.pic_ambulancia.Image = ((System.Drawing.Image)(resources.GetObject("pic_ambulancia.Image")));
+            this.pic_ambulancia.Location = new System.Drawing.Point(97, 89);
             this.pic_ambulancia.Name = "pic_ambulancia";
             this.pic_ambulancia.Size = new System.Drawing.Size(400, 287);
+            this.pic_ambulancia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_ambulancia.TabIndex = 3;
             this.pic_ambulancia.TabStop = false;
-            // 
-            // btn_3
-            // 
-            this.btn_3.Location = new System.Drawing.Point(83, 457);
-            this.btn_3.Name = "btn_3";
-            this.btn_3.Size = new System.Drawing.Size(186, 50);
-            this.btn_3.TabIndex = 1;
-            this.btn_3.Text = "Subir imagen";
-            this.btn_3.UseVisualStyleBackColor = true;
-            this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
             // 
             // Cabina_Exterior
             // 
@@ -2547,9 +2313,9 @@ namespace Inspeccion_Ambulancia
             // 
             // Datos_generales
             // 
+            this.Datos_generales.Controls.Add(this.ambulancia);
             this.Datos_generales.Controls.Add(this.hora);
             this.Datos_generales.Controls.Add(this.provincia);
-            this.Datos_generales.Controls.Add(this.alfa);
             this.Datos_generales.Controls.Add(this.lbl_alfa);
             this.Datos_generales.Controls.Add(this.base_operativa);
             this.Datos_generales.Controls.Add(this.lnl_base_operativa);
@@ -2596,24 +2362,6 @@ namespace Inspeccion_Ambulancia
             this.provincia.Size = new System.Drawing.Size(167, 28);
             this.provincia.TabIndex = 74;
             // 
-            // alfa
-            // 
-            this.alfa.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.alfa.Location = new System.Drawing.Point(910, 166);
-            this.alfa.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.alfa.Name = "alfa";
-            this.alfa.Size = new System.Drawing.Size(190, 27);
-            this.alfa.TabIndex = 73;
-            this.alfa.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // lbl_alfa
             // 
             this.lbl_alfa.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -2621,9 +2369,9 @@ namespace Inspeccion_Ambulancia
             this.lbl_alfa.Location = new System.Drawing.Point(812, 170);
             this.lbl_alfa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_alfa.Name = "lbl_alfa";
-            this.lbl_alfa.Size = new System.Drawing.Size(73, 20);
+            this.lbl_alfa.Size = new System.Drawing.Size(101, 20);
             this.lbl_alfa.TabIndex = 72;
-            this.lbl_alfa.Text = "Alfa No.:";
+            this.lbl_alfa.Text = "Ambulancia:";
             // 
             // base_operativa
             // 
@@ -2838,9 +2586,9 @@ namespace Inspeccion_Ambulancia
             // 
             // Otros_datos
             // 
+            this.Otros_datos.Controls.Add(this.temperatura);
+            this.Otros_datos.Controls.Add(this.combustible);
             this.Otros_datos.Controls.Add(this.btn_enviar);
-            this.Otros_datos.Controls.Add(this.btn_5);
-            this.Otros_datos.Controls.Add(this.btn_4);
             this.Otros_datos.Controls.Add(this.kilometraje);
             this.Otros_datos.Controls.Add(this.label82);
             this.Otros_datos.Controls.Add(this.observaciones_generales);
@@ -2873,28 +2621,6 @@ namespace Inspeccion_Ambulancia
             this.btn_enviar.Text = "Enviar";
             this.btn_enviar.UseVisualStyleBackColor = false;
             this.btn_enviar.Click += new System.EventHandler(this.btn_enviar_Click);
-            // 
-            // btn_5
-            // 
-            this.btn_5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_5.Location = new System.Drawing.Point(655, 238);
-            this.btn_5.Name = "btn_5";
-            this.btn_5.Size = new System.Drawing.Size(186, 50);
-            this.btn_5.TabIndex = 320;
-            this.btn_5.Text = "Subir imagen";
-            this.btn_5.UseVisualStyleBackColor = true;
-            this.btn_5.Click += new System.EventHandler(this.btn_5_Click);
-            // 
-            // btn_4
-            // 
-            this.btn_4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_4.Location = new System.Drawing.Point(132, 238);
-            this.btn_4.Name = "btn_4";
-            this.btn_4.Size = new System.Drawing.Size(186, 50);
-            this.btn_4.TabIndex = 319;
-            this.btn_4.Text = "Subir imagen";
-            this.btn_4.UseVisualStyleBackColor = true;
-            this.btn_4.Click += new System.EventHandler(this.btn_4_Click_1);
             // 
             // kilometraje
             // 
@@ -2955,9 +2681,10 @@ namespace Inspeccion_Ambulancia
             // 
             this.pic_temperatura.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pic_temperatura.BackColor = System.Drawing.Color.Gainsboro;
-            this.pic_temperatura.Location = new System.Drawing.Point(655, 106);
+            this.pic_temperatura.Image = ((System.Drawing.Image)(resources.GetObject("pic_temperatura.Image")));
+            this.pic_temperatura.Location = new System.Drawing.Point(668, 85);
             this.pic_temperatura.Name = "pic_temperatura";
-            this.pic_temperatura.Size = new System.Drawing.Size(330, 117);
+            this.pic_temperatura.Size = new System.Drawing.Size(330, 138);
             this.pic_temperatura.TabIndex = 7;
             this.pic_temperatura.TabStop = false;
             // 
@@ -2966,7 +2693,7 @@ namespace Inspeccion_Ambulancia
             this.label79.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label79.AutoSize = true;
             this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(755, 45);
+            this.label79.Location = new System.Drawing.Point(760, 45);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(145, 20);
             this.label79.TabIndex = 6;
@@ -2987,11 +2714,63 @@ namespace Inspeccion_Ambulancia
             // 
             this.pic_combustible.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pic_combustible.BackColor = System.Drawing.Color.Gainsboro;
-            this.pic_combustible.Location = new System.Drawing.Point(132, 100);
+            this.pic_combustible.Image = ((System.Drawing.Image)(resources.GetObject("pic_combustible.Image")));
+            this.pic_combustible.Location = new System.Drawing.Point(132, 85);
             this.pic_combustible.Name = "pic_combustible";
-            this.pic_combustible.Size = new System.Drawing.Size(330, 123);
+            this.pic_combustible.Size = new System.Drawing.Size(330, 138);
             this.pic_combustible.TabIndex = 0;
             this.pic_combustible.TabStop = false;
+            // 
+            // combustible
+            // 
+            this.combustible.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.combustible.Location = new System.Drawing.Point(226, 238);
+            this.combustible.Name = "combustible";
+            this.combustible.Size = new System.Drawing.Size(137, 27);
+            this.combustible.TabIndex = 322;
+            // 
+            // temperatura
+            // 
+            this.temperatura.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.temperatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.temperatura.FormattingEnabled = true;
+            this.temperatura.Items.AddRange(new object[] {
+            "Frío",
+            "Medio",
+            "Caliente"});
+            this.temperatura.Location = new System.Drawing.Point(764, 238);
+            this.temperatura.Name = "temperatura";
+            this.temperatura.Size = new System.Drawing.Size(141, 28);
+            this.temperatura.TabIndex = 323;
+            // 
+            // ambulancia
+            // 
+            this.ambulancia.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ambulancia.Location = new System.Drawing.Point(921, 165);
+            this.ambulancia.Margin = new System.Windows.Forms.Padding(4);
+            this.ambulancia.Name = "ambulancia";
+            this.ambulancia.Size = new System.Drawing.Size(179, 27);
+            this.ambulancia.TabIndex = 76;
+            // 
+            // label58
+            // 
+            this.label58.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(556, 401);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(29, 20);
+            this.label58.TabIndex = 325;
+            this.label58.Text = "10";
+            // 
+            // textBox57
+            // 
+            this.textBox57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox57.Location = new System.Drawing.Point(592, 398);
+            this.textBox57.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox57.Name = "textBox57";
+            this.textBox57.Size = new System.Drawing.Size(468, 27);
+            this.textBox57.TabIndex = 324;
             // 
             // inspeccion_ambulancia
             // 
@@ -3023,7 +2802,6 @@ namespace Inspeccion_Ambulancia
             this.Limpieza.PerformLayout();
             this.Datos_generales.ResumeLayout(false);
             this.Datos_generales.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.alfa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.no_reporte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coordinacion_zonal)).EndInit();
             this.tabControl1.ResumeLayout(false);
@@ -3032,6 +2810,7 @@ namespace Inspeccion_Ambulancia
             ((System.ComponentModel.ISupportInitialize)(this.kilometraje)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_temperatura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combustible)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3213,18 +2992,13 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.TextBox textBox37;
         private System.Windows.Forms.ComboBox comboBox37;
         private System.Windows.Forms.ComboBox provincia;
-        private System.Windows.Forms.NumericUpDown alfa;
         private System.Windows.Forms.Label lbl_alfa;
         private System.Windows.Forms.TextBox base_operativa;
         private System.Windows.Forms.Label lnl_base_operativa;
         private System.Windows.Forms.Label lnl_provincia;
-        private System.Windows.Forms.Button btn_3;
         private System.Windows.Forms.PictureBox pic_ambulancia;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.TextBox textBox48;
-        private System.Windows.Forms.TextBox textBox59;
-        private System.Windows.Forms.TextBox textBox58;
-        private System.Windows.Forms.TextBox textBox57;
         private System.Windows.Forms.TextBox textBox56;
         private System.Windows.Forms.TextBox textBox55;
         private System.Windows.Forms.TextBox textBox54;
@@ -3233,36 +3007,18 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.TextBox textBox53;
         private System.Windows.Forms.TextBox textBox50;
         private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox textBox65;
-        private System.Windows.Forms.TextBox textBox64;
-        private System.Windows.Forms.TextBox textBox63;
-        private System.Windows.Forms.TextBox textBox62;
-        private System.Windows.Forms.TextBox textBox61;
-        private System.Windows.Forms.TextBox textBox60;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label58;
         private System.Windows.Forms.DateTimePicker hora;
         private System.Windows.Forms.TabPage Otros_datos;
         private System.Windows.Forms.Button btn_enviar;
-        private System.Windows.Forms.Button btn_5;
-        private System.Windows.Forms.Button btn_4;
         private System.Windows.Forms.NumericUpDown kilometraje;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.TextBox observaciones_generales;
@@ -3272,5 +3028,10 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.PictureBox pic_combustible;
+        private System.Windows.Forms.NumericUpDown combustible;
+        private System.Windows.Forms.ComboBox temperatura;
+        private System.Windows.Forms.TextBox ambulancia;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.TextBox textBox57;
     }
 }
