@@ -58,58 +58,58 @@ namespace Inspeccion_Ambulancia
 
 
             // ------------------------------------------------------------------------------
-            // ------ Comprobar si todos los campos obligatorios han sido llenados --------
-            // ------------------------------------------------------------------------------
-            //foreach (Control c in Datos_generales.Controls)
-            //{
-            //    if (string.IsNullOrEmpty(c.Text))
-            //    {
-            //        Funciones.Mensaje_Llenar_Campos("'Datos Generales'");
-            //        return;
+            // ------Comprobar si todos los campos obligatorios han sido llenados --------
+            //------------------------------------------------------------------------------
+            foreach (Control c in Datos_generales.Controls)
+            {
+                if (string.IsNullOrEmpty(c.Text))
+                {
+                    Funciones.Mensaje_Llenar_Campos("'Datos Generales'");
+                    return;
 
-            //    }
-            //}
+                }
+            }
 
-            //foreach (ComboBox cb in Limpieza.Controls.OfType<ComboBox>())
-            //{
-            //    if (string.IsNullOrEmpty(cb.Text))
-            //    {
-            //        //Funciones.Mensaje_Llenar_Campos();
-            //        Funciones.Mensaje_Llenar_Campos("'Limpieza'");
-            //        return;
-            //    }
-            //}
+            foreach (ComboBox cb in Limpieza.Controls.OfType<ComboBox>())
+            {
+                if (string.IsNullOrEmpty(cb.Text))
+                {
+                    //Funciones.Mensaje_Llenar_Campos();
+                    Funciones.Mensaje_Llenar_Campos("'Limpieza'");
+                    return;
+                }
+            }
 
-            //foreach (ComboBox cb in Cabina_Interior.Controls.OfType<ComboBox>())
-            //{
-            //    if (string.IsNullOrEmpty(cb.Text))
-            //    {
-            //        Funciones.Mensaje_Llenar_Campos("'Cabina Interior'");
-            //        return;
-            //    }
-            //}
+            foreach (ComboBox cb in Cabina_Interior.Controls.OfType<ComboBox>())
+            {
+                if (string.IsNullOrEmpty(cb.Text))
+                {
+                    Funciones.Mensaje_Llenar_Campos("'Cabina Interior'");
+                    return;
+                }
+            }
 
-            //foreach (ComboBox cb in Documentos.Controls.OfType<ComboBox>())
-            //{
-            //    if (string.IsNullOrEmpty(cb.Text))
-            //    {
-            //        Funciones.Mensaje_Llenar_Campos("'Documentos'");
-            //        return;
-            //    }
-            //}
+            foreach (ComboBox cb in Documentos.Controls.OfType<ComboBox>())
+            {
+                if (string.IsNullOrEmpty(cb.Text))
+                {
+                    Funciones.Mensaje_Llenar_Campos("'Documentos'");
+                    return;
+                }
+            }
 
-            //foreach (ComboBox cb in Cabina_Exterior.Controls.OfType<ComboBox>())
-            //{
-            //    if (string.IsNullOrEmpty(cb.Text))
-            //    {
-            //        Funciones.Mensaje_Llenar_Campos("'Cabina Exterior'");
-            //        return;
-            //    }
-            //}
+            foreach (ComboBox cb in Cabina_Exterior.Controls.OfType<ComboBox>())
+            {
+                if (string.IsNullOrEmpty(cb.Text))
+                {
+                    Funciones.Mensaje_Llenar_Campos("'Cabina Exterior'");
+                    return;
+                }
+            }
 
 
-            //// ------ Daños -----
-            //// Comprobar si se ha subido una foto
+            // ------ Daños -----
+            // Comprobar si se ha subido una foto
             //if (pic_ambulancia.Image == null)
             //{
             //    MessageBox.Show("Es obligatorio cargar la imagen en la sección 'Daños'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -119,25 +119,17 @@ namespace Inspeccion_Ambulancia
 
 
 
-            //// Otros datos
+            // Otros datos
 
-            //foreach (Control c in Otros_datos.Controls)
+            foreach (Control c in Otros_datos.Controls)
 
-            //{
-            //    if (c.GetType() != typeof(PictureBox) && string.IsNullOrEmpty(c.Text))
-            //    {
-            //        Funciones.Mensaje_Llenar_Campos("'Otros datos'");
-            //        return;
-            //    }
-
-            //    if (c.GetType() == typeof(PictureBox))
-            //    {
-            //        if (pic_combustible.Image == null)
-            //            MessageBox.Show("Es obligatorio cargar la imagen de Combustible en 'Otros datos'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        if (pic_temperatura.Image == null)
-            //            MessageBox.Show("Es obligatorio cargar la imagen de Temperatura en 'Otros datos'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
+            {
+                if (c.GetType() != typeof(PictureBox) && string.IsNullOrEmpty(c.Text) && c.Name != "observaciones_generales")
+                {
+                    Funciones.Mensaje_Llenar_Campos("'Otros datos'");
+                    return;
+                }
+            }
 
             //------------------------------------------------------------------------------
             //-----------------------Insertar la informacion en la base de datos -----------
@@ -310,7 +302,6 @@ namespace Inspeccion_Ambulancia
             //Si hay al menos una observacion, se inserta a la tabla danos_observaciones
             if (!empty)
             {
-                MessageBox.Show(strSQL);
                 cmd.CommandText = strSQL;
                 cmd.Connection = main.cn;
                 cmd.ExecuteNonQuery();
