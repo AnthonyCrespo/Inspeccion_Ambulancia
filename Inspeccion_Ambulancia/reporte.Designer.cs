@@ -65,7 +65,7 @@ namespace Inspeccion_Ambulancia
             // btn_generar_reporte
             // 
             this.btn_generar_reporte.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_generar_reporte.Location = new System.Drawing.Point(904, 705);
+            this.btn_generar_reporte.Location = new System.Drawing.Point(904, 686);
             this.btn_generar_reporte.Name = "btn_generar_reporte";
             this.btn_generar_reporte.Size = new System.Drawing.Size(155, 47);
             this.btn_generar_reporte.TabIndex = 66;
@@ -131,7 +131,7 @@ namespace Inspeccion_Ambulancia
             this.grd.RowHeadersWidth = 51;
             this.grd.RowTemplate.Height = 24;
             this.grd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grd.Size = new System.Drawing.Size(858, 623);
+            this.grd.Size = new System.Drawing.Size(858, 583);
             this.grd.TabIndex = 3;
             // 
             // label2
