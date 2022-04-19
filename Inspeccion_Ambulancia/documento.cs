@@ -170,10 +170,6 @@ namespace Inspeccion_Ambulancia
             cmd.Connection = main.cn;
             dr = cmd.ExecuteReader();
             dr.Read();
-            //pic_combustible.Image = Image.FromFile(dr[1].ToString());
-            //pic_combustible.SizeMode = PictureBoxSizeMode.StretchImage;
-            //pic_temperatura.Image = Image.FromFile(dr[2].ToString());
-            //pic_temperatura.SizeMode = PictureBoxSizeMode.StretchImage;
             combustible.Text = dr[1].ToString() + " %";
             temperatura.Text = dr[2].ToString();
             kilometraje.Text = dr[3].ToString() + " KM";
@@ -181,16 +177,6 @@ namespace Inspeccion_Ambulancia
             dr.Close();
 
             // Daños
-            //str = "select * from danos where no_reporte = " + no_reporte.ToString();
-            //cmd.CommandText = str;
-            //cmd.Connection = main.cn;
-            //dr = cmd.ExecuteReader();
-            //dr.Read();
-            //pic_ambulancia.Image = Image.FromFile(dr[1].ToString());
-            //pic_ambulancia.SizeMode = PictureBoxSizeMode.StretchImage;
-            //dr.Close();
-
-            ////Descripcion de Daños
 
             label_list = new List<Label>(){
                 de1, de2, de3, de4, de5, de6, de7, de8, de9, de10

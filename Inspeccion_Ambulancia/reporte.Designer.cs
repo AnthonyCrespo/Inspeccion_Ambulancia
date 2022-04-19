@@ -31,17 +31,17 @@ namespace Inspeccion_Ambulancia
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(reporte));
             this.Buscador = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.grd = new System.Windows.Forms.DataGridView();
-            this.buscar_por = new System.Windows.Forms.ComboBox();
-            this.fecha = new System.Windows.Forms.DateTimePicker();
-            this.no_reporte = new System.Windows.Forms.NumericUpDown();
-            this.btn_buscar = new System.Windows.Forms.Button();
             this.btn_generar_reporte = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.no_reporte = new System.Windows.Forms.NumericUpDown();
+            this.fecha = new System.Windows.Forms.DateTimePicker();
+            this.buscar_por = new System.Windows.Forms.ComboBox();
+            this.grd = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.Informe = new System.Windows.Forms.TabControl();
             this.Buscador.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.no_reporte)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             this.Informe.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,29 +62,49 @@ namespace Inspeccion_Ambulancia
             this.Buscador.Text = "Buscador";
             this.Buscador.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // btn_generar_reporte
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Buscar por:";
+            this.btn_generar_reporte.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_generar_reporte.Location = new System.Drawing.Point(904, 705);
+            this.btn_generar_reporte.Name = "btn_generar_reporte";
+            this.btn_generar_reporte.Size = new System.Drawing.Size(155, 47);
+            this.btn_generar_reporte.TabIndex = 66;
+            this.btn_generar_reporte.Text = "Generar Reporte";
+            this.btn_generar_reporte.UseVisualStyleBackColor = true;
+            this.btn_generar_reporte.Click += new System.EventHandler(this.btn_generar_reporte_Click);
             // 
-            // grd
+            // btn_buscar
             // 
-            this.grd.AllowUserToAddRows = false;
-            this.grd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grd.Location = new System.Drawing.Point(201, 70);
-            this.grd.MultiSelect = false;
-            this.grd.Name = "grd";
-            this.grd.ReadOnly = true;
-            this.grd.RowHeadersWidth = 51;
-            this.grd.RowTemplate.Height = 24;
-            this.grd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grd.Size = new System.Drawing.Size(879, 623);
-            this.grd.TabIndex = 3;
+            this.btn_buscar.Location = new System.Drawing.Point(626, 11);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(174, 42);
+            this.btn_buscar.TabIndex = 65;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
+            // no_reporte
+            // 
+            this.no_reporte.Location = new System.Drawing.Point(310, 21);
+            this.no_reporte.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.no_reporte.Name = "no_reporte";
+            this.no_reporte.Size = new System.Drawing.Size(120, 24);
+            this.no_reporte.TabIndex = 64;
+            // 
+            // fecha
+            // 
+            this.fecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.fecha.CustomFormat = "";
+            this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.fecha.Location = new System.Drawing.Point(459, 21);
+            this.fecha.Margin = new System.Windows.Forms.Padding(4);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(149, 24);
+            this.fecha.TabIndex = 63;
             // 
             // buscar_por
             // 
@@ -99,53 +119,35 @@ namespace Inspeccion_Ambulancia
             this.buscar_por.TabIndex = 4;
             this.buscar_por.SelectedIndexChanged += new System.EventHandler(this.buscar_por_SelectedIndexChanged);
             // 
-            // fecha
+            // grd
             // 
-            this.fecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.fecha.CustomFormat = "";
-            this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fecha.Location = new System.Drawing.Point(459, 21);
-            this.fecha.Margin = new System.Windows.Forms.Padding(4);
-            this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(149, 24);
-            this.fecha.TabIndex = 63;
+            this.grd.AllowUserToAddRows = false;
+            this.grd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grd.Location = new System.Drawing.Point(201, 70);
+            this.grd.MultiSelect = false;
+            this.grd.Name = "grd";
+            this.grd.ReadOnly = true;
+            this.grd.RowHeadersWidth = 51;
+            this.grd.RowTemplate.Height = 24;
+            this.grd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grd.Size = new System.Drawing.Size(858, 623);
+            this.grd.TabIndex = 3;
             // 
-            // no_reporte
+            // label2
             // 
-            this.no_reporte.Location = new System.Drawing.Point(310, 21);
-            this.no_reporte.Maximum = new decimal(new int[] {
-            9999999,
-            0,
-            0,
-            0});
-            this.no_reporte.Name = "no_reporte";
-            this.no_reporte.Size = new System.Drawing.Size(120, 24);
-            this.no_reporte.TabIndex = 64;
-            // 
-            // btn_buscar
-            // 
-            this.btn_buscar.Location = new System.Drawing.Point(626, 11);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(174, 42);
-            this.btn_buscar.TabIndex = 65;
-            this.btn_buscar.Text = "Buscar";
-            this.btn_buscar.UseVisualStyleBackColor = true;
-            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
-            // 
-            // btn_generar_reporte
-            // 
-            this.btn_generar_reporte.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_generar_reporte.Location = new System.Drawing.Point(925, 699);
-            this.btn_generar_reporte.Name = "btn_generar_reporte";
-            this.btn_generar_reporte.Size = new System.Drawing.Size(155, 47);
-            this.btn_generar_reporte.TabIndex = 66;
-            this.btn_generar_reporte.Text = "Generar Reporte";
-            this.btn_generar_reporte.UseVisualStyleBackColor = true;
-            this.btn_generar_reporte.Click += new System.EventHandler(this.btn_generar_reporte_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Buscar por:";
             // 
             // Informe
             // 
-            this.Informe.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Informe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Informe.Controls.Add(this.Buscador);
             this.Informe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Informe.Location = new System.Drawing.Point(12, 12);
@@ -167,8 +169,8 @@ namespace Inspeccion_Ambulancia
             this.Load += new System.EventHandler(this.reporte_Load);
             this.Buscador.ResumeLayout(false);
             this.Buscador.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.no_reporte)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
             this.Informe.ResumeLayout(false);
             this.ResumeLayout(false);
 

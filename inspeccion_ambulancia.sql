@@ -24,18 +24,12 @@ create table documentos() inherits(preguntas);
 create table cabina_exterior() inherits(preguntas);
 
 
-
-
-
-
 create table danos(
     no_reporte integer not null,
     id_descripcion int not null,
     descripcion varchar
 );
 
-
--- id_descripcion: campos del 1 al 18
 
 create table otros_datos(
     no_reporte integer not null,
@@ -62,7 +56,35 @@ alter table cabina_interior add constraint fkey_no_reporte foreign key(no_report
 alter table documentos add constraint fkey_no_reporte foreign key(no_reporte) references  datos_generales(no_reporte);
 alter table cabina_exterior add constraint fkey_no_reporte foreign key(no_reporte) references  datos_generales(no_reporte);
 alter table danos add constraint fkey_no_reporte foreign key(no_reporte) references  datos_generales(no_reporte);
-alter table descripcion_danos add constraint fkey_no_reporte foreign key(no_reporte) references  datos_generales(no_reporte);
 alter table otros_datos add constraint fkey_no_reporte foreign key(no_reporte) references  datos_generales(no_reporte);
 
+
+create table provincias (
+nombre varchar);
+
+insert into provincias values
+('Azuay'),
+('Bolivar'),
+('Cañar'),
+('Carchi'),
+('Chimborazo'),
+('Cotopaxi'),
+('El Oro'),
+('Esmeraldas'),
+('Galápagos'),
+('Guayas'),
+('Imbabura'),
+('Loja'),
+('Los Ríos'),
+('Manabí'),
+('Morona Santiago'),
+('Napo'),
+('Sucumbíos'),
+('Pastaza'),
+('Pinchincha'),
+('Santa Elena'),
+('Santo Domingo'),
+('Francisco De Orellana'),
+('Tungurahua'),
+('Zamora Chinchipe');
 

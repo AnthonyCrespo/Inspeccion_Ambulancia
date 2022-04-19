@@ -41,6 +41,10 @@ namespace Inspeccion_Ambulancia
             //Valores por defecto
             no_reporte.Value = 1;
             no_reporte.Minimum = 1;
+
+
+
+            MaximizeBox = false;
         }
 
         private void btn_buscar_Click(object sender, EventArgs e)

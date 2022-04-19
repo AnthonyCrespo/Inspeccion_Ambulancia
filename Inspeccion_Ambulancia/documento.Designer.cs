@@ -300,6 +300,7 @@ namespace Inspeccion_Ambulancia
             // pic_escudo
             // 
             this.pic_escudo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pic_escudo.BackColor = System.Drawing.Color.Transparent;
             this.pic_escudo.Image = ((System.Drawing.Image)(resources.GetObject("pic_escudo.Image")));
             this.pic_escudo.Location = new System.Drawing.Point(1474, 1);
             this.pic_escudo.Name = "pic_escudo";
@@ -311,6 +312,7 @@ namespace Inspeccion_Ambulancia
             // pic_msp
             // 
             this.pic_msp.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pic_msp.BackColor = System.Drawing.Color.Transparent;
             this.pic_msp.Image = ((System.Drawing.Image)(resources.GetObject("pic_msp.Image")));
             this.pic_msp.Location = new System.Drawing.Point(30, -8);
             this.pic_msp.Name = "pic_msp";

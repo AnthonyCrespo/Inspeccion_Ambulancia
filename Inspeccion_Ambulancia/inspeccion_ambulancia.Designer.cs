@@ -34,6 +34,8 @@ namespace Inspeccion_Ambulancia
             this.pic_msp = new System.Windows.Forms.PictureBox();
             this.pic_escudo = new System.Windows.Forms.PictureBox();
             this.Danos = new System.Windows.Forms.TabPage();
+            this.label58 = new System.Windows.Forms.Label();
+            this.textBox57 = new System.Windows.Forms.TextBox();
             this.label74 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
@@ -209,6 +211,7 @@ namespace Inspeccion_Ambulancia
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Datos_generales = new System.Windows.Forms.TabPage();
+            this.ambulancia = new System.Windows.Forms.TextBox();
             this.hora = new System.Windows.Forms.DateTimePicker();
             this.provincia = new System.Windows.Forms.ComboBox();
             this.lbl_alfa = new System.Windows.Forms.Label();
@@ -230,6 +233,8 @@ namespace Inspeccion_Ambulancia
             this.lnl_conductor2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Otros_datos = new System.Windows.Forms.TabPage();
+            this.temperatura = new System.Windows.Forms.ComboBox();
+            this.combustible = new System.Windows.Forms.NumericUpDown();
             this.btn_enviar = new System.Windows.Forms.Button();
             this.kilometraje = new System.Windows.Forms.NumericUpDown();
             this.label82 = new System.Windows.Forms.Label();
@@ -240,11 +245,6 @@ namespace Inspeccion_Ambulancia
             this.label79 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.pic_combustible = new System.Windows.Forms.PictureBox();
-            this.combustible = new System.Windows.Forms.NumericUpDown();
-            this.temperatura = new System.Windows.Forms.ComboBox();
-            this.ambulancia = new System.Windows.Forms.TextBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.textBox57 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
             this.Danos.SuspendLayout();
@@ -258,10 +258,10 @@ namespace Inspeccion_Ambulancia
             ((System.ComponentModel.ISupportInitialize)(this.coordinacion_zonal)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Otros_datos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.combustible)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kilometraje)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_temperatura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.combustible)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -331,6 +331,26 @@ namespace Inspeccion_Ambulancia
             this.Danos.TabIndex = 5;
             this.Danos.Text = "Daños";
             this.Danos.UseVisualStyleBackColor = true;
+            // 
+            // label58
+            // 
+            this.label58.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(556, 401);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(29, 20);
+            this.label58.TabIndex = 325;
+            this.label58.Text = "10";
+            // 
+            // textBox57
+            // 
+            this.textBox57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox57.Location = new System.Drawing.Point(592, 398);
+            this.textBox57.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox57.Name = "textBox57";
+            this.textBox57.Size = new System.Drawing.Size(468, 27);
+            this.textBox57.TabIndex = 324;
             // 
             // label74
             // 
@@ -2341,6 +2361,15 @@ namespace Inspeccion_Ambulancia
             this.Datos_generales.Text = "Datos generales";
             this.Datos_generales.UseVisualStyleBackColor = true;
             // 
+            // ambulancia
+            // 
+            this.ambulancia.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ambulancia.Location = new System.Drawing.Point(921, 165);
+            this.ambulancia.Margin = new System.Windows.Forms.Padding(4);
+            this.ambulancia.Name = "ambulancia";
+            this.ambulancia.Size = new System.Drawing.Size(179, 27);
+            this.ambulancia.TabIndex = 76;
+            // 
             // hora
             // 
             this.hora.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -2606,6 +2635,28 @@ namespace Inspeccion_Ambulancia
             this.Otros_datos.Text = "Otros datos";
             this.Otros_datos.UseVisualStyleBackColor = true;
             // 
+            // temperatura
+            // 
+            this.temperatura.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.temperatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.temperatura.FormattingEnabled = true;
+            this.temperatura.Items.AddRange(new object[] {
+            "Frío",
+            "Medio",
+            "Caliente"});
+            this.temperatura.Location = new System.Drawing.Point(764, 238);
+            this.temperatura.Name = "temperatura";
+            this.temperatura.Size = new System.Drawing.Size(141, 28);
+            this.temperatura.TabIndex = 323;
+            // 
+            // combustible
+            // 
+            this.combustible.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.combustible.Location = new System.Drawing.Point(226, 238);
+            this.combustible.Name = "combustible";
+            this.combustible.Size = new System.Drawing.Size(137, 27);
+            this.combustible.TabIndex = 322;
+            // 
             // btn_enviar
             // 
             this.btn_enviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -2721,57 +2772,6 @@ namespace Inspeccion_Ambulancia
             this.pic_combustible.TabIndex = 0;
             this.pic_combustible.TabStop = false;
             // 
-            // combustible
-            // 
-            this.combustible.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.combustible.Location = new System.Drawing.Point(226, 238);
-            this.combustible.Name = "combustible";
-            this.combustible.Size = new System.Drawing.Size(137, 27);
-            this.combustible.TabIndex = 322;
-            // 
-            // temperatura
-            // 
-            this.temperatura.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.temperatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.temperatura.FormattingEnabled = true;
-            this.temperatura.Items.AddRange(new object[] {
-            "Frío",
-            "Medio",
-            "Caliente"});
-            this.temperatura.Location = new System.Drawing.Point(764, 238);
-            this.temperatura.Name = "temperatura";
-            this.temperatura.Size = new System.Drawing.Size(141, 28);
-            this.temperatura.TabIndex = 323;
-            // 
-            // ambulancia
-            // 
-            this.ambulancia.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ambulancia.Location = new System.Drawing.Point(921, 165);
-            this.ambulancia.Margin = new System.Windows.Forms.Padding(4);
-            this.ambulancia.Name = "ambulancia";
-            this.ambulancia.Size = new System.Drawing.Size(179, 27);
-            this.ambulancia.TabIndex = 76;
-            // 
-            // label58
-            // 
-            this.label58.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(556, 401);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(29, 20);
-            this.label58.TabIndex = 325;
-            this.label58.Text = "10";
-            // 
-            // textBox57
-            // 
-            this.textBox57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox57.Location = new System.Drawing.Point(592, 398);
-            this.textBox57.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(468, 27);
-            this.textBox57.TabIndex = 324;
-            // 
             // inspeccion_ambulancia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -2807,10 +2807,10 @@ namespace Inspeccion_Ambulancia
             this.tabControl1.ResumeLayout(false);
             this.Otros_datos.ResumeLayout(false);
             this.Otros_datos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.combustible)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kilometraje)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_temperatura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.combustible)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
