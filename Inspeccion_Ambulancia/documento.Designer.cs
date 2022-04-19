@@ -3819,9 +3819,10 @@ namespace Inspeccion_Ambulancia
             this.Controls.Add(this.pic_escudo);
             this.Controls.Add(this.pic_msp);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "documento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "documento";
+            this.Text = "Documento";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.documento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).EndInit();
