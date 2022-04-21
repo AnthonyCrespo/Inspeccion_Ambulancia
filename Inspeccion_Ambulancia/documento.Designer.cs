@@ -282,25 +282,27 @@ namespace Inspeccion_Ambulancia
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.pic_combustible = new System.Windows.Forms.PictureBox();
-            this.pic_temperatura = new System.Windows.Forms.PictureBox();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.kilometraje = new System.Windows.Forms.Label();
-            this.observaciones_generales = new System.Windows.Forms.Label();
-            this.combustible = new System.Windows.Forms.Label();
             this.temperatura = new System.Windows.Forms.Label();
+            this.combustible = new System.Windows.Forms.Label();
+            this.pic_temperatura = new System.Windows.Forms.PictureBox();
+            this.observaciones_generales = new System.Windows.Forms.Label();
+            this.pic_combustible = new System.Windows.Forms.PictureBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.kilometraje = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_ambulancia)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_temperatura)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1751,6 +1753,7 @@ namespace Inspeccion_Ambulancia
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.materialRaisedButton1);
             this.panel1.Controls.Add(this.de10);
             this.panel1.Controls.Add(this.de9);
             this.panel1.Controls.Add(this.de8);
@@ -1879,7 +1882,7 @@ namespace Inspeccion_Ambulancia
             this.de10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.de10.Location = new System.Drawing.Point(513, 838);
             this.de10.Name = "de10";
-            this.de10.Size = new System.Drawing.Size(31, 16);
+            this.de10.Size = new System.Drawing.Size(27, 15);
             this.de10.TabIndex = 622;
             this.de10.Text = "obs";
             this.de10.Visible = false;
@@ -1891,7 +1894,7 @@ namespace Inspeccion_Ambulancia
             this.de9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.de9.Location = new System.Drawing.Point(513, 815);
             this.de9.Name = "de9";
-            this.de9.Size = new System.Drawing.Size(31, 16);
+            this.de9.Size = new System.Drawing.Size(27, 15);
             this.de9.TabIndex = 621;
             this.de9.Text = "obs";
             this.de9.Visible = false;
@@ -1903,7 +1906,7 @@ namespace Inspeccion_Ambulancia
             this.de8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.de8.Location = new System.Drawing.Point(513, 788);
             this.de8.Name = "de8";
-            this.de8.Size = new System.Drawing.Size(31, 16);
+            this.de8.Size = new System.Drawing.Size(27, 15);
             this.de8.TabIndex = 620;
             this.de8.Text = "obs";
             this.de8.Visible = false;
@@ -1915,7 +1918,7 @@ namespace Inspeccion_Ambulancia
             this.de7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.de7.Location = new System.Drawing.Point(513, 764);
             this.de7.Name = "de7";
-            this.de7.Size = new System.Drawing.Size(31, 16);
+            this.de7.Size = new System.Drawing.Size(27, 15);
             this.de7.TabIndex = 619;
             this.de7.Text = "obs";
             this.de7.Visible = false;
@@ -1927,7 +1930,7 @@ namespace Inspeccion_Ambulancia
             this.de6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.de6.Location = new System.Drawing.Point(513, 740);
             this.de6.Name = "de6";
-            this.de6.Size = new System.Drawing.Size(31, 16);
+            this.de6.Size = new System.Drawing.Size(27, 15);
             this.de6.TabIndex = 618;
             this.de6.Text = "obs";
             this.de6.Visible = false;
@@ -1939,7 +1942,7 @@ namespace Inspeccion_Ambulancia
             this.de5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.de5.Location = new System.Drawing.Point(513, 716);
             this.de5.Name = "de5";
-            this.de5.Size = new System.Drawing.Size(31, 16);
+            this.de5.Size = new System.Drawing.Size(27, 15);
             this.de5.TabIndex = 617;
             this.de5.Text = "obs";
             this.de5.Visible = false;
@@ -1951,7 +1954,7 @@ namespace Inspeccion_Ambulancia
             this.de4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.de4.Location = new System.Drawing.Point(513, 692);
             this.de4.Name = "de4";
-            this.de4.Size = new System.Drawing.Size(31, 16);
+            this.de4.Size = new System.Drawing.Size(27, 15);
             this.de4.TabIndex = 616;
             this.de4.Text = "obs";
             this.de4.Visible = false;
@@ -1963,7 +1966,7 @@ namespace Inspeccion_Ambulancia
             this.de3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.de3.Location = new System.Drawing.Point(513, 668);
             this.de3.Name = "de3";
-            this.de3.Size = new System.Drawing.Size(31, 16);
+            this.de3.Size = new System.Drawing.Size(27, 15);
             this.de3.TabIndex = 615;
             this.de3.Text = "obs";
             this.de3.Visible = false;
@@ -1975,7 +1978,7 @@ namespace Inspeccion_Ambulancia
             this.de2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.de2.Location = new System.Drawing.Point(513, 641);
             this.de2.Name = "de2";
-            this.de2.Size = new System.Drawing.Size(31, 16);
+            this.de2.Size = new System.Drawing.Size(27, 15);
             this.de2.TabIndex = 614;
             this.de2.Text = "obs";
             this.de2.Visible = false;
@@ -1987,7 +1990,7 @@ namespace Inspeccion_Ambulancia
             this.de1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.de1.Location = new System.Drawing.Point(513, 616);
             this.de1.Name = "de1";
-            this.de1.Size = new System.Drawing.Size(31, 16);
+            this.de1.Size = new System.Drawing.Size(27, 15);
             this.de1.TabIndex = 613;
             this.de1.Text = "obs";
             this.de1.Visible = false;
@@ -2946,7 +2949,7 @@ namespace Inspeccion_Ambulancia
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label67.Location = new System.Drawing.Point(46, 449);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(683, 96);
+            this.label67.Size = new System.Drawing.Size(621, 90);
             this.label67.TabIndex = 534;
             this.label67.Text = resources.GetString("label67.Text");
             // 
@@ -3332,84 +3335,16 @@ namespace Inspeccion_Ambulancia
             this.panel3.Size = new System.Drawing.Size(886, 922);
             this.panel3.TabIndex = 512;
             // 
-            // label78
+            // temperatura
             // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(74, 596);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(232, 20);
-            this.label78.TabIndex = 195;
-            this.label78.Text = "NIVEL DE COMBUSTIBLE";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(500, 596);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(145, 20);
-            this.label79.TabIndex = 196;
-            this.label79.Text = "TEMPERATURA";
-            // 
-            // pic_combustible
-            // 
-            this.pic_combustible.BackColor = System.Drawing.Color.Gainsboro;
-            this.pic_combustible.Image = ((System.Drawing.Image)(resources.GetObject("pic_combustible.Image")));
-            this.pic_combustible.Location = new System.Drawing.Point(8, 619);
-            this.pic_combustible.Name = "pic_combustible";
-            this.pic_combustible.Size = new System.Drawing.Size(330, 138);
-            this.pic_combustible.TabIndex = 197;
-            this.pic_combustible.TabStop = false;
-            // 
-            // pic_temperatura
-            // 
-            this.pic_temperatura.BackColor = System.Drawing.Color.Gainsboro;
-            this.pic_temperatura.Image = ((System.Drawing.Image)(resources.GetObject("pic_temperatura.Image")));
-            this.pic_temperatura.Location = new System.Drawing.Point(394, 619);
-            this.pic_temperatura.Name = "pic_temperatura";
-            this.pic_temperatura.Size = new System.Drawing.Size(330, 138);
-            this.pic_temperatura.TabIndex = 198;
-            this.pic_temperatura.TabStop = false;
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(68, 800);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(261, 20);
-            this.label80.TabIndex = 199;
-            this.label80.Text = "KILOMETRAJE DE ENTREGA";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(69, 831);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(174, 17);
-            this.label81.TabIndex = 208;
-            this.label81.Text = "Observaciones generales:";
-            // 
-            // kilometraje
-            // 
-            this.kilometraje.AutoSize = true;
-            this.kilometraje.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kilometraje.Location = new System.Drawing.Point(433, 800);
-            this.kilometraje.Name = "kilometraje";
-            this.kilometraje.Size = new System.Drawing.Size(42, 20);
-            this.kilometraje.TabIndex = 430;
-            this.kilometraje.Text = " KM";
-            // 
-            // observaciones_generales
-            // 
-            this.observaciones_generales.AutoSize = true;
-            this.observaciones_generales.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.observaciones_generales.Location = new System.Drawing.Point(69, 854);
-            this.observaciones_generales.Name = "observaciones_generales";
-            this.observaciones_generales.Size = new System.Drawing.Size(31, 17);
-            this.observaciones_generales.TabIndex = 431;
-            this.observaciones_generales.Text = "obs";
+            this.temperatura.AutoSize = true;
+            this.temperatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temperatura.Location = new System.Drawing.Point(521, 761);
+            this.temperatura.Name = "temperatura";
+            this.temperatura.Size = new System.Drawing.Size(20, 20);
+            this.temperatura.TabIndex = 509;
+            this.temperatura.Text = "T";
+            this.temperatura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // combustible
             // 
@@ -3422,16 +3357,84 @@ namespace Inspeccion_Ambulancia
             this.combustible.Text = "%";
             this.combustible.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // temperatura
+            // pic_temperatura
             // 
-            this.temperatura.AutoSize = true;
-            this.temperatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temperatura.Location = new System.Drawing.Point(521, 761);
-            this.temperatura.Name = "temperatura";
-            this.temperatura.Size = new System.Drawing.Size(20, 20);
-            this.temperatura.TabIndex = 509;
-            this.temperatura.Text = "T";
-            this.temperatura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pic_temperatura.BackColor = System.Drawing.Color.Gainsboro;
+            this.pic_temperatura.Image = ((System.Drawing.Image)(resources.GetObject("pic_temperatura.Image")));
+            this.pic_temperatura.Location = new System.Drawing.Point(394, 619);
+            this.pic_temperatura.Name = "pic_temperatura";
+            this.pic_temperatura.Size = new System.Drawing.Size(330, 138);
+            this.pic_temperatura.TabIndex = 198;
+            this.pic_temperatura.TabStop = false;
+            // 
+            // observaciones_generales
+            // 
+            this.observaciones_generales.AutoSize = true;
+            this.observaciones_generales.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.observaciones_generales.Location = new System.Drawing.Point(69, 854);
+            this.observaciones_generales.Name = "observaciones_generales";
+            this.observaciones_generales.Size = new System.Drawing.Size(31, 17);
+            this.observaciones_generales.TabIndex = 431;
+            this.observaciones_generales.Text = "obs";
+            // 
+            // pic_combustible
+            // 
+            this.pic_combustible.BackColor = System.Drawing.Color.Gainsboro;
+            this.pic_combustible.Image = ((System.Drawing.Image)(resources.GetObject("pic_combustible.Image")));
+            this.pic_combustible.Location = new System.Drawing.Point(8, 619);
+            this.pic_combustible.Name = "pic_combustible";
+            this.pic_combustible.Size = new System.Drawing.Size(330, 138);
+            this.pic_combustible.TabIndex = 197;
+            this.pic_combustible.TabStop = false;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.Location = new System.Drawing.Point(500, 596);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(145, 20);
+            this.label79.TabIndex = 196;
+            this.label79.Text = "TEMPERATURA";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.Location = new System.Drawing.Point(74, 596);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(232, 20);
+            this.label78.TabIndex = 195;
+            this.label78.Text = "NIVEL DE COMBUSTIBLE";
+            // 
+            // kilometraje
+            // 
+            this.kilometraje.AutoSize = true;
+            this.kilometraje.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kilometraje.Location = new System.Drawing.Point(433, 800);
+            this.kilometraje.Name = "kilometraje";
+            this.kilometraje.Size = new System.Drawing.Size(42, 20);
+            this.kilometraje.TabIndex = 430;
+            this.kilometraje.Text = " KM";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(69, 831);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(174, 17);
+            this.label81.TabIndex = 208;
+            this.label81.Text = "Observaciones generales:";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Location = new System.Drawing.Point(68, 800);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(261, 20);
+            this.label80.TabIndex = 199;
+            this.label80.Text = "KILOMETRAJE DE ENTREGA";
             // 
             // panel2
             // 
@@ -3462,6 +3465,37 @@ namespace Inspeccion_Ambulancia
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1782, 131);
             this.panel2.TabIndex = 513;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.AutoSize = true;
+            this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Icon = null;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(568, 862);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(99, 36);
+            this.materialRaisedButton1.TabIndex = 623;
+            this.materialRaisedButton1.Text = "Imprimir";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // documento
             // 
@@ -3517,8 +3551,8 @@ namespace Inspeccion_Ambulancia
             ((System.ComponentModel.ISupportInitialize)(this.pic_ambulancia)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_temperatura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_combustible)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -3792,5 +3826,7 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.Label temperatura;
         private System.Windows.Forms.Panel panel2;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
     }
 }
