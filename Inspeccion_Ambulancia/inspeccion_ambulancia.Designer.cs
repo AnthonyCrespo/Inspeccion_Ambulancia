@@ -344,6 +344,7 @@ namespace Inspeccion_Ambulancia
             this.label58.Size = new System.Drawing.Size(29, 20);
             this.label58.TabIndex = 325;
             this.label58.Text = "10";
+            this.label58.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // textBox57
             // 
@@ -364,6 +365,7 @@ namespace Inspeccion_Ambulancia
             this.label74.Size = new System.Drawing.Size(19, 20);
             this.label74.TabIndex = 323;
             this.label74.Text = "9";
+            this.label74.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label66
             // 
@@ -375,6 +377,7 @@ namespace Inspeccion_Ambulancia
             this.label66.Size = new System.Drawing.Size(19, 20);
             this.label66.TabIndex = 322;
             this.label66.Text = "8";
+            this.label66.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label65
             // 
@@ -386,6 +389,7 @@ namespace Inspeccion_Ambulancia
             this.label65.Size = new System.Drawing.Size(19, 20);
             this.label65.TabIndex = 321;
             this.label65.Text = "7";
+            this.label65.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label64
             // 
@@ -397,6 +401,7 @@ namespace Inspeccion_Ambulancia
             this.label64.Size = new System.Drawing.Size(19, 20);
             this.label64.TabIndex = 320;
             this.label64.Text = "6";
+            this.label64.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label63
             // 
@@ -408,6 +413,7 @@ namespace Inspeccion_Ambulancia
             this.label63.Size = new System.Drawing.Size(19, 20);
             this.label63.TabIndex = 319;
             this.label63.Text = "5";
+            this.label63.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label62
             // 
@@ -419,6 +425,7 @@ namespace Inspeccion_Ambulancia
             this.label62.Size = new System.Drawing.Size(19, 20);
             this.label62.TabIndex = 318;
             this.label62.Text = "4";
+            this.label62.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label61
             // 
@@ -430,6 +437,7 @@ namespace Inspeccion_Ambulancia
             this.label61.Size = new System.Drawing.Size(19, 20);
             this.label61.TabIndex = 317;
             this.label61.Text = "3";
+            this.label61.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label60
             // 
@@ -441,6 +449,7 @@ namespace Inspeccion_Ambulancia
             this.label60.Size = new System.Drawing.Size(19, 20);
             this.label60.TabIndex = 316;
             this.label60.Text = "2";
+            this.label60.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label59
             // 
@@ -452,6 +461,7 @@ namespace Inspeccion_Ambulancia
             this.label59.Size = new System.Drawing.Size(19, 20);
             this.label59.TabIndex = 315;
             this.label59.Text = "1";
+            this.label59.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // textBox56
             // 
@@ -548,7 +558,8 @@ namespace Inspeccion_Ambulancia
             // pic_ambulancia
             // 
             this.pic_ambulancia.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pic_ambulancia.BackColor = System.Drawing.Color.LightGray;
+            this.pic_ambulancia.BackColor = System.Drawing.Color.Transparent;
+            this.pic_ambulancia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pic_ambulancia.Image = ((System.Drawing.Image)(resources.GetObject("pic_ambulancia.Image")));
             this.pic_ambulancia.Location = new System.Drawing.Point(117, 89);
             this.pic_ambulancia.Name = "pic_ambulancia";
@@ -2712,7 +2723,7 @@ namespace Inspeccion_Ambulancia
             "Frío",
             "Medio",
             "Caliente"});
-            this.temperatura.Location = new System.Drawing.Point(763, 238);
+            this.temperatura.Location = new System.Drawing.Point(788, 216);
             this.temperatura.Name = "temperatura";
             this.temperatura.Size = new System.Drawing.Size(141, 28);
             this.temperatura.TabIndex = 323;
@@ -2720,7 +2731,7 @@ namespace Inspeccion_Ambulancia
             // combustible
             // 
             this.combustible.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.combustible.Location = new System.Drawing.Point(225, 238);
+            this.combustible.Location = new System.Drawing.Point(250, 216);
             this.combustible.Name = "combustible";
             this.combustible.Size = new System.Drawing.Size(137, 27);
             this.combustible.TabIndex = 322;
@@ -2733,7 +2744,7 @@ namespace Inspeccion_Ambulancia
             this.btn_enviar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
             this.btn_enviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_enviar.ForeColor = System.Drawing.Color.White;
-            this.btn_enviar.Location = new System.Drawing.Point(932, 424);
+            this.btn_enviar.Location = new System.Drawing.Point(912, 404);
             this.btn_enviar.Name = "btn_enviar";
             this.btn_enviar.Size = new System.Drawing.Size(186, 50);
             this.btn_enviar.TabIndex = 321;
@@ -2744,7 +2755,7 @@ namespace Inspeccion_Ambulancia
             // kilometraje
             // 
             this.kilometraje.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.kilometraje.Location = new System.Drawing.Point(404, 325);
+            this.kilometraje.Location = new System.Drawing.Point(384, 306);
             this.kilometraje.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -2759,7 +2770,7 @@ namespace Inspeccion_Ambulancia
             this.label82.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label82.AutoSize = true;
             this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(547, 327);
+            this.label82.Location = new System.Drawing.Point(527, 308);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(34, 20);
             this.label82.TabIndex = 317;
@@ -2768,7 +2779,7 @@ namespace Inspeccion_Ambulancia
             // observaciones_generales
             // 
             this.observaciones_generales.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.observaciones_generales.Location = new System.Drawing.Point(129, 401);
+            this.observaciones_generales.Location = new System.Drawing.Point(109, 382);
             this.observaciones_generales.Margin = new System.Windows.Forms.Padding(4);
             this.observaciones_generales.Multiline = true;
             this.observaciones_generales.Name = "observaciones_generales";
@@ -2779,7 +2790,7 @@ namespace Inspeccion_Ambulancia
             // 
             this.label81.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(125, 375);
+            this.label81.Location = new System.Drawing.Point(105, 356);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(204, 20);
             this.label81.TabIndex = 207;
@@ -2790,7 +2801,7 @@ namespace Inspeccion_Ambulancia
             this.label80.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label80.AutoSize = true;
             this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(127, 327);
+            this.label80.Location = new System.Drawing.Point(107, 308);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(261, 20);
             this.label80.TabIndex = 8;
@@ -2799,9 +2810,10 @@ namespace Inspeccion_Ambulancia
             // pic_temperatura
             // 
             this.pic_temperatura.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pic_temperatura.BackColor = System.Drawing.Color.Gainsboro;
+            this.pic_temperatura.BackColor = System.Drawing.Color.Transparent;
+            this.pic_temperatura.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pic_temperatura.Image = ((System.Drawing.Image)(resources.GetObject("pic_temperatura.Image")));
-            this.pic_temperatura.Location = new System.Drawing.Point(667, 85);
+            this.pic_temperatura.Location = new System.Drawing.Point(692, 63);
             this.pic_temperatura.Name = "pic_temperatura";
             this.pic_temperatura.Size = new System.Drawing.Size(330, 138);
             this.pic_temperatura.TabIndex = 7;
@@ -2812,7 +2824,7 @@ namespace Inspeccion_Ambulancia
             this.label79.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label79.AutoSize = true;
             this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(759, 45);
+            this.label79.Location = new System.Drawing.Point(784, 23);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(145, 20);
             this.label79.TabIndex = 6;
@@ -2823,7 +2835,7 @@ namespace Inspeccion_Ambulancia
             this.label78.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label78.AutoSize = true;
             this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(178, 45);
+            this.label78.Location = new System.Drawing.Point(203, 23);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(232, 20);
             this.label78.TabIndex = 5;
@@ -2832,9 +2844,10 @@ namespace Inspeccion_Ambulancia
             // pic_combustible
             // 
             this.pic_combustible.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pic_combustible.BackColor = System.Drawing.Color.Gainsboro;
+            this.pic_combustible.BackColor = System.Drawing.Color.Transparent;
+            this.pic_combustible.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pic_combustible.Image = ((System.Drawing.Image)(resources.GetObject("pic_combustible.Image")));
-            this.pic_combustible.Location = new System.Drawing.Point(131, 85);
+            this.pic_combustible.Location = new System.Drawing.Point(156, 63);
             this.pic_combustible.Name = "pic_combustible";
             this.pic_combustible.Size = new System.Drawing.Size(330, 138);
             this.pic_combustible.TabIndex = 0;
@@ -2845,7 +2858,7 @@ namespace Inspeccion_Ambulancia
             this.label68.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(368, 241);
+            this.label68.Location = new System.Drawing.Point(393, 219);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(24, 20);
             this.label68.TabIndex = 326;

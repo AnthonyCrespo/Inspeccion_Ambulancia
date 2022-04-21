@@ -293,6 +293,7 @@ namespace Inspeccion_Ambulancia
             this.combustible = new System.Windows.Forms.Label();
             this.temperatura = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.pic_escudo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_msp)).BeginInit();
             this.panel1.SuspendLayout();
@@ -3790,5 +3791,6 @@ namespace Inspeccion_Ambulancia
         private System.Windows.Forms.Label combustible;
         private System.Windows.Forms.Label temperatura;
         private System.Windows.Forms.Panel panel2;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
