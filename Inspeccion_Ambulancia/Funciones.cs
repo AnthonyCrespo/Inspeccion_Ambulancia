@@ -64,7 +64,5 @@ namespace Inspeccion_Ambulancia
         {
             MessageBox.Show("No se han encontrado resultados para la búsqueda.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
-
-
     }
 }

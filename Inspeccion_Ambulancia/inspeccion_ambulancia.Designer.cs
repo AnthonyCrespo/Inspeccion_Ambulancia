@@ -350,7 +350,7 @@ namespace Inspeccion_Ambulancia
             this.textBox57.Margin = new System.Windows.Forms.Padding(4);
             this.textBox57.Name = "textBox57";
             this.textBox57.Size = new System.Drawing.Size(468, 27);
-            this.textBox57.TabIndex = 324;
+            this.textBox57.TabIndex = 306;
             // 
             // label74
             // 
@@ -485,7 +485,7 @@ namespace Inspeccion_Ambulancia
             this.textBox51.Margin = new System.Windows.Forms.Padding(4);
             this.textBox51.Name = "textBox51";
             this.textBox51.Size = new System.Drawing.Size(468, 27);
-            this.textBox51.TabIndex = 302;
+            this.textBox51.TabIndex = 300;
             // 
             // textBox52
             // 
@@ -503,7 +503,7 @@ namespace Inspeccion_Ambulancia
             this.textBox53.Margin = new System.Windows.Forms.Padding(4);
             this.textBox53.Name = "textBox53";
             this.textBox53.Size = new System.Drawing.Size(468, 27);
-            this.textBox53.TabIndex = 300;
+            this.textBox53.TabIndex = 302;
             // 
             // textBox50
             // 
@@ -1393,7 +1393,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox25.Location = new System.Drawing.Point(523, 296);
             this.comboBox25.Name = "comboBox25";
             this.comboBox25.Size = new System.Drawing.Size(67, 28);
-            this.comboBox25.TabIndex = 206;
+            this.comboBox25.TabIndex = 209;
             // 
             // comboBox24
             // 
@@ -1405,7 +1405,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox24.Location = new System.Drawing.Point(523, 242);
             this.comboBox24.Name = "comboBox24";
             this.comboBox24.Size = new System.Drawing.Size(67, 28);
-            this.comboBox24.TabIndex = 205;
+            this.comboBox24.TabIndex = 207;
             // 
             // comboBox23
             // 
@@ -1417,7 +1417,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox23.Location = new System.Drawing.Point(523, 188);
             this.comboBox23.Name = "comboBox23";
             this.comboBox23.Size = new System.Drawing.Size(67, 28);
-            this.comboBox23.TabIndex = 204;
+            this.comboBox23.TabIndex = 205;
             // 
             // comboBox22
             // 
@@ -1437,7 +1437,7 @@ namespace Inspeccion_Ambulancia
             this.textBox25.Margin = new System.Windows.Forms.Padding(4);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(468, 27);
-            this.textBox25.TabIndex = 202;
+            this.textBox25.TabIndex = 210;
             // 
             // textBox24
             // 
@@ -1445,7 +1445,7 @@ namespace Inspeccion_Ambulancia
             this.textBox24.Margin = new System.Windows.Forms.Padding(4);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(468, 27);
-            this.textBox24.TabIndex = 201;
+            this.textBox24.TabIndex = 208;
             // 
             // textBox23
             // 
@@ -1453,7 +1453,7 @@ namespace Inspeccion_Ambulancia
             this.textBox23.Margin = new System.Windows.Forms.Padding(4);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(468, 27);
-            this.textBox23.TabIndex = 200;
+            this.textBox23.TabIndex = 206;
             // 
             // textBox22
             // 
@@ -1461,7 +1461,7 @@ namespace Inspeccion_Ambulancia
             this.textBox22.Margin = new System.Windows.Forms.Padding(4);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(468, 27);
-            this.textBox22.TabIndex = 197;
+            this.textBox22.TabIndex = 204;
             // 
             // label6
             // 
@@ -1607,7 +1607,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox21.Location = new System.Drawing.Point(490, 790);
             this.comboBox21.Name = "comboBox21";
             this.comboBox21.Size = new System.Drawing.Size(120, 28);
-            this.comboBox21.TabIndex = 211;
+            this.comboBox21.TabIndex = 172;
             // 
             // comboBox20
             // 
@@ -1620,7 +1620,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox20.Location = new System.Drawing.Point(490, 738);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(120, 28);
-            this.comboBox20.TabIndex = 210;
+            this.comboBox20.TabIndex = 170;
             // 
             // comboBox19
             // 
@@ -1633,7 +1633,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox19.Location = new System.Drawing.Point(490, 678);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(120, 28);
-            this.comboBox19.TabIndex = 209;
+            this.comboBox19.TabIndex = 168;
             // 
             // comboBox18
             // 
@@ -1646,7 +1646,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox18.Location = new System.Drawing.Point(490, 640);
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(120, 28);
-            this.comboBox18.TabIndex = 208;
+            this.comboBox18.TabIndex = 166;
             // 
             // comboBox17
             // 
@@ -1659,7 +1659,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox17.Location = new System.Drawing.Point(490, 605);
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(120, 28);
-            this.comboBox17.TabIndex = 207;
+            this.comboBox17.TabIndex = 164;
             // 
             // comboBox16
             // 
@@ -1672,7 +1672,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox16.Location = new System.Drawing.Point(490, 559);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(120, 28);
-            this.comboBox16.TabIndex = 206;
+            this.comboBox16.TabIndex = 162;
             // 
             // comboBox15
             // 
@@ -1685,7 +1685,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox15.Location = new System.Drawing.Point(490, 521);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(120, 28);
-            this.comboBox15.TabIndex = 205;
+            this.comboBox15.TabIndex = 160;
             // 
             // comboBox14
             // 
@@ -1698,7 +1698,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox14.Location = new System.Drawing.Point(490, 485);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(120, 28);
-            this.comboBox14.TabIndex = 204;
+            this.comboBox14.TabIndex = 158;
             // 
             // comboBox13
             // 
@@ -1711,7 +1711,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox13.Location = new System.Drawing.Point(490, 448);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(120, 28);
-            this.comboBox13.TabIndex = 203;
+            this.comboBox13.TabIndex = 156;
             // 
             // comboBox12
             // 
@@ -1724,7 +1724,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox12.Location = new System.Drawing.Point(490, 408);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(120, 28);
-            this.comboBox12.TabIndex = 202;
+            this.comboBox12.TabIndex = 154;
             // 
             // comboBox11
             // 
@@ -1737,7 +1737,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox11.Location = new System.Drawing.Point(490, 374);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(120, 28);
-            this.comboBox11.TabIndex = 201;
+            this.comboBox11.TabIndex = 152;
             // 
             // comboBox10
             // 
@@ -1750,7 +1750,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox10.Location = new System.Drawing.Point(490, 331);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(120, 28);
-            this.comboBox10.TabIndex = 200;
+            this.comboBox10.TabIndex = 150;
             // 
             // comboBox9
             // 
@@ -1763,7 +1763,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox9.Location = new System.Drawing.Point(490, 295);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(120, 28);
-            this.comboBox9.TabIndex = 199;
+            this.comboBox9.TabIndex = 148;
             // 
             // comboBox8
             // 
@@ -1776,7 +1776,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox8.Location = new System.Drawing.Point(490, 258);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(120, 28);
-            this.comboBox8.TabIndex = 198;
+            this.comboBox8.TabIndex = 146;
             // 
             // comboBox7
             // 
@@ -1789,7 +1789,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox7.Location = new System.Drawing.Point(490, 216);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(120, 28);
-            this.comboBox7.TabIndex = 197;
+            this.comboBox7.TabIndex = 144;
             // 
             // comboBox6
             // 
@@ -1802,7 +1802,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox6.Location = new System.Drawing.Point(490, 179);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(120, 28);
-            this.comboBox6.TabIndex = 196;
+            this.comboBox6.TabIndex = 142;
             // 
             // comboBox5
             // 
@@ -1815,7 +1815,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox5.Location = new System.Drawing.Point(490, 140);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(120, 28);
-            this.comboBox5.TabIndex = 195;
+            this.comboBox5.TabIndex = 140;
             // 
             // comboBox4
             // 
@@ -1828,7 +1828,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox4.Location = new System.Drawing.Point(490, 101);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(120, 28);
-            this.comboBox4.TabIndex = 194;
+            this.comboBox4.TabIndex = 138;
             // 
             // textBox21
             // 
@@ -1837,7 +1837,7 @@ namespace Inspeccion_Ambulancia
             this.textBox21.Margin = new System.Windows.Forms.Padding(4);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(468, 27);
-            this.textBox21.TabIndex = 193;
+            this.textBox21.TabIndex = 173;
             // 
             // textBox20
             // 
@@ -1846,7 +1846,7 @@ namespace Inspeccion_Ambulancia
             this.textBox20.Margin = new System.Windows.Forms.Padding(4);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(468, 27);
-            this.textBox20.TabIndex = 192;
+            this.textBox20.TabIndex = 171;
             // 
             // textBox19
             // 
@@ -1855,7 +1855,7 @@ namespace Inspeccion_Ambulancia
             this.textBox19.Margin = new System.Windows.Forms.Padding(4);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(468, 27);
-            this.textBox19.TabIndex = 191;
+            this.textBox19.TabIndex = 169;
             // 
             // textBox18
             // 
@@ -1864,7 +1864,7 @@ namespace Inspeccion_Ambulancia
             this.textBox18.Margin = new System.Windows.Forms.Padding(4);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(468, 27);
-            this.textBox18.TabIndex = 190;
+            this.textBox18.TabIndex = 167;
             // 
             // textBox17
             // 
@@ -1873,7 +1873,7 @@ namespace Inspeccion_Ambulancia
             this.textBox17.Margin = new System.Windows.Forms.Padding(4);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(468, 27);
-            this.textBox17.TabIndex = 189;
+            this.textBox17.TabIndex = 165;
             // 
             // textBox16
             // 
@@ -1882,7 +1882,7 @@ namespace Inspeccion_Ambulancia
             this.textBox16.Margin = new System.Windows.Forms.Padding(4);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(468, 27);
-            this.textBox16.TabIndex = 188;
+            this.textBox16.TabIndex = 163;
             // 
             // textBox15
             // 
@@ -1891,7 +1891,7 @@ namespace Inspeccion_Ambulancia
             this.textBox15.Margin = new System.Windows.Forms.Padding(4);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(468, 27);
-            this.textBox15.TabIndex = 187;
+            this.textBox15.TabIndex = 161;
             // 
             // textBox14
             // 
@@ -1900,7 +1900,7 @@ namespace Inspeccion_Ambulancia
             this.textBox14.Margin = new System.Windows.Forms.Padding(4);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(468, 27);
-            this.textBox14.TabIndex = 186;
+            this.textBox14.TabIndex = 159;
             // 
             // textBox13
             // 
@@ -1909,7 +1909,7 @@ namespace Inspeccion_Ambulancia
             this.textBox13.Margin = new System.Windows.Forms.Padding(4);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(468, 27);
-            this.textBox13.TabIndex = 185;
+            this.textBox13.TabIndex = 157;
             // 
             // textBox12
             // 
@@ -1918,7 +1918,7 @@ namespace Inspeccion_Ambulancia
             this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(468, 27);
-            this.textBox12.TabIndex = 184;
+            this.textBox12.TabIndex = 155;
             // 
             // textBox11
             // 
@@ -1927,7 +1927,7 @@ namespace Inspeccion_Ambulancia
             this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(468, 27);
-            this.textBox11.TabIndex = 183;
+            this.textBox11.TabIndex = 153;
             // 
             // textBox10
             // 
@@ -1936,7 +1936,7 @@ namespace Inspeccion_Ambulancia
             this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(468, 27);
-            this.textBox10.TabIndex = 182;
+            this.textBox10.TabIndex = 151;
             // 
             // textBox9
             // 
@@ -1945,7 +1945,7 @@ namespace Inspeccion_Ambulancia
             this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(468, 27);
-            this.textBox9.TabIndex = 181;
+            this.textBox9.TabIndex = 149;
             // 
             // textBox8
             // 
@@ -1954,7 +1954,7 @@ namespace Inspeccion_Ambulancia
             this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(468, 27);
-            this.textBox8.TabIndex = 180;
+            this.textBox8.TabIndex = 147;
             // 
             // textBox7
             // 
@@ -1963,7 +1963,7 @@ namespace Inspeccion_Ambulancia
             this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(468, 27);
-            this.textBox7.TabIndex = 179;
+            this.textBox7.TabIndex = 145;
             // 
             // textBox6
             // 
@@ -1972,7 +1972,7 @@ namespace Inspeccion_Ambulancia
             this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(468, 27);
-            this.textBox6.TabIndex = 178;
+            this.textBox6.TabIndex = 143;
             // 
             // textBox5
             // 
@@ -1981,7 +1981,7 @@ namespace Inspeccion_Ambulancia
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(468, 27);
-            this.textBox5.TabIndex = 177;
+            this.textBox5.TabIndex = 141;
             // 
             // textBox4
             // 
@@ -1990,7 +1990,7 @@ namespace Inspeccion_Ambulancia
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(468, 27);
-            this.textBox4.TabIndex = 176;
+            this.textBox4.TabIndex = 139;
             // 
             // textBox3
             // 
@@ -1999,7 +1999,7 @@ namespace Inspeccion_Ambulancia
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(468, 27);
-            this.textBox3.TabIndex = 155;
+            this.textBox3.TabIndex = 137;
             // 
             // label4
             // 
@@ -2262,7 +2262,7 @@ namespace Inspeccion_Ambulancia
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(468, 27);
-            this.textBox1.TabIndex = 29;
+            this.textBox1.TabIndex = 28;
             // 
             // comboBox2
             // 
@@ -2274,7 +2274,7 @@ namespace Inspeccion_Ambulancia
             this.comboBox2.Location = new System.Drawing.Point(555, 215);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(67, 28);
-            this.comboBox2.TabIndex = 28;
+            this.comboBox2.TabIndex = 29;
             // 
             // comboBox1
             // 
@@ -2368,7 +2368,7 @@ namespace Inspeccion_Ambulancia
             this.ambulancia.Margin = new System.Windows.Forms.Padding(4);
             this.ambulancia.Name = "ambulancia";
             this.ambulancia.Size = new System.Drawing.Size(179, 27);
-            this.ambulancia.TabIndex = 76;
+            this.ambulancia.TabIndex = 69;
             // 
             // hora
             // 
@@ -2379,7 +2379,7 @@ namespace Inspeccion_Ambulancia
             this.hora.Name = "hora";
             this.hora.ShowUpDown = true;
             this.hora.Size = new System.Drawing.Size(72, 27);
-            this.hora.TabIndex = 75;
+            this.hora.TabIndex = 73;
             // 
             // provincia
             // 
@@ -2389,7 +2389,7 @@ namespace Inspeccion_Ambulancia
             this.provincia.Location = new System.Drawing.Point(204, 162);
             this.provincia.Name = "provincia";
             this.provincia.Size = new System.Drawing.Size(167, 28);
-            this.provincia.TabIndex = 74;
+            this.provincia.TabIndex = 67;
             // 
             // lbl_alfa
             // 
@@ -2409,7 +2409,7 @@ namespace Inspeccion_Ambulancia
             this.base_operativa.Margin = new System.Windows.Forms.Padding(4);
             this.base_operativa.Name = "base_operativa";
             this.base_operativa.Size = new System.Drawing.Size(195, 27);
-            this.base_operativa.TabIndex = 71;
+            this.base_operativa.TabIndex = 68;
             // 
             // lnl_base_operativa
             // 
@@ -2486,7 +2486,7 @@ namespace Inspeccion_Ambulancia
             this.unidad_operativa.Margin = new System.Windows.Forms.Padding(4);
             this.unidad_operativa.Name = "unidad_operativa";
             this.unidad_operativa.Size = new System.Drawing.Size(195, 27);
-            this.unidad_operativa.TabIndex = 57;
+            this.unidad_operativa.TabIndex = 66;
             // 
             // conductor_recibe
             // 
@@ -2495,7 +2495,7 @@ namespace Inspeccion_Ambulancia
             this.conductor_recibe.Margin = new System.Windows.Forms.Padding(4);
             this.conductor_recibe.Name = "conductor_recibe";
             this.conductor_recibe.Size = new System.Drawing.Size(357, 27);
-            this.conductor_recibe.TabIndex = 51;
+            this.conductor_recibe.TabIndex = 71;
             // 
             // conductor_entrega
             // 
@@ -2504,7 +2504,7 @@ namespace Inspeccion_Ambulancia
             this.conductor_entrega.Margin = new System.Windows.Forms.Padding(4);
             this.conductor_entrega.Name = "conductor_entrega";
             this.conductor_entrega.Size = new System.Drawing.Size(357, 27);
-            this.conductor_entrega.TabIndex = 50;
+            this.conductor_entrega.TabIndex = 70;
             // 
             // fecha
             // 
@@ -2515,7 +2515,7 @@ namespace Inspeccion_Ambulancia
             this.fecha.Margin = new System.Windows.Forms.Padding(4);
             this.fecha.Name = "fecha";
             this.fecha.Size = new System.Drawing.Size(149, 27);
-            this.fecha.TabIndex = 62;
+            this.fecha.TabIndex = 72;
             // 
             // lbl_hora
             // 
@@ -2684,7 +2684,7 @@ namespace Inspeccion_Ambulancia
             0});
             this.kilometraje.Name = "kilometraje";
             this.kilometraje.Size = new System.Drawing.Size(137, 27);
-            this.kilometraje.TabIndex = 318;
+            this.kilometraje.TabIndex = 324;
             // 
             // label82
             // 
@@ -2705,7 +2705,7 @@ namespace Inspeccion_Ambulancia
             this.observaciones_generales.Multiline = true;
             this.observaciones_generales.Name = "observaciones_generales";
             this.observaciones_generales.Size = new System.Drawing.Size(540, 59);
-            this.observaciones_generales.TabIndex = 316;
+            this.observaciones_generales.TabIndex = 325;
             // 
             // label81
             // 
