@@ -25,7 +25,7 @@ namespace Inspeccion_Ambulancia
             int no_reporte = Convert.ToInt32(frm1.grd.CurrentRow.Cells[0].Value);
 
             Text = "Reporte No. " + no_reporte.ToString();
-            MaximizeBox = false;
+            //MaximizeBox = false;
 
             //Cargar datos generales de la base de datos
             NpgsqlCommand cmd = new NpgsqlCommand();
@@ -195,6 +195,5 @@ namespace Inspeccion_Ambulancia
             };
             dr.Close();
         }
-
     }
 }
