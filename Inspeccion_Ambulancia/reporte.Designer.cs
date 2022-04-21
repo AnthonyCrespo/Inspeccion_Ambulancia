@@ -65,7 +65,7 @@ namespace Inspeccion_Ambulancia
             // btn_generar_reporte
             // 
             this.btn_generar_reporte.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_generar_reporte.Location = new System.Drawing.Point(904, 686);
+            this.btn_generar_reporte.Location = new System.Drawing.Point(1030, 680);
             this.btn_generar_reporte.Name = "btn_generar_reporte";
             this.btn_generar_reporte.Size = new System.Drawing.Size(155, 47);
             this.btn_generar_reporte.TabIndex = 66;
@@ -122,16 +122,22 @@ namespace Inspeccion_Ambulancia
             // grd
             // 
             this.grd.AllowUserToAddRows = false;
-            this.grd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.grd.AllowUserToDeleteRows = false;
+            this.grd.AllowUserToOrderColumns = true;
+            this.grd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grd.Location = new System.Drawing.Point(201, 70);
+            this.grd.Location = new System.Drawing.Point(132, 71);
             this.grd.MultiSelect = false;
             this.grd.Name = "grd";
             this.grd.ReadOnly = true;
             this.grd.RowHeadersWidth = 51;
             this.grd.RowTemplate.Height = 24;
             this.grd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grd.Size = new System.Drawing.Size(858, 583);
+            this.grd.Size = new System.Drawing.Size(1053, 583);
             this.grd.TabIndex = 3;
             // 
             // label2
