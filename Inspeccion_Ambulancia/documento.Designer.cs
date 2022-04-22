@@ -308,7 +308,7 @@ namespace Inspeccion_Ambulancia
             this.pic_escudo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pic_escudo.BackColor = System.Drawing.Color.Transparent;
             this.pic_escudo.Image = ((System.Drawing.Image)(resources.GetObject("pic_escudo.Image")));
-            this.pic_escudo.Location = new System.Drawing.Point(1654, 20);
+            this.pic_escudo.Location = new System.Drawing.Point(1671, 10);
             this.pic_escudo.Name = "pic_escudo";
             this.pic_escudo.Size = new System.Drawing.Size(68, 68);
             this.pic_escudo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1735,10 +1735,10 @@ namespace Inspeccion_Ambulancia
             // 
             this.label67.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(44, 442);
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(48, 457);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(842, 60);
+            this.label67.Size = new System.Drawing.Size(726, 52);
             this.label67.TabIndex = 534;
             this.label67.Text = resources.GetString("label67.Text");
             // 

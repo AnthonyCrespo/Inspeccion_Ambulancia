@@ -69,7 +69,7 @@ namespace Inspeccion_Ambulancia
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(198, 9);
+            this.label1.Location = new System.Drawing.Point(219, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(502, 72);
             this.label1.TabIndex = 17;
@@ -82,9 +82,9 @@ namespace Inspeccion_Ambulancia
             this.pic_escudo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pic_escudo.BackColor = System.Drawing.Color.Transparent;
             this.pic_escudo.Image = ((System.Drawing.Image)(resources.GetObject("pic_escudo.Image")));
-            this.pic_escudo.Location = new System.Drawing.Point(779, 9);
+            this.pic_escudo.Location = new System.Drawing.Point(789, 9);
             this.pic_escudo.Name = "pic_escudo";
-            this.pic_escudo.Size = new System.Drawing.Size(83, 91);
+            this.pic_escudo.Size = new System.Drawing.Size(68, 80);
             this.pic_escudo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_escudo.TabIndex = 16;
             this.pic_escudo.TabStop = false;
@@ -93,7 +93,7 @@ namespace Inspeccion_Ambulancia
             // 
             this.pic_msp.BackColor = System.Drawing.Color.Transparent;
             this.pic_msp.Image = ((System.Drawing.Image)(resources.GetObject("pic_msp.Image")));
-            this.pic_msp.Location = new System.Drawing.Point(7, 9);
+            this.pic_msp.Location = new System.Drawing.Point(23, 9);
             this.pic_msp.Name = "pic_msp";
             this.pic_msp.Size = new System.Drawing.Size(159, 72);
             this.pic_msp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
