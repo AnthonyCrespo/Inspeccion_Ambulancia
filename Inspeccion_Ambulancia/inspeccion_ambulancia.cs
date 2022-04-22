@@ -316,7 +316,6 @@ namespace Inspeccion_Ambulancia
             //string nombre2 = @"C:\Users\Anthony\Pictures\Hospital\" + no_reporte.Text + "_temperatura.jpg";
             strSQL = "insert into otros_datos values ";
             strSQL += "(" + no_reporte.Text + "," + combustible.Text + ",'" + temperatura.Text + "'," + kilometraje.Text +  ",'" + observaciones_generales.Text +"')";
-            MessageBox.Show(strSQL);
             cmd.CommandText = strSQL;
             cmd.Connection = main.cn;
             cmd.ExecuteNonQuery();

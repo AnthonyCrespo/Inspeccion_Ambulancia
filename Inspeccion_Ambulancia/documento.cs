@@ -24,13 +24,6 @@ namespace Inspeccion_Ambulancia
 
         private void documento_Load(object sender, EventArgs e)
         {
-
-
-            //Funcion para imprimir
-            printDocument1.DefaultPageSettings.Landscape = true;
-
-
-
             int no_reporte = Convert.ToInt32(frm1.grd.CurrentRow.Cells[0].Value);
 
             Text = "Reporte No. " + no_reporte.ToString();
@@ -203,48 +196,9 @@ namespace Inspeccion_Ambulancia
                 j ++;
             };
             dr.Close();
-
-
-
-
-
-        }
-
-
-        
-
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-
-            e.Graphics.DrawImage(bitmap, 0, 0);
-        }
-
-        Bitmap bitmap;
-
-        private void materialRaisedButton1_Click(object sender, EventArgs e)
-        {
-            Panel panel = new Panel();
-            this.Controls.Add(panel);
-            Graphics grp = panel.CreateGraphics();
-            Size formSize = this.Size;
-            bitmap = new Bitmap(formSize.Width, formSize.Height, grp);
-            grp = Graphics.FromImage(bitmap);
-            Point panelLocation = PointToScreen(panel.Location);
-            grp.CopyFromScreen(panelLocation.X, panelLocation.Y, 0, 0, formSize);
-            printPreviewDialog1.Document = printDocument1;
-            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
-            printPreviewDialog1.ShowDialog();
-
-            //Graphics g = this.CreateGraphics();
-            //bitmap = new Bitmap(this.Size.Width, this.Size.Height, g);
-            //Graphics mg = Graphics.FromImage(bitmap);
-            //mg.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, this.Size);
-            //printPreviewDialog1.ShowDialog();
         }
 
 
     }
-
-
 
 }
